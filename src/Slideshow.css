@@ -1,0 +1,178 @@
+
+
+/* moblie */
+@media (max-width: 480px) {
+  .each-slide > div {
+      position: relative;
+      height: 235px;
+      border: 1px solid;
+      background-color: rgb(33, 186, 197);
+    }
+
+    .test{
+
+      background-repeat:no-repeat;
+      background-position: center;
+      height: 165px;
+      width: 100%;
+
+    }
+    
+    .text-block {
+      position: absolute;
+      top:76%;
+      bottom: 0px;
+      right: 100px;
+      color:white;
+    }
+
+    .medium{
+      font-size: 16px;
+    }
+    .small{
+      font-size: 14px;
+    }
+}
+
+
+/* tablet Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .each-slide > div {
+
+      position: relative;
+      height: 320px;
+      border: 1px solid;
+      background-color: rgb(33, 186, 197);
+    }
+
+    .test{
+
+      background-repeat:no-repeat;
+      background-position: center;
+      height: 260px;
+      width: 100%;
+
+    }
+    
+    .text-block {
+      position: absolute;
+      top: 85%;
+      bottom: 0px;
+      right: 140px;
+      color:white;
+    }
+
+    .medium{
+      font-size: 16px;
+    }
+    .small{
+      font-size: 14px;
+    }
+}
+
+/* tablet Ipads portrait mode */
+@media (min-width: 767px) and (max-width: 1024px) {
+  .each-slide > div {
+
+      position: relative;
+      height: 410px;
+      border: 1px solid;
+      background-color: rgb(33, 186, 197);
+    }
+
+    .test{
+
+      background-repeat:no-repeat;
+      background-position: center;
+      height: 350px;
+      width: 100%;
+
+    }
+    
+    .text-block {
+      position: absolute;
+      top: 87%;
+      bottom: 0px;
+      right: 300px;
+      color:white;
+    }
+
+    .medium{
+      font-size: 16px;
+    }
+    .small{
+      font-size: 14px;
+    }
+}
+
+
+/* laptops and desktops */
+@media (min-width: 1025px) and (max-width: 1080px) {
+  .each-slide > div {
+
+      position: relative;
+      height: 455px;
+      border: 1px solid;
+      background-color: rgb(24, 187, 199);
+    }
+
+    .test{
+
+      background-repeat:no-repeat;
+      background-position: center;
+      height: 370px;
+      width: 100%;
+
+    }
+    
+    .text-block {
+      position: absolute;
+      top: 85%;
+      bottom: 0px;
+      right: 400px;
+      color:white;
+    }
+
+    .medium{
+      font-size: 20px;
+    }
+    .small{
+      font-size: 17px;
+    }
+}
+
+
+/* large screen*/
+@media (min-width: 1081px) {
+  .each-slide > div {
+
+      position: relative;
+      height: 600px;
+      border: 1px solid;
+      background-color: rgb(24, 187, 199);
+    }
+
+    .test{
+
+      background-repeat:no-repeat;
+      background-position: center;
+      height: 600px;
+      width: 100%;
+
+    }
+    
+    .text-block {
+      position: absolute;
+      top: 87%;
+      bottom: 0px;
+      right: 450px;
+      color: black;
+    }
+
+    .medium{
+      font-size: 28px;
+    }
+    .small{
+      font-size: 24px;
+    }
+}
