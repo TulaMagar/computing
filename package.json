@@ -1,5 +1,5 @@
 {
-  "homepage": "http://techcomputinginfo.com",
+  "homepage": "http://tulay.github.io",
   "name": "computing",
   "version": "0.1.0",
   "private": true,
@@ -26,7 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "techcomputinginfo.com -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
