@@ -14,6 +14,7 @@ import withReveal from 'react-reveal/withReveal';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 //https://www.react-reveal.com/examples/common/lightspeed/
+//https://bestofreactjs.com/repo/dbramwell-react-animate-on-scroll
 function About() {
   return (
     <>
