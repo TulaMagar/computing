@@ -10,6 +10,9 @@ import LazyLoad from 'react-lazyload';
 import Reveal from 'react-reveal/Reveal';
 import LightSpeed from 'react-reveal/LightSpeed';
 import Zoom from 'react-reveal/Zoom';
+import withReveal from 'react-reveal/withReveal';
+
+import ScrollAnimation from 'react-animate-on-scroll';
 //https://www.react-reveal.com/examples/common/lightspeed/
 function About() {
   return (
@@ -57,14 +60,17 @@ function About() {
         </div>
 
         <div>
+            <withReveal>
             <h3>&emsp;&emsp;Microsoft Outlook Version</h3>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;If you don't want to use the preview of upcoming microsoft update then you can simply click on Coming Soon to turn off </p>
             <LazyLoad>
                 <Image className="img-fluid mx-auto d-block" src={ComingSoon} alt="version img not found" width="300vh"/>   
-            </LazyLoad>        
+            </LazyLoad>       
+            </withReveal> 
         </div>
 
         <div className="container pt-5 p-5 bg-info bg-gradient my-5 border text-black">
+        <withReveal>
             <h3>&emsp;&emsp;Microsoft Outlook View</h3>
             <p className='text-white'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;As I know this new navigation display style only affect to later 2020 version. I am using 2022 version </p>
             <LazyLoad>
@@ -78,7 +84,25 @@ function About() {
                     <img className="img-fluid mx-auto d-block" src={NewUpdate} alt="version img not found"/>
                 </MobileView>
             </LazyLoad>
-            
+            </withReveal>
+            <ScrollAnimation animateIn='fadeIn'
+                animateOut='fadeOut'>
+                <h1>
+                    React Animate On Scroll
+                </h1>
+                <h2>
+                    Using:
+                </h2>
+            </ScrollAnimation>
+                
+            <ScrollAnimation animateIn='bounceInRight'
+                animateOut='bounceOutLeft'>
+                <h2>
+                    <a href='https://daneden.github.io/animate.css/'>
+                    Animate.css
+                    </a>
+                </h2>
+            </ScrollAnimation>
         </div>
         
       </div>
