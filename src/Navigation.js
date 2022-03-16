@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navigation.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Navigation () {
   const navStyle ={
