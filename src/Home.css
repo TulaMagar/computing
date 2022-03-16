@@ -1,0 +1,42 @@
+.container-large {
+    background-color: rgb(42, 34, 63);
+    height: auto;
+    padding: 10px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 70%;
+}
+
+.flex-child {
+    flex: 1;
+    color: aliceblue;
+    text-align: center;
+    padding: 13px;
+    margin: 10px;
+    border: 5px solid wheat;
+}
+
+.flex-child:hover {
+    background-color: blue;
+    border: none;
+}
+
+
+@media (max-width: 600px) {
+
+    .flex-container {
+        flex-direction: column;
+        min-width: 100%;
+    }
+    .flex-child {
+        flex: 1;
+        color: aliceblue;
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+        border: 5px solid wheat;
+    }
+}
