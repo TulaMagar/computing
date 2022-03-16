@@ -36,8 +36,8 @@ const Slideshow = () => {
         <Slide>
          {slideImages.map((slideImage, index)=> (
             <div className="each-slide" key={index}>
-              <div >
-                  <img className="img-fluid width: 100% height: auto center-block  test" src={slideImage.url}/>
+              <div className='section' >
+                  <img className="test" src={slideImage.url}/>
                   <div className='text-block'>
                     <h1 className='medium'>{slideImage.title}</h1>
                     <p className='small'>&emsp;{slideImage.caption}</p>
