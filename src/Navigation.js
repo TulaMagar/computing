@@ -36,7 +36,7 @@ function Navigation () {
             </Nav>
             <Nav>
               <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/Questions">Questions</Nav.Link>
+              <Nav.Link href="/shop">Questions</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

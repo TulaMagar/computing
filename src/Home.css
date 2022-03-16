@@ -24,8 +24,14 @@
     border: none;
 }
 
+.context{
+    margin: auto;
+    width: 50%;
+    padding:  60px;
+    font-size: 30px;
+}
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
 
     .flex-container {
         flex-direction: column;
@@ -38,5 +44,13 @@
         padding: 20px;
         margin: 20px;
         border: 5px solid wheat;
+    }
+    .contex{
+
+        margin: auto;
+        min-width: 100%;
+        text-indent: 40px;
+        padding:  60px;
+        font-size: 20px;
     }
 }

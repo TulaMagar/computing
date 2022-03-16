@@ -26,6 +26,14 @@ const Home = () => {
     
             </div>
         </div>
+
+        <p className='context'>
+            <span> 
+                Find the similar issues and solution. <strong> Not avaiable: Right now, posting a issue isn't avaiable but 
+                we will build it soon! </strong>
+            </span>
+        </p>
+
         </>
     );
 

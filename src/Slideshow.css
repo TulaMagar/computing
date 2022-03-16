@@ -154,16 +154,16 @@
     
     .text-block {
       position: absolute;
-      /* top: 85%; */
+      top: 80%;
       bottom: 10px;
       right: 450px;
       color: black;
     }
 
     .medium{
-      font-size: 35px;
+      font-size: 40px;
     }
     .small{
-      font-size: 24px;
+      font-size: 30px;
     }
 }
