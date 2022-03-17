@@ -1,38 +1,47 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import {Link} from 'react-router-dom';
+import './Shop.css';
 
 function Shop() {
 
-  useEffect(() =>{
+  const [isVisible, setIsVisible] = useState(true);
+  const [height, setHeight] = useState(0)
+  
+  useEffect(() => {   
+    window.addEventListener("scroll", listenToScroll);
+    return () => 
+       window.removeEventListener("scroll", listenToScroll); 
+  }, [])
+  
+  const listenToScroll = () => {
+    let heightToHideFrom = 200;
+    const winScroll = document.body.scrollTop || 
+        document.documentElement.scrollTop;
+    setHeight(winScroll);
 
-    fetchItems();
-
-  }, []);
-
-
-  const [data, setItems] = useState([]);
-
-  const fetchItems = async () => {
-
-    const items= await fetch(
-
-      'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmMzI4YjNkMC03YjFmLTAxM2EtNGFjNS01ZmNkODM1NzQ2MTIiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNjQ2MDkyNTgwLCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6InVwY29taW5naW5wdWJnIn0.F3vso-J20uOsuJi_0LYsfLtB2v-PmCXUWjWltzJ9GBE '
-
-    );
-
-    const data = await items.json();
-    console.log(data);
-    setItems(data.data);
+    if (winScroll > heightToHideFrom) {  
+         isVisible && setIsVisible(false);
+    } else {
+         setIsVisible(true);
+    }  
   };
 
   return (
-    <div>
-      {data.map(item =>(
-        <h1>{item.name}</h1>
-      ))}
-    </div>
+   <div id="container">
+      <div id="height">
+        <b>height: {height} - {isVisible?"show":"hide"}</b> 
+      </div>
+     {
+        isVisible 
+         && 
+       <div id="hide">
+            Content hidden when scrolled beyond  200px
+       </div>
+      }
+   </div>
   );
 }
+
 
 export default Shop;

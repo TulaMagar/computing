@@ -43,7 +43,8 @@ function About() {
         </Reveal>
 
         <div  className="container pt-5 p-5 bg-info bg-gradient my-5 border text-black">
-            <LightSpeed top>
+            <ScrollAnimation animateIn='fadeIn'
+                animateOut='fadeOut'>
             <h3>&emsp;&emsp;Microsoft Outlook Version</h3>
             <p className='text-white'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;As I know this new navigation display style only affect to later 2020 version. I am using 2022 version </p>
             <LazyLoad>
@@ -57,17 +58,18 @@ function About() {
                     <img className="img-fluid mx-auto d-block" src={Version} alt="version img not found" width="100%"/>
                 </MobileView>
             </LazyLoad>
-            </LightSpeed>
+            </ScrollAnimation>
         </div>
 
         <div>
-            <withReveal>
+            <ScrollAnimation animateIn='fadeIn'
+                animateOut='fadeOut'>
             <h3>&emsp;&emsp;Microsoft Outlook Version</h3>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;If you don't want to use the preview of upcoming microsoft update then you can simply click on Coming Soon to turn off </p>
             <LazyLoad>
                 <Image className="img-fluid mx-auto d-block" src={ComingSoon} alt="version img not found" width="300vh"/>   
             </LazyLoad>       
-            </withReveal> 
+            </ScrollAnimation > 
         </div>
 
         <div className="container pt-5 p-5 bg-info bg-gradient my-5 border text-black">

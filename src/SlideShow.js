@@ -7,6 +7,8 @@ import Meeting from './SlideshowImage/meeting.jpg';
 import Cute from './SlideshowImage/cute.jpg';
 import './Slideshow.css';
 import LazyLoad from 'react-lazyload';
+import Zoom from 'react-reveal/Zoom';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const slideImages = [
   {
@@ -34,10 +36,13 @@ const Slideshow = () => {
       
       <div className="slide-container">
         <Slide>
+        
          {slideImages.map((slideImage, index)=> (
             <div className="each-slide" key={index}>
               <div className='section' >
+                
                   <img className="test" src={slideImage.url}/>
+                  
                   <div className='text-block'>
                     <h1 className='medium'>{slideImage.title}</h1>
                     <p className='small'>&emsp;{slideImage.caption}</p>
@@ -45,6 +50,7 @@ const Slideshow = () => {
               </div>
             </div>
           ))} 
+          
         </Slide>
       </div>
     );
