@@ -56,24 +56,26 @@ const Home = () => {
         <ScrollAnimation animateIn='fadeIn'
                 animateOut='fadeOut'>
         
-            <div className="Static-container">
+            <div className='container-L-image'>
+                    <div className="Static-container">
+                        
+                        <div className="image">
+                            <img src={Clean} alt="Clean not found"/>
+                        </div>
 
-                <div className="image">
-                    <img src={Clean} alt="Clean image not found"/>
-                </div>
+                        <div className="image">
+                            <img src={Moon} alt="Clean not found"/>
+                        </div>
+                        <div className="image">
+                            <img src={Sea} alt="Clean not found"/>
+                        </div>
 
-                <div className="image">
-                    <img src={Moon} alt="Clean image not found"/>
-                </div>
-                <div className="image">
-                    <img src={Sea} alt="Clean image not found"/>
-                </div>
+                        <div className="image">
+                            <img src={Clean} alt="Clean not found"/>
+                        </div>
 
-                <div className="image">
-                    <img src={Clean} alt="Clean image not found"/>
+                    </div>
                 </div>
-
-            </div>
         </ScrollAnimation>
 
         <ScrollAnimation animateIn='fadeIn'

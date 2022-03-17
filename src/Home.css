@@ -4,6 +4,13 @@
     width: 100%;
     padding: 10px;
 }
+
+.container-L-image {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
 .flex-container {
     /* height: 100px; */
     display: flex;
@@ -26,18 +33,19 @@
 }
 
 .Static-container{
-    background: #41464b;
+    /* background: #41464b; */
     /* height: 40%; */
     display: flex;
-    height: 370px;
+    /* height: 370px; */
     flex-direction: row;
     justify-content: center;
 }
 
 .image{
 
-    width: 307px;
-    padding: 5px;
+    width: 330px;
+    padding: 10px;
+    padding: 10px;
     color:whitesmoke;
 }
 
@@ -61,6 +69,14 @@
         height: 400px;
         padding: 10px;
     }
+
+    .container-L-image {
+        /* background-color: rgb(42, 34, 63); */
+        height: 1500px;
+        padding: 10px;
+    }
+
+
     .flex-container {
         margin-top: 30px;
         height: 100px;
@@ -69,6 +85,19 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .Static-container{
+        margin-top: 30px;
+        /* width: 100%; */
+        height: 267px;
+        /* flex-direction: column; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
 
     .flex-child {
         min-width: 100%;
@@ -79,27 +108,22 @@
         border: 5px solid wheat;
     }
 
-    .flex-child:hover {
-        background-color: blue;
-        border: none;
-    }
-
-    .Static-container{
-        margin: 2px auto 0 auto;
-        border-radius: 10px;
-        background: #5c6a77;
-        width: 100%;
-        /* height: 40%; */
-        display: flex;
-        flex-direction: column;
-    }
 
     .image{
         word-wrap: break-word;
-        padding: 20px;
-        margin-left: 8px;
-        border: 5px solid #0a0d0f;
-        width: 96%;
+        min-width: 100%;
+        text-align: center;
+        padding: 1px;
+        margin: 2px;
+        /* margin-left: 8px; */
+        /* border: 5px solid #0a0d0f; */
+    }
+
+
+
+    .flex-child:hover {
+        background-color: blue;
+        border: none;
     }
 
     .contex{
@@ -109,6 +133,7 @@
         text-indent: 40px;
         padding:  60px;
         font-size: 20px;
+        margin-bottom: 500px;
     }
 
 }
