@@ -1,11 +1,11 @@
 .container-large {
-    background-color: rgb(42, 34, 63);
+    /* background-color: rgb(42, 34, 63); */
     height: auto;
     width: 100%;
     padding: 10px;
 }
 .flex-container {
-    height: 100px;
+    /* height: 100px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,29 +15,36 @@
     width: 307px;
     color: aliceblue;
     text-align: center;
-    padding: 13px;
+    padding: 10px;
     margin: 10px;
     border: 5px solid wheat;
 }
 
-.flex-child:hover {
-    background-color: blue;
+ .flex-child:hover {
+    /* background-color: blue; */
     border: none;
 }
 
 .Static-container{
-    background: #3085d6;
+    background: #41464b;
     /* height: 40%; */
     display: flex;
+    height: 370px;
     flex-direction: row;
     justify-content: center;
 }
 
 .image{
+
     width: 307px;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #0a0d0f;
+    padding: 5px;
+    color:whitesmoke;
+}
+
+.image > img{
+
+    height: 350px;
+    width: 100%;
 }
 
 .context{
@@ -55,7 +62,7 @@
         padding: 10px;
     }
     .flex-container {
-        margin-top: 15px;
+        margin-top: 30px;
         height: 100px;
         display: flex;
         flex-direction: row;
@@ -80,7 +87,7 @@
     .Static-container{
         margin: 2px auto 0 auto;
         border-radius: 10px;
-        background: #3085d6;
+        background: #5c6a77;
         width: 100%;
         /* height: 40%; */
         display: flex;

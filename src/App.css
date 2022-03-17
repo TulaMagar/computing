@@ -14,3 +14,13 @@ nav {
   align-items: center;
   list-style: none;
 }
+
+.background{
+  /* background-color: rgb(49, 49, 49); */
+  background-image: url("./Background/HomeBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  /* color: black; */
+}
