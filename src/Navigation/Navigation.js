@@ -3,6 +3,8 @@ import './Navigation.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+//https://react-bootstrap.github.io/components/navbar/ 
+// Fix nav bar this link
 function Navigation () {
   const navStyle ={
     color : 'white'
