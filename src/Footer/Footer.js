@@ -4,7 +4,9 @@ const Footer = () => {
 
     return (
         <>
-            <footer>
+            <footer className="buttom-footer">
+
+                
 
             </footer>
         </>

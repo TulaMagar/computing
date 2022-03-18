@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import PastPresentFuture from '../Slideshow/SlideshowImage/pastPresentFuture.jpg';
+import PastPresentFuture from './SlideshowImage/pastPresentFuture.png';
 import OlOl from './SlideshowImage/olol.jpg';
 import Meeting from './SlideshowImage/meeting.jpg';
 import Cute from './SlideshowImage/cute.jpg';

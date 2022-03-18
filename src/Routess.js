@@ -1,24 +1,20 @@
 import React from 'react';
-import './App.css';
-import Navigation from './Navigation/Navigation.js';
+// import './App.css';
 import Home from './Home/Home.js';
 import About from './About/About.js';
 import Shop from './Shop';
 import ItemDetails from "./ItemDetails";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Footer from './Footer/Footer';
-import Routess from './Routess';
+
 
 
 // Sitemap: https://www.xml-sitemaps.com/
 //https://www.npmjs.com/package/react-localstorage
 //Login with google : https://www.freakyjolly.com/google-signin-login-button-in-react-js-example-using-react-google_login-package/
-function App() {
+function Routess() {
 
   return (
     <Router>
-      <div className="App background">
-        <Navigation/>
         <Routes>
           <Route exact path="/" element={ <Home /> }/>
           <Route exact path="/about" element={<About />}/>
@@ -28,11 +24,8 @@ function App() {
             <Navigate to="/" />
           </Route> */}
         </Routes>
-        <Footer/>
-      </div>
-
     </Router>
   );
 }
 
-export default App;
+export default Routess;
