@@ -15,10 +15,12 @@ import withReveal from 'react-reveal/withReveal';
 import ScrollAnimation from 'react-animate-on-scroll';
 //https://www.react-reveal.com/examples/common/lightspeed/
 //https://bestofreactjs.com/repo/dbramwell-react-animate-on-scroll
+
+//https://www.codegrepper.com/code-examples/javascript/reveal+text+on+hover+react
 function About() {
   return (
     <>
-    <div className="container pt-5 p-5 bg-dark text-white">
+    <div className="container pt-5 p-5 text-white">
         <Zoom>
         <h1>Coming Soon Microsoft Outlook Navigation Panel</h1> <br/>
         <p classNames="pt-3 p-3 my-3"> &emsp;&emsp; Recently, Microsoft has been updating software as usual. This time Microsoft plan to update the outlook navigation panel
@@ -32,7 +34,7 @@ function About() {
 
     <div className="container pt-5 p-5 my-5 border">
         <Reveal>
-        <div className="container pt-5 p-5 bg-secondary my-5 border text-white">
+        <div className="container pt-5 p-5 my-5 border text-white">
             <h2 className="text-black">Still Confusion</h2>
 
             <p className="pt-3 p-3 my-3"> 

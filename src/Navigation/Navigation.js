@@ -27,7 +27,7 @@ function Navigation () {
 
   return (
     <>
-      <Navbar collapseOnSelect sticky='top' expand='sm' bg='dark' variant='dark'>
+      <Navbar collapseOnSelect sticky='top' expand='sm' variant='dark' className='background color'>
         <Container >
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
