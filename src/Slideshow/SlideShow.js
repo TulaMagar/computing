@@ -1,14 +1,14 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import PastPresentFuture from './SlideshowImage/pastPresentFuture.jpg';
+import PastPresentFuture from '../Slideshow/SlideshowImage/pastPresentFuture.jpg';
 import OlOl from './SlideshowImage/olol.jpg';
 import Meeting from './SlideshowImage/meeting.jpg';
 import Cute from './SlideshowImage/cute.jpg';
 import './Slideshow.css';
-import LazyLoad from 'react-lazyload';
-import Zoom from 'react-reveal/Zoom';
-import ScrollAnimation from 'react-animate-on-scroll';
+// import LazyLoad from 'react-lazyload';
+// import Zoom from 'react-reveal/Zoom';
+// import ScrollAnimation from 'react-animate-on-scroll';
 
 const slideImages = [
   {

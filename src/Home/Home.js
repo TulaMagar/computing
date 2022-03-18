@@ -1,10 +1,10 @@
 import React from 'react';
-import SlideShow from './SlideShow';
+import SlideShow from '../Slideshow/SlideShow.js';
 import './Home.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Clean from './Background/clean.avif';
-import Moon from './Background/moon.webp';
-import Sea from './Background/sea.jpg';
+import Clean from '../Background/clean.avif';
+import Moon from '../Background/moon.webp';
+import Sea from '../Background/sea.jpg';
 
 
 const Home = () => {

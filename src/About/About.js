@@ -1,8 +1,8 @@
 import React from 'react';
 import './About.css'
-import ComingSoon from './img/ComingSoon.png';
-import NewUpdate from './img/NewUpdate.png';
-import  Version from './img/Version.PNG';
+import ComingSoon from '../img/ComingSoon.png';
+import NewUpdate from '../img/NewUpdate.png';
+import  Version from '../img/Version.PNG';
 import "bootstrap/dist/css/bootstrap.css";
 import Image from "react-bootstrap/Image";
 import {BrowserView, MobileView} from 'react-device-detect';
