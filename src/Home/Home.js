@@ -6,6 +6,8 @@ import Clean from '../Background/clean.avif';
 import Moon from '../Background/moon.webp';
 import Sea from '../Background/sea.jpg';
 
+import Globe from './Globe/giphy.gif';
+
 
 const Home = () => {
     
@@ -61,6 +63,9 @@ const Home = () => {
                             
                             <div className="image">
                                 <img src={Clean} alt="Clean not found"/>
+                                <p>
+                                    <span> </span>
+                                </p>
                             </div>
 
                             <div className="image">
@@ -80,24 +85,26 @@ const Home = () => {
 
             <ScrollAnimation animateIn='fadeIn'
                     animateOut='fadeOut'>
-            
-                <p className='context'>
-                    <span> 
-                        Find the similar issues and solution. <strong> Not avaiable: Right now, posting a issue isn't avaiable but 
-                        I will build it soon! </strong>
-                    </span>
-                </p>
-            </ScrollAnimation>
+                    
+                    <div className='container-ReachOut'>
+                        <div className="ReachOut-container">
+                            
+                            <div className="side">
+                                <p>
+                                    <span> 
+                                        Find the similar issues and solution. <strong> Not avaiable: Right now, posting a issue isn't avaiable but 
+                                        I will build it soon! </strong>
+                                    </span>
+                                </p>
+                            </div>
 
-            <ScrollAnimation animateIn='fadeIn'
-                    animateOut='fadeOut'>
-            
-                <p className='context'>
-                    <span> 
-                        Find the similar issues and solution. <strong> Not avaiable: Right now, posting a issue isn't avaiable but 
-                        I will build it soon! </strong>
-                    </span>
-                </p>
+                            <div className="side">
+                                <img src={Globe} alt="globe not found"/>
+                            </div>
+
+                        </div>
+                    </div>
+
             </ScrollAnimation>
         </React.Fragment>
     );
