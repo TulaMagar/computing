@@ -13,6 +13,7 @@
 
     color: whitesmoke;
     text-decoration: none;
+    padding: 8px;
 }
 
 .nav-list:hover{
@@ -25,5 +26,15 @@
     
     .color {
         font-size: large;
+    }
+
+    .mobile-nav{
+        margin-top: 10px;
+    }
+    .nav-list{
+
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
     }
 }

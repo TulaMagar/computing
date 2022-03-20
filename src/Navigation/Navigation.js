@@ -46,13 +46,13 @@ function Navigation () {
       <Navbar collapseOnSelect sticky='top' expand='sm' variant='dark' className='background color '>
         <Container >
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-          <Navbar.Collapse id='responsive-navbar-nav'>
+          <Navbar.Collapse className='mobile-nav' id='responsive-navbar-nav'>
             <Nav className='me-auto'>
-              <Nav.Link><Link className='nav-list' to="/">Home</Link></Nav.Link>
+                <Link className='nav-list' to="/">Home</Link>
             </Nav>
             <Nav>
-              <Nav.Link><Link className='nav-list'  to="/about"> About </Link></Nav.Link>
-              <Nav.Link><Link className='nav-list'  to="/shop">Questions</Link></Nav.Link>
+                <Link className='nav-list'  to="/about"> About </Link>
+                <Link className='nav-list'  to="/shop">Questions</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
