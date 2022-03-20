@@ -11,7 +11,7 @@ function Navigation () {
   };
   return (
     <>
-      {/* <Navbar collapseOnSelect sticky='top' expand='sm' variant='dark' className='background color'>
+      <Navbar collapseOnSelect sticky='top' expand='sm' variant='dark' className='background color'>
         <Container >
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
@@ -24,8 +24,8 @@ function Navigation () {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar> */}
-      <nav>
+      </Navbar>
+      {/* <nav>
         <Link style={navStyle} to="/">
           <h3> Home </h3>
         </Link>
@@ -38,7 +38,7 @@ function Navigation () {
             <li> Shop </li>
           </Link>
         </ul>
-    </nav>
+    </nav> */}
     </>
   );
 
