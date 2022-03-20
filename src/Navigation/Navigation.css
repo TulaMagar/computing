@@ -6,7 +6,18 @@
     
 }
 .margin{
-    margin-bottom: 1em;
+    min-height: 10vh;
+}
+
+.nav-list{
+
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav-list:hover{
+
+    color: aqua;
 }
 
 

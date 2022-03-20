@@ -13,6 +13,7 @@ import Routess from './Routess';
 // Sitemap: https://www.xml-sitemaps.com/
 //https://www.npmjs.com/package/react-localstorage
 //Login with google : https://www.freakyjolly.com/google-signin-login-button-in-react-js-example-using-react-google_login-package/
+
 function App() {
 
   return (
@@ -20,7 +21,7 @@ function App() {
       <div className="App background">
         <Navigation/>
         <Routes>
-          <Route exact path="/computing/" element={ <Home /> }/>
+          <Route exact path="/" element={ <Home /> }/>
           <Route exact path="/about" element={<About />}/>
           <Route exact path="/shop" element={<Shop />}/>
           <Route path="/shop/:id" element={<ItemDetails />}/>
