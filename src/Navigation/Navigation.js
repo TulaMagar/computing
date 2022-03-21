@@ -48,11 +48,11 @@ function Navigation () {
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse className='mobile-nav' id='responsive-navbar-nav'>
             <Nav className='me-auto'>
-                <Link className='nav-list' to="/">Home</Link>
+                <Link className='nav-list' to="/" onClick={() => window.location.reload()} >Home</Link>
             </Nav>
             <Nav>
-                <Link className='nav-list'  to="/about"> About </Link>
-                <Link className='nav-list'  to="/shop">Questions</Link>
+                <Link className='nav-list'  to="/about" onClick={this.forceUpdate} > About </Link>
+                <Link className='nav-list'  to="/shop" onClick={this.forceUpdate} >Questions</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
