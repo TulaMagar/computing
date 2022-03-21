@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Clean from '../Background/clean.avif';
 import Moon from '../Background/moon.webp';
 import Sea from '../Background/sea.jpg';
-
+import {Helmet} from "react-helmet";
 import Globe from './Globe/giphy.gif';
 
 
@@ -13,6 +13,12 @@ const Home = () => {
     
     return (
         <React.Fragment>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>computing</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
+
             <ScrollAnimation animateIn='fadeIn'
                     animateOut='fadeOut'>
             

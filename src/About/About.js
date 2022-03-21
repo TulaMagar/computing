@@ -13,6 +13,7 @@ import Zoom from 'react-reveal/Zoom';
 import WithReveal from 'react-reveal/withReveal';
 
 import ScrollAnimation from 'react-animate-on-scroll';
+import {Helmet} from "react-helmet";
 //https://www.react-reveal.com/examples/common/lightspeed/
 //https://bestofreactjs.com/repo/dbramwell-react-animate-on-scroll
 
@@ -20,6 +21,11 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function About() {
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>about</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+    </Helmet>
     <div className="container pt-5 p-5 text-white">
         <Zoom>
             <h1>Coming Soon Microsoft Outlook Navigation Panel</h1> <br/>
