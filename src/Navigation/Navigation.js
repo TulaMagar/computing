@@ -48,7 +48,7 @@ function Navigation () {
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse className='mobile-nav' id='responsive-navbar-nav'>
             <Nav className='me-auto'>
-                <Link className='nav-list' to="/">Home</Link>
+                <Link className='nav-list' to="/home">Home</Link>
             </Nav>
             <Nav>
                 <Link className='nav-list'  to="/about"> About </Link>
