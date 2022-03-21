@@ -51,8 +51,10 @@ function Navigation () {
                 <Link className='nav-list' to="/" onClick={() => window.location.reload()} >Home</Link>
             </Nav>
             <Nav>
-                <Link className='nav-list'  to="/about" onClick={this.forceUpdate} > About </Link>
-                <Link className='nav-list'  to="/shop" onClick={this.forceUpdate} >Questions</Link>
+                {/* <Link className='nav-list'  to="/about" onClick={this.forceUpdate} > About </Link>
+                <Link className='nav-list'  to="/shop" onClick={this.forceUpdate} >Questions</Link> */}
+                <Link className='nav-list'  to="/about" onClick={() => window.location.reload()} > About </Link>
+                <Link className='nav-list'  to="/shop" onClick={() => window.location.reload()} >Questions</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
