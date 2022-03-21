@@ -6,7 +6,7 @@ import About from './About/About.js';
 import Thop from './Shop';
 import Shop from './Questions/RouterWithBootstrap.js';
 import ItemDetails from "./ItemDetails";
-import {HashRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import {HashRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Footer from './Footer/Footer';
 import Routess from './Routess';
 
@@ -18,7 +18,7 @@ import Routess from './Routess';
 function App() {
 
   return (
-    <Router>
+    <HashRouter>
       <div className="App background">
         <Navigation/>
         <Routes>
@@ -31,7 +31,7 @@ function App() {
         <Footer/>
       </div>
 
-    </Router>
+    </HashRouter>
   );
 }
 
