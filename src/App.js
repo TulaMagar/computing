@@ -22,7 +22,7 @@ function App() {
       <div className="App background">
         <Navigation/>
         <Routes>
-          <Route exact path="/" element={ <Home /> }/>
+          <Route exact path="/home" element={ <Home /> }/>
           <Route exact path="/about" element={<About />}/>
           <Route exact path="/shop" element={<Shop />}/>
           <Route path="/shop/:id" element={<ItemDetails />}/>
