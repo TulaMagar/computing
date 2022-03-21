@@ -1,5 +1,5 @@
 {
-  "homepage": "https://techcomputinginfo.com/",
+  "homepage": "https://techcomputinginfo.com",
   "name": "computing",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +9,9 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.1.3",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.0",
     "react": "^17.0.2",
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^2.2.1",
@@ -58,5 +61,15 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "gh-pages": "^3.2.3"
+  },
+  "husky": {
+      "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+        "prettier --write"
+     ]
   }
 }

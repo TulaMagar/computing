@@ -26,9 +26,6 @@ function App() {
           <Route exact path="/about" element={<About />}/>
           <Route exact path="/shop" element={<Shop />}/>
           <Route path="/shop/:id" element={<ItemDetails />}/>
-          {/* <Route path="*">
-            <Navigate to="/" />
-          </Route> */}
         </Routes>
         <Footer/>
       </div>
