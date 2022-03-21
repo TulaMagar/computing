@@ -18,7 +18,7 @@ import Routess from './Routess';
 function App() {
 
   return (
-    <Router basename='/computing'>
+    <Router>
       <div className="App background">
         <Navigation/>
         <Routes>
