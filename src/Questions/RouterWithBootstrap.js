@@ -50,8 +50,8 @@ function RouterWithBootstrap () {
                     />
                     </p>
                     <ul>
-                    {fruit.filter(f => f.includes(filter) || filter === '')
-                        .map(f => <li key={f}> {f}</li>)}
+                        {fruit.filter(f => f.toString().toLowerCase().includes(filter.toString().toLowerCase()) || filter === '')
+                            .map(f => <li key={f}> {f}</li>)}
                     </ul>
                 </div>
         
