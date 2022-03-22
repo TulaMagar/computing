@@ -26,6 +26,7 @@ function Navigation () {
             <Nav>
               <Nav.Link as={NavLink} to="/about" >About</Nav.Link>
               <Nav.Link as={NavLink} to="/shop" >Questions</Nav.Link>
+              <Nav.Link as={NavLink} to="/login" >Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

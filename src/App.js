@@ -5,6 +5,7 @@ import Home from './Home/Home.js';
 import About from './About/About.js';
 import Thop from './Shop';
 import Shop from './Questions/RouterWithBootstrap.js';
+import Login from './Auth/Login.js';
 import ItemDetails from "./ItemDetails";
 import {BrowserRouter,HashRouter, Routes, Route, Navigate, useLocation} from 'react-router-dom';
 import Footer from './Footer/Footer';
@@ -38,6 +39,7 @@ function App() {
           <Route exact path="/" element={ <Home /> }/>
           <Route exact path="/about" element={<About />}/>
           <Route exact path="/shop" element={<Shop />}/>
+          <Route exact path="/login"element={<Login />}/>
           <Route path="/shop/:id" element={<ItemDetails />}/>
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
