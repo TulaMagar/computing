@@ -5,7 +5,7 @@ import {Helmet} from "react-helmet";
 function RouterWithBootstrap () {
 
     const textInput = React.createRef();  // React use ref to get input value
-    const [data, setData] = useState();
+    
 
     const datas = [{url:"test", description: "this is this website"}, 
         {url:"test", description: "this is that website"},
@@ -22,16 +22,16 @@ function RouterWithBootstrap () {
         {url:"test", description: "this is this website"}, 
         {url:"test", description: "this is that website"}]
 
-    const onOnclickHandler = (e) => {
-        console.log(textInput.current.value); 
-    }
+    const fruit = [['apple', 'banana'], 'orange', 'grapefruit',
+    'mango', 'strawberry', 'peach', 'apricot'];
 
+    const [filter, setFilter] = useState('');
     return (
         <>
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>questions</title>
-                <link rel="canonical" href="http://mysite.com/example" />
+                {/* <link rel="canonical" href="http://mysite.com/example" /> */}
             </Helmet>
             <div id="container">
                 <div id="left">
@@ -39,9 +39,20 @@ function RouterWithBootstrap () {
                 </div>
         
                 <div id="middle">
-                    <input ref={textInput} type="text" />
-                    <button onClick={onOnclickHandler}>Click Here</button>
-                    <div>{ datas.map( (dats) => <li> {dats.url} :: {dats.description}</li> )}</div>
+
+                <p>
+                    Type to filter the list:
+                    <input id="filter"
+                        name="filter"
+                        type="text"
+                        value={filter}
+                        onChange={event => setFilter(event.target.value)}
+                    />
+                    </p>
+                    <ul>
+                    {fruit.filter(f => f.includes(filter) || filter === '')
+                        .map(f => <li key={f}> {f}</li>)}
+                    </ul>
                 </div>
         
                 <div id="right">
