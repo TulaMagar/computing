@@ -18,7 +18,7 @@ import Routess from './Routess';
 function App() {
 
   return (
-    <HashRouter>
+    <HashRouter >
       <div className="App background">
         <Navigation/>
         <Routes>
