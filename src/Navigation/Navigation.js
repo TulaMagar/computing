@@ -11,7 +11,8 @@ function Navigation () {
   // onUpdate={window.scrollTo(0,0)}
   const sampleLocation = useLocation();
   const componentDidMount = () => {
-    window.location.reload();
+    // window.location.reload();
+    window.scrollTo(0,0);
   }
   return (
     <>
