@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import Navigation from './Navigation/Navigation.js';
 import Home from './Home/Home.js';
@@ -6,7 +6,7 @@ import About from './About/About.js';
 import Thop from './Shop';
 import Shop from './Questions/RouterWithBootstrap.js';
 import ItemDetails from "./ItemDetails";
-import {BrowserRouter,HashRouter, Routes, Route, Navigate} from 'react-router-dom';
+import {BrowserRouter,HashRouter, Routes, Route, Navigate, useLocation} from 'react-router-dom';
 import Footer from './Footer/Footer';
 import Routess from './Routess';
 
@@ -15,10 +15,23 @@ import Routess from './Routess';
 //https://www.npmjs.com/package/react-localstorage
 //Login with google : https://www.freakyjolly.com/google-signin-login-button-in-react-js-example-using-react-google_login-package/
 
+const useScrollToTop = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+};
+
+const ScrollToTop = () => {
+  useScrollToTop();
+  return null;
+};
+
 function App() {
 
   return (
     <HashRouter >
+      <ScrollToTop />
       <div className="App background">
         <Navigation/>
         <Routes>

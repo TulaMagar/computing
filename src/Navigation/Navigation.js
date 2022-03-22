@@ -21,11 +21,11 @@ function Navigation () {
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse className='mobile-nav' id='responsive-navbar-nav'>
           <Nav className='me-auto'>
-              <Nav.Link as={NavLink} to="/" onClick={() => componentDidMount()}>Home</Nav.Link>
+              <Nav.Link as={NavLink} to="/" >Home</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link as={NavLink} to="/about" onClick={() => componentDidMount()}>About</Nav.Link>
-              <Nav.Link as={NavLink} to="/shop" onClick={() => componentDidMount()}>Questions</Nav.Link>
+              <Nav.Link as={NavLink} to="/about" >About</Nav.Link>
+              <Nav.Link as={NavLink} to="/shop" >Questions</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
