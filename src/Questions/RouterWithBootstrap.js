@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './RouterWithBootstrap.css';
 import {Helmet} from "react-helmet";
 
@@ -26,6 +26,10 @@ function RouterWithBootstrap () {
     'mango', 'strawberry', 'peach', 'apricot'];
 
     const [filter, setFilter] = useState('');
+
+    useEffect(() => {
+        
+    })
     return (
         <>
             <Helmet>
@@ -40,19 +44,19 @@ function RouterWithBootstrap () {
         
                 <div id="middle">
 
-                <p>
-                    Type to filter the list:
-                    <input id="filter"
-                        name="filter"
-                        type="text"
-                        value={filter}
-                        onChange={event => setFilter(event.target.value)}
-                    />
-                    </p>
-                    <ul>
-                        {fruit.filter(f => f.toString().toLowerCase().includes(filter.toString().toLowerCase()) || filter === '')
-                            .map(f => <li key={f}> {f}</li>)}
-                    </ul>
+                        <p>
+                            Type to filter the list:
+                            <input id="filter"
+                                name="filter"
+                                type="text"
+                                value={filter}
+                                onChange={event => setFilter(event.target.value)}
+                            />
+                        </p>
+                        <ul>
+                            {datas.filter(f => f.description.toString().toLowerCase().includes(filter.toString().toLowerCase()) || filter === '')
+                                .map((f, index) => <li key={index}> {f.url} {f.description}</li>)}
+                        </ul>
                 </div>
         
                 <div id="right">
