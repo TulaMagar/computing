@@ -8,7 +8,7 @@ import Sea from '../Background/sea.jpg';
 import {Helmet} from "react-helmet";
 import Globe from './Globe/giphy.gif';
 
-
+//Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
 const Home = () => {
     
     return (
