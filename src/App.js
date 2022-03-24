@@ -7,7 +7,7 @@ import Thop from './Shop';
 import Shop from './Questions/RouterWithBootstrap.js';
 import Login from './Auth/Login.js';
 import ItemDetails from "./ItemDetails";
-import {BrowserRouter,HashRouter, Routes, Route, Navigate, useLocation} from 'react-router-dom';
+import {HashRouter, Routes, Route, Navigate, useLocation} from 'react-router-dom';
 import Footer from './Footer/Footer';
 import Routess from './Routess';
 
