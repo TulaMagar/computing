@@ -7,9 +7,36 @@ import Moon from '../Background/moon.webp';
 import Sea from '../Background/sea.jpg';
 import {Helmet} from "react-helmet";
 import Globe from './Globe/giphy.gif';
+import styled, { css } from 'styled-components'
 
 //Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+
+function FadeInSection(props) {
+    const [isVisible, setVisible] = React.useState(false);
+    const domRef = React.useRef();
+    React.useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => setVisible(entry.isIntersecting));
+      });
+      observer.observe(domRef.current);
+    }, []);
+    return (
+      <div
+        className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+        ref={domRef}
+      >
+        {props.children}
+      </div>
+    );
+  }
+
+
 const Home = () => {
+
+    // const FadeIn = styled.div `
+    //     opacity: ${( showPopup ) => (showPopup ? '1' : '0')};
+        
+    // `;
     
     return (
         <React.Fragment>
@@ -26,8 +53,7 @@ const Home = () => {
 
             </ScrollAnimation>
 
-            <ScrollAnimation animateIn='fadeIn'
-                    animateOut='fadeOut'>
+            <FadeInSection>
                 <div className='container-large'>
                     <div className="flex-container">
 
@@ -48,7 +74,7 @@ const Home = () => {
             
                     </div>
                 </div>
-            </ScrollAnimation>
+            </FadeInSection>
 
             <ScrollAnimation animateIn='fadeIn'
                     animateOut='fadeOut'>
@@ -61,8 +87,7 @@ const Home = () => {
                 </p>
             </ScrollAnimation>
 
-            <ScrollAnimation animateIn='fadeIn'
-                    animateOut='fadeOut'>
+            <FadeInSection>
             
                 <div className='container-L-image'>
                         <div className="Static-container">
@@ -87,7 +112,7 @@ const Home = () => {
 
                         </div>
                     </div>
-            </ScrollAnimation>
+            </FadeInSection>
 
             <ScrollAnimation animateIn='fadeIn'
                     animateOut='fadeOut'>
