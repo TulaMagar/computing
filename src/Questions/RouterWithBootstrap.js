@@ -44,16 +44,17 @@ function RouterWithBootstrap () {
         
                 <div id="middle">
 
-                        <p>
-                            Type to filter the list:
+                        <p className='input-container'>
                             <input id="filter"
+                                className='input'
                                 name="filter"
                                 type="text"
                                 value={filter}
+                                placeholder="type to search for similar question and answer"
                                 onChange={event => setFilter(event.target.value)}
                             />
                         </p>
-                        <ul>
+                        <ul className='question-list'>
                             {datas.filter(f => f.description.toString().toLowerCase().includes(filter.toString().toLowerCase()) || filter === '')
                                 .map((f, index) => <li key={index}> {f.url} {f.description}</li>)}
                         </ul>

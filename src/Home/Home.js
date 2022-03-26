@@ -7,7 +7,7 @@ import Moon from '../Background/moon.webp';
 import Sea from '../Background/sea.jpg';
 import {Helmet} from "react-helmet";
 import Globe from './Globe/giphy.gif';
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
 //Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
 
