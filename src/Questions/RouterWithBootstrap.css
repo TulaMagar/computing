@@ -1,4 +1,10 @@
 
+.input{
+    height: 50px;
+    width: calc(100% - 10px);
+    border-radius: 20px;
+    padding: 15px;
+}
 @media (max-width: 467px){
 
     #left{
@@ -16,12 +22,6 @@
 
     .input-container{
         padding: 8px;
-    }
-    
-    .input{
-        min-width: 98%;
-        height: 50px;
-        border-radius: 20px;
     }
     
     .question-list{
@@ -52,12 +52,9 @@
     }
     
     #middle{
-        /* float: left; */
-        /* position: absolute; */
         width: 60%; 
         height: auto; 
         margin: 0 auto; 
-        /* background-color: red; */
         border-left: 1px solid whitesmoke;
         border-right: 1px solid whitesmoke;
         padding-left: 20px;
@@ -78,13 +75,6 @@
     .input-container{
         padding: 30px;
         text-align: center;
-    }
-    
-    .input{
-        height: 50px;
-        min-width: 90%;
-        border-radius: 20px;
-        padding: 15px;
     }
     
     .question-list{

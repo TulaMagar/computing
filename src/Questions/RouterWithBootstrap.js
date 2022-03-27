@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './RouterWithBootstrap.css';
 import {Helmet} from "react-helmet";
+import {Link} from 'react-router-dom';
+
 
 function RouterWithBootstrap () {
 
@@ -8,7 +10,7 @@ function RouterWithBootstrap () {
     
 
     const datas = [{url:"test", description: "this is this website"}, 
-        {url:"test", description: "this is that website"},
+        {url:"test", description: "../About/About.js"},
         {url:"test", description: "this is this website"}, 
         {url:"test", description: "this is that website"},
         {url:"test", description: "this is this website"}, 
@@ -56,7 +58,13 @@ function RouterWithBootstrap () {
                         </p>
                         <ul className='question-list'>
                             {datas.filter(f => f.description.toString().toLowerCase().includes(filter.toString().toLowerCase()) || filter === '')
-                                .map((f, index) => <li key={index}> {f.url} {f.description}</li>)}
+                                .map((f, index) => 
+                                    <div key={index}>
+                                        <li> {f.url} </li>
+                                        {/* <Link to={`/shop/${index}`}>{f.description}</Link> */}
+                                        <Link to={f.description}>{f.description}</Link>
+                                    </div>
+                                )}
                         </ul>
                 </div>
         
