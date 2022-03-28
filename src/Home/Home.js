@@ -118,7 +118,7 @@ const Home = () => {
                         </div>
                     </div>
             </FadeInSection>
-
+ 
             <ScrollAnimation animateIn='fadeIn'
                     animateOut='fadeOut'>
                     
@@ -129,7 +129,8 @@ const Home = () => {
                                 <p>
                                     <span> 
                                         Find the similar issues and solution. <strong> Not avaiable: Right now, posting a issue isn't avaiable but 
-                                        I will build it soon! </strong>
+                                        I will build it soon! </strong> ind the similar issues and solution. Not avaiable: Right now, posting a issue isn't avaiable but 
+                                        I will build it soon!
                                     </span>
                                 </p>
                             </div>
