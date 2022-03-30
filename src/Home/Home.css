@@ -110,8 +110,17 @@
 
 .side > p {
     /* width: 500px; */
-    margin-top: 150px;
+    margin-left: 30px;
+    margin-top: 50px;
+    word-wrap: break-all;
 }
+
+.side > p > span{
+    /* width: 500px; */
+    margin-left: 30px;
+    word-wrap: break-word;
+}
+
 .side > img{
     width: 505px;
     margin-left: 125px;
@@ -191,6 +200,17 @@
         padding:  60px;
         font-size: 20px;
         margin-bottom: 500px;
+    }
+
+    .side {
+        word-wrap: break-word;
+    }
+    
+    .side > p > span{
+        /* width: 500px; */
+        margin-left: 30px;
+        /* word-wrap: break-word; */
+        font-size: calc(0.75em + 1vmin);
     }
 
 }

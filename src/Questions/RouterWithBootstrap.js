@@ -65,7 +65,7 @@ function RouterWithBootstrap () {
                                         {/* <Link to={`/shop/${index}`}>{f.description}</Link> */}
                                         <Link to={f.description}>{f.description}</Link>
                                     </div>
-                                )}
+                                )} 
                         </ul>
                 </div>
         

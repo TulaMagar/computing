@@ -28,6 +28,11 @@ const ScrollToTop = () => {
   return null;
 };
 
+
+// const subQestion =() =>{
+//   <Route path="/about"
+// }
+
 function App() {
 
   return (
@@ -49,5 +54,6 @@ function App() {
     </HashRouter>
   );
 }
+
 
 export default App;
