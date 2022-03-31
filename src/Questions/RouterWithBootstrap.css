@@ -58,11 +58,12 @@
         border-left: 1px solid whitesmoke;
         border-right: 1px solid whitesmoke;
         padding-left: 20px;
+        /* background-image: url("./middleBackgroung.jpg"); */
     }
     
     #right{
         width: 20%; 
-        height: 50px;  
+        height: auto;  
         position: absolute;
         right: 0;
         top: 0;

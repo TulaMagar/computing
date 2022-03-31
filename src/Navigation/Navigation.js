@@ -1,8 +1,8 @@
 import React from 'react';
 import './Navigation.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { Link, useNavigate, NavLink, useLocation } from 'react-router-dom';
-import {refresh} from 'react-router';
+import { NavLink, useLocation } from 'react-router-dom';
+
 
 //https://react-bootstrap.github.io/components/navbar/ 
 // Fix nav bar this link
@@ -25,6 +25,9 @@ function Navigation () {
             </Nav>
             <Nav>
               <Nav.Link as={NavLink} to="/about" >About</Nav.Link>
+              <Nav.Link as={NavLink} to="/blogList">
+                Blog
+              </Nav.Link>
               <Nav.Link as={NavLink} to="/shop" >Questions</Nav.Link>
               <Nav.Link as={NavLink} to="/login" >Login</Nav.Link>
             </Nav>

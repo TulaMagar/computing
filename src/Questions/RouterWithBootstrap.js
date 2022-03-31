@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./RouterWithBootstrap.css";
-// import {Helmet} from "react-helmet";
 import { Link } from "react-router-dom";
 
 //https://codesandbox.io/s/admiring-kalam-lpxwel?file=/src/Navigation.js
@@ -9,43 +8,17 @@ function RouterWithBootstrap() {
   const textInput = React.createRef(); // React use ref to get input value
 
   const datas = [
-    { url: "test", description: "this is this website" },
-    { url: "test", description: "../About/About.js" },
-    { url: "test", description: "this is this website" },
-    { url: "test", description: "this is that website" },
-    { url: "test", description: "this is this website" },
-    { url: "test", description: "this is that website" },
-    { url: "test", description: "this is this website" },
-    { url: "test", description: "this is that website" },
-    { url: "test", description: "this is this website" },
-    { url: "test", description: "this is that website" },
-    { url: "test", description: "this is this website" },
-    { url: "test", description: "this is that website" },
-    { url: "test", description: "this is this website" },
-    { url: "test", description: "this is that website" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
   ];
 
-  const fruit = [
-    ["apple", "banana"],
-    "orange",
-    "grapefruit",
-    "mango",
-    "strawberry",
-    "peach",
-    "apricot",
-  ];
+  const BlogPath = ["blog1", "blog2", "blog1", "blog2", "blog3-4-5"];
 
   const [filter, setFilter] = useState("");
 
   useEffect(() => {});
   return (
     <>
-      {/* <Helmet>
-                <meta charSet="utf-8" />
-                <title>questions</title>
-                <link rel="canonical" href="http://mysite.com/example" />
-            </Helmet> */}
-
       <div id="container">
         <div id="left">
           <h1>RIGHT SIDE</h1>
@@ -81,7 +54,7 @@ function RouterWithBootstrap() {
               .map((f, index) => (
                 <div key={index}>
                   <li> {f.url} </li>
-                  {/* <Link to={`/shop/${index}`}>{f.description}</Link> */}
+
                   <Link to={f.description}>{f.description}</Link>
                 </div>
               ))}
