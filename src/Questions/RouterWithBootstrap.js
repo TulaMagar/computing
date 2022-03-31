@@ -56,14 +56,7 @@ function RouterWithBootstrap() {
     <>
       <div id="container">
         <div id="left">
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <h1>RIGHT SIDE</h1>
+     
           <br />
           <h1>RIGHT SIDE</h1>
           <br />
