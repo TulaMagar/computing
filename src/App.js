@@ -41,18 +41,43 @@ const Blog = () => {
   const [BlogItem, setBlogItem] = React.useState();
 
   React.useEffect(() => {
-    const BlogItem = React.lazy(() => import(`./blogs/${blogs}.js`));
+    const BlogItem = React.lazy(() => import(`./Questions/QuestionList/${blogs}.js`));
     console.log({ BlogItem });
     setBlogItem(BlogItem);
   }, [blogs]);
 
   return (
     <>
-      <h1>Blog</h1>
-      {BlogItem && <BlogItem />}
+      {/* <h1>Blog</h1> */}
+      <React.Suspense fallback={<div>Loading...</div>}>
+        {BlogItem && <BlogItem />}
+      </React.Suspense>
     </>
   );
 };
+
+
+// const Blog = () => {
+//   const { blogs } = useParams();
+//   console.log({ blogs });
+
+//   const [BlogItem, setBlogItem] = React.useState();
+
+//   React.useEffect(() => {
+//     const BlogItem = React.lazy(() => import(`./Questions/QuestionList/${blogs}.js`));
+//     console.log({ BlogItem });
+//     setBlogItem(BlogItem);
+//   }, [blogs]);
+
+//   return (
+//     <>
+//       <h1>Blog</h1>
+//       <React.Suspense fallback={<div>Loading...</div>}>
+//         {BlogItem && <BlogItem />}
+//       </React.Suspense>
+//     </>
+//   );
+// };
 
 function App() {
   return (
@@ -63,11 +88,11 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
-          <Route path="/blogList" element={<Bloglist />} />
-          <Route path="/blogList/:blogs" element={<Blog />} />
-          <Route exact path="/shop" element={<Shop />} />
+          {/* <Route path="/blogList" element={<Bloglist />} />
+          <Route path="/blogList/:blogs" element={<Blog />} /> */}
+          <Route exact path="/question" element={<Shop />} />
+          <Route path="/question/:blogs" element={<Blog />} />
           <Route exact path="/login" element={<Login />} />
-          <Route path="/shop/:blog" element={<Blog />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />

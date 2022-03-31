@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 function RouterWithBootstrap() {
   const textInput = React.createRef(); // React use ref to get input value
 
-  const datas = [
+  const BlogPath = [
     { url: "test", description: "blog" },
     { url: "test", description: "blog2" },
   ];
 
-  const BlogPath = ["blog1", "blog2", "blog1", "blog2", "blog3-4-5"];
+  // const BlogPath = ["blog1", "blog2", "blog1", "blog2", "blog3-4-5"];
 
   const [filter, setFilter] = useState("");
 
@@ -43,7 +43,7 @@ function RouterWithBootstrap() {
             />
           </p>
           <ul className="question-list">
-            {datas
+            {BlogPath
               .filter(
                 (f) =>
                   f.description

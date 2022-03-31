@@ -25,10 +25,10 @@ function Navigation () {
             </Nav>
             <Nav>
               <Nav.Link as={NavLink} to="/about" >About</Nav.Link>
-              <Nav.Link as={NavLink} to="/blogList">
+              {/* <Nav.Link as={NavLink} to="/blogList">
                 Blog
-              </Nav.Link>
-              <Nav.Link as={NavLink} to="/shop" >Questions</Nav.Link>
+              </Nav.Link> */}
+              <Nav.Link as={NavLink} to="/question" >Questions</Nav.Link>
               <Nav.Link as={NavLink} to="/login" >Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>

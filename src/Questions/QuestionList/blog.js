@@ -8,22 +8,16 @@ import {BrowserView, MobileView} from 'react-device-detect';
 import LazyLoad from 'react-lazyload';
 
 
-
+// import test from '../../Questions'
 
 import ScrollAnimation from 'react-animate-on-scroll';
-import {Helmet} from "react-helmet";
 //https://www.react-reveal.com/examples/common/lightspeed/
 //https://bestofreactjs.com/repo/dbramwell-react-animate-on-scroll
 
 //https://www.codegrepper.com/code-examples/javascript/reveal+text+on+hover+react
-function About() {
+function blog() {
   return (
     <>
-    <Helmet>
-        <meta charSet="utf-8" />
-        <title>about</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-    </Helmet>
     <div className="container pt-5 p-5 text-white">
 
             <h1>Coming Soon Microsoft Outlook Navigation Panel</h1> <br/>
@@ -118,4 +112,4 @@ function About() {
   );
 }
 
-export default About;
+export default blog;
