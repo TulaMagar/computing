@@ -10,6 +10,41 @@ function RouterWithBootstrap() {
   const BlogPath = [
     { url: "test", description: "blog" },
     { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+    { url: "test", description: "blog" },
+    { url: "test", description: "blog2" },
+
   ];
 
   // const BlogPath = ["blog1", "blog2", "blog1", "blog2", "blog3-4-5"];
@@ -62,26 +97,6 @@ function RouterWithBootstrap() {
         </div>
 
         <div id="right">
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
           <h1>RIGHT SIDE</h1>
           <br />
           <h1>RIGHT SIDE</h1>
