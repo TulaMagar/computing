@@ -41,14 +41,15 @@ body{
     #container{
         display: flex;
         flex-direction: row;
+        order: 0; width: auto;
         
     }
     
     #left{
         width: 20%; 
-        position: fixed;
-        /* left: 0; */
-        padding: 30px ;
+        position: sticky;
+        left: 0;
+        padding: 20px ;
     }
     
     #middle{
@@ -60,9 +61,10 @@ body{
     }
     
     #right{
-        width: 10%; 
+        width: 20%; 
         height:auto;
         text-align: left;
+        padding: 2%;
         
     }
     
