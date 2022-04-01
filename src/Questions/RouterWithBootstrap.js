@@ -103,12 +103,12 @@ function RouterWithBootstrap() {
               .map((f, index) => (
                 <div  key={index}>
                 
-                  <div id="curves" className="line"> &emsp; {f.url} 
+                  <div id="curves" className="line"> <Link to={f.description} style={{ textDecoration: 'none' }}> &nbsp; {f.description}</Link> 
                     <div id="curve1" > </div>
-                    <span class="arrow-right">  </span>
-                    <Link to={f.description} style={{ textDecoration: 'none' }}> &emsp; {f.description}</Link>
+                    <span className="arrow-right">  </span>
+                    &nbsp; {f.url}
                   </div>
-                  
+                  <br/>
                 </div>
               ))}
           </div>

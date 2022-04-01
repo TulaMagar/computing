@@ -88,9 +88,9 @@ body{
     } */
 
     #curves div {
-        width: 10px;
-        height: 20px;
-        border: 2px solid #999;
+        width: 20px;
+        height: 15px;
+        border-left: 3px solid #999;
       }
       #curves.width div {
         border-color: transparent transparent transparent #999;
@@ -99,7 +99,7 @@ body{
         -moz-border-radius: 50px 0 0 50px;
         border-radius: 50px 0 0 50px;
       }
-      .arrow-right {
+      /* .arrow-right {
         width: 0;
         height: 0;
         border-top: 10px solid transparent;
@@ -108,7 +108,7 @@ body{
         float: right;
         margin-top: -7px;
         margin-right: -26px;
-      }
+      } */
 
     /* .earse-underline{
         text-decoration: none;
