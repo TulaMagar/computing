@@ -81,7 +81,38 @@ body{
         font-size: 20px;
     }
     
-    .question-list > li {
+    /* .question-list > line {
         padding: 7px;
-    }
+
+        border-radius: 50px 20px;
+    } */
+
+    #curves div {
+        width: 10px;
+        height: 20px;
+        border: 2px solid #999;
+      }
+      #curves.width div {
+        border-color: transparent transparent transparent #999;
+      }
+      #curve1 {
+        -moz-border-radius: 50px 0 0 50px;
+        border-radius: 50px 0 0 50px;
+      }
+      .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 27px solid #ccc;
+        float: right;
+        margin-top: -7px;
+        margin-right: -26px;
+      }
+
+    /* .earse-underline{
+        text-decoration: none;
+    } */
+
+    
 }

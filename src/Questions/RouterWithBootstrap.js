@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./RouterWithBootstrap.css";
 import { Link } from "react-router-dom";
 
-//https://codesandbox.io/s/admiring-kalam-lpxwel?file=/src/Navigation.js
+//https://www.toptal.com/designers/htmlarrows/arrows/
 
 function RouterWithBootstrap() {
   const textInput = React.createRef(); // React use ref to get input value
@@ -91,7 +91,7 @@ function RouterWithBootstrap() {
               onChange={(event) => setFilter(event.target.value)}
             />
           </p>
-          <ul className="question-list">
+          <div className="question-list">
             {BlogPath
               .filter(
                 (f) =>
@@ -101,13 +101,17 @@ function RouterWithBootstrap() {
                     .includes(filter.toString().toLowerCase()) || filter === ""
               )
               .map((f, index) => (
-                <div key={index}>
-                  <li> {f.url} </li>
-
-                  <Link to={f.description}>{f.description}</Link>
+                <div  key={index}>
+                
+                  <div id="curves" className="line"> &emsp; {f.url} 
+                    <div id="curve1" > </div>
+                    <span class="arrow-right">  </span>
+                    <Link to={f.description} style={{ textDecoration: 'none' }}> &emsp; {f.description}</Link>
+                  </div>
+                  
                 </div>
               ))}
-          </ul>
+          </div>
         </div>
 
         <div id="right">
