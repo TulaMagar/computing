@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import SlideShow from "../Slideshow/SlideShow.js";
 import "./Home.css";
 import Clean from "../Background/clean.avif";
@@ -10,9 +10,12 @@ import styled, { css } from "styled-components";
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import UseTitle from '../Title.js';
+
 //Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
 
 const Home = () => {
+  UseTitle("computing home page");
   return (
     <React.Fragment>
       {/* <Helmet>
@@ -20,6 +23,7 @@ const Home = () => {
         <title>computing</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet> */}
+      
 <ScrollAnimation animateIn='fadeIn'
   animateOut='fadeOut'>
       <SlideShow />

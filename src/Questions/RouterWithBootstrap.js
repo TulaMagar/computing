@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./RouterWithBootstrap.css";
 import { Link } from "react-router-dom";
+import UseTitle from '../Title.js';
 
 //https://www.toptal.com/designers/htmlarrows/arrows/
 
@@ -52,7 +53,9 @@ function RouterWithBootstrap() {
   const [filter, setFilter] = useState("");
 
   useEffect(() => {});
+  UseTitle("computing question and answer");
   return (
+    
     <>
       <div id="container">
         <div id="left">
