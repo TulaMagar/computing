@@ -18,9 +18,10 @@ function Navigation () {
     <>
       <Navbar collapseOnSelect sticky='top' expand='sm' variant='dark' className='background color '>
         <Container >
+        <Navbar.Brand href="#home"></Navbar.Brand>  
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse className='mobile-nav' id='responsive-navbar-nav'>
-          <Nav className='me-auto'>
+            <Nav className='me-auto'>
               <Nav.Link as={NavLink} to="/" >Home</Nav.Link>
             </Nav>
             <Nav>
