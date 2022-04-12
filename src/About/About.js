@@ -2,6 +2,8 @@ import React from "react";
 import "./About.css";
 import WeTheOne from "../img/pexels-lisa-fotios-3972467.jpg";
 import "bootstrap/dist/css/bootstrap.css";
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
 
 function About () {
   return(
@@ -10,6 +12,7 @@ function About () {
         <div className="weTheOne"> <img src={WeTheOne} alt="we the one not found"/> </div>
         <div className="Connecting"> <img src={WeTheOne} alt="we the one not found"/> </div>
       </div>
+
       <div className="whatWeDo">
           <h1 className="WhatWeDoInfoHeader">What we do!</h1>
           <p className="WhatWeDoInfo">
@@ -34,7 +37,11 @@ function About () {
         
         </div> 
         
-        <div className="Connecting"> <img src={WeTheOne} alt="we the one not found"/>  </div>
+        <div className="Connecting"> 
+        
+          <img className="testss" src={WeTheOne} alt="we the one not found"/> 
+          
+        </div>
 
         <div className="Third"> 
           <p className="Info"> We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -43,6 +50,32 @@ function About () {
           </p>
         </div>
       
+      </div>
+
+      {/* <h2>Card</h2> */}
+
+      <div className="CardContainer">
+        <div class="card">
+          <img src={WeTheOne} alt="Avatar" style={{width:"100%"}}/>
+          <div class="container">
+          <h4><b>Tula Magar</b></h4> 
+            <p>Owner & Coder..</p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src={WeTheOne} alt="Avatar" style={{width:"100%"}}/>
+          <div class="container">
+            <h4><b>Tula Magar</b></h4> 
+            <p>Owner & Coder..</p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src={WeTheOne} alt="Avatar" style={{width:"100%"}}/>
+          <div class="container">
+          <h4><b>Tula Magar</b></h4> 
+            <p>Owner & Coder..</p>  
+          </div>
+        </div>
       </div>
     </>
   );

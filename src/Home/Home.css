@@ -155,9 +155,7 @@
 
     .Static-container{
         margin-top: 30px;
-        /* width: 100%; */
         height: 267px;
-        /* flex-direction: column; */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
