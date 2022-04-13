@@ -18,17 +18,18 @@ function Navigation () {
     <>
       <Navbar collapseOnSelect sticky='top' expand='sm' variant='dark' className='background color '>
         <Container >
+        <Navbar.Brand href="#home"></Navbar.Brand>  
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse className='mobile-nav' id='responsive-navbar-nav'>
-          <Nav className='me-auto'>
+            <Nav className='me-auto'>
               <Nav.Link as={NavLink} to="/" >Home</Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link as={NavLink} to="/about" >About</Nav.Link>
-              <Nav.Link as={NavLink} to="/blogList">
+              {/* <Nav.Link as={NavLink} to="/blogList">
                 Blog
-              </Nav.Link>
-              <Nav.Link as={NavLink} to="/shop" >Questions</Nav.Link>
+              </Nav.Link> */}
+              <Nav.Link as={NavLink} to="/question" >Questions</Nav.Link>
               <Nav.Link as={NavLink} to="/login" >Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>

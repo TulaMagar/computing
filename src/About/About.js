@@ -1,146 +1,103 @@
 import React from "react";
 import "./About.css";
-import ComingSoon from "../img/ComingSoon.png";
-import NewUpdate from "../img/NewUpdate.png";
-import Version from "../img/Version.PNG";
+import WeTheOne from "../img/pexels-lisa-fotios-3972467.jpg";
 import "bootstrap/dist/css/bootstrap.css";
-import Image from "react-bootstrap/Image";
-import { BrowserView, MobileView } from "react-device-detect";
-import LazyLoad from "react-lazyload";
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
 
-import ScrollAnimation from "react-animate-on-scroll";
-// import { Helmet } from "react-helmet";
-//https://www.react-reveal.com/examples/common/lightspeed/
-//https://bestofreactjs.com/repo/dbramwell-react-animate-on-scroll
-
-//https://www.codegrepper.com/code-examples/javascript/reveal+text+on+hover+react
 function About() {
   return (
     <>
-      {/* <Helmet>
-        <meta charSet="utf-8" />
-        <title>about</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet> */}
-      <div className="container pt-5 p-5 text-white">
-        <h1>Coming Soon Microsoft Outlook Navigation Panel</h1> <br />
-        <p className="pt-3 p-3 my-3">
+      <div className="contin">
+        <div className="weTheOne">
           {" "}
-          &emsp;&emsp; Recently, Microsoft has been updating software as usual.
-          This time Microsoft plan to update the outlook navigation panel
-          display style to vertical panel on the left side. Before this new
-          update, we used to see navigation panel display on the buttom left
-          side of outlook. Now, Microsoft are letting to use some user who has
-          turn on "Comming Soon" feature. People has "Comming Soon" feature are
-          having confusion over this new update. You can turn off the "Comming
-          Soon" and don't use it until new feature are permenently avaiable to
-          everyone or get use it ahead than most people. I would suggest IT
-          professional to use this feature as soon as possible and get familiar
-          with the new navigation panel display style so, you will assist other
-          people fast and concise way.
+          <img src={WeTheOne} alt="we the one not found" />{" "}
+        </div>
+        <div className="Connecting">
+          {" "}
+          <img src={WeTheOne} alt="we the one not found" />{" "}
+        </div>
+      </div>
+
+      <div className="whatWeDo">
+        <h1 className="WhatWeDoInfoHeader">What we do!</h1>
+        <p className="WhatWeDoInfo">
+          We have created a fictional band website. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
         </p>
       </div>
 
-      <div className="container pt-5 p-5 my-5 border">
-        <div className="container pt-5 p-5 my-5 border text-white">
-          <h2 className="text-black">Still Confusion</h2>
-
-          <p className="pt-3 p-3 my-3">
-            &emsp;&emsp; Below, I will solve show the picture to visually
-            understand what I am saying above. I will explain little on the top
-            of the pictures.
+      <div className="ToWhom">
+        <div className="weTheOne">
+          <p className="Info">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
           </p>
         </div>
 
-        <div className="container pt-5 p-5 bg-info bg-gradient my-5 border text-black">
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-            <h3>&emsp;&emsp;Microsoft Outlook Version</h3>
-            <p className="text-white">
-              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;As I know this new navigation
-              display style only affect to later 2020 version. I am using 2022
-              version{" "}
-            </p>
-            <LazyLoad>
-              <BrowserView>
-                <img
-                  className="img-fluid mx-auto d-block"
-                  src={Version}
-                  alt="version img not found"
-                  width="100%"
-                />
-              </BrowserView>
-            </LazyLoad>
-
-            <LazyLoad>
-              <MobileView>
-                <img
-                  className="img-fluid mx-auto d-block"
-                  src={Version}
-                  alt="version img not found"
-                  width="100%"
-                />
-              </MobileView>
-            </LazyLoad>
-          </ScrollAnimation>
-        </div>
-
-        <div>
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-            <h3>&emsp;&emsp;Microsoft Outlook Version</h3>
-            <p>
-              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;If you don't want to use the
-              preview of upcoming microsoft update then you can simply click on
-              Coming Soon to turn off{" "}
-            </p>
-            <LazyLoad>
-              <Image
-                className="img-fluid mx-auto d-block"
-                src={ComingSoon}
-                alt="version img not found"
-                width="300vh"
-              />
-            </LazyLoad>
-          </ScrollAnimation>
-        </div>
-
-        <div className="container pt-5 p-5 bg-info bg-gradient my-5 border text-black">
-          <h3>&emsp;&emsp;Microsoft Outlook View</h3>
-          <p className="text-white">
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;As I know this new navigation
-            display style only affect to later 2020 version. I am using 2022
-            version{" "}
+        <div className="Connecting">
+          {/* <img className="testss" src={WeTheOne} alt="we the one not found"/>  */}
+          <p className="Info">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
           </p>
-          <LazyLoad>
-            <BrowserView>
-              <img
-                className="img-fluid mx-auto d-block"
-                src={NewUpdate}
-                alt="version img not found"
-                width="100%"
-              />
-            </BrowserView>
-          </LazyLoad>
+        </div>
 
-          <LazyLoad>
-            <MobileView>
-              <img
-                className="img-fluid mx-auto d-block"
-                src={NewUpdate}
-                alt="version img not found"
-              />
-            </MobileView>
-          </LazyLoad>
+        <div className="Third">
+          <p className="Info">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+      </div>
 
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-            <h1>React Animate On Scroll</h1>
-            <h2>Using:</h2>
-          </ScrollAnimation>
+      {/* <h2>Card</h2> */}
 
-          <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
-            <h2>
-              <a href="https://daneden.github.io/animate.css/">Animate.css</a>
-            </h2>
-          </ScrollAnimation>
+      <div className="CardContainer">
+        <div class="card">
+          <img src={WeTheOne} alt="Avatar" style={{ width: "100%" }} />
+          <div class="container">
+            <h4>
+              <b>Tula Magar</b>
+            </h4>
+            <p>Owner & Coder..</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src={WeTheOne} alt="Avatar" style={{ width: "100%" }} />
+          <div class="container">
+            <h4>
+              <b>Tula Magar</b>
+            </h4>
+            <p>Owner & Coder..</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src={WeTheOne} alt="Avatar" style={{ width: "100%" }} />
+          <div class="container">
+            <h4>
+              <b>Tula Magar</b>
+            </h4>
+            <p>Owner & Coder..</p>
+          </div>
         </div>
       </div>
     </>
