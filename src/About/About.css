@@ -20,41 +20,58 @@
   padding-left: 20px;
   height: 100%;
   width: calc(100% - 20px);
-  border-radius: 3% 90%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  /* border-radius: 50px; */
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+              -20px -20px 60px #ffffff;
   object-fit: cover;
 }
 
 .whatWeDo{
   margin-top: 70px;
   text-align: center;
-  background-color: rgb(240, 194, 230);
+  background-color: #ffffff10;
+  box-shadow: inset 20px 20px 60px #ffffff10,
+              inset -20px -20px 60px #ffffff10;
+  
 }
 
 .WhatWeDoInfoHeader{
   font-weight: bold;
   color: black;
   text-decoration:solid;
+  color: whitesmoke;
+  padding: 20px;
 }
 .WhatWeDoInfo{
   margin: auto;
-  width: 80%;
+  width: 90%;
   color: black;
   /* border: 1px solid whitesmoke; */
   font-size: 22px !important;
+  text-align: left;
+  /* padding: 40px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: whitesmoke;
 }
 
 @media(min-width:767px){
   .ToWhom{
-    height:50vh;
+    /* height:calc(11vw + 34vh - 2vmin); */
+    height: 50vh;
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
     
     padding: 5px;
     margin: auto;
-    width: 80%;
+    width: 90%;
     text-align: center;
     margin-top: 80px;
+    padding: 20px;
+    /* background-color: rgb(143, 138, 138); */
   }
   .ToWhom > .weTheOne{
     -webkit-flex: 1;
@@ -68,33 +85,42 @@
   
     border-bottom-right-radius: 590px 100px;
     border-top-right-radius: 590px 100px;
-    background-image: linear-gradient(red 10%, green 85%, blue 90%);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-image: linear-gradient(rgb(185, 163, 163) 5%, rgb(62, 80, 62) 59%, rgb(127, 127, 204) 155%);
+    /* background-image: linear-gradient(#EDAEF8, #81B1FA); */
     /* word-wrap: break-word;
     white-space: pre-line; */
-    
+    text-align: left;
+    padding: 10px;
+    /* word-break: break-all; */
     
   }
   
   .Info{
-    
+    font-size: calc(0.6vw - 0.7vh + 2vmin);
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
-    word-wrap: break-word;
+    word-break: break-word;
   
   }
   
-  
   .ToWhom > .Connecting{
-    margin-top: 62px;
-    height: 37vh;
+    height: 48vh;
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
-    /* -webkit-flex: 1.5;
-    -ms-flex: 1.5;
-    flex: 1.5; */
-    background-image: linear-gradient(red, green, blue);
+    /* background-image: linear-gradient(red, green, blue); */
+    background-image: linear-gradient(rgb(185, 163, 163) 10%, rgb(62, 80, 62) 56%, rgb(151, 151, 240) 170%);
+    border-bottom-right-radius: 590px 100px;
+    border-top-right-radius: 590px 100px;
+    border-bottom-left-radius: 590px 100px;
+    border-top-left-radius: 590px 100px;
+    line-height: 48vh;
+    text-align: center;
+    text-align: left;
+    padding: 10px;
   }
   
   .testss{
@@ -114,30 +140,58 @@
     text-align: center;
     border-bottom-left-radius: 590px 100px;
     border-top-left-radius: 590px 100px;
-    background-image: linear-gradient(red 10%, green 85%, blue 90%);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    /* background-image: linear-gradient(red 10%, green 85%, blue 90%); */
+    background-image: linear-gradient(rgb(185, 163, 163) 5%, rgb(62, 80, 62) 59%, rgb(133, 133, 204) 150%);
     word-wrap: break-word;
+    text-align: left;
+    padding: 10px;
+    
   }
   
+  .testing{
+    /* margin: auto;
+    width: 98%; */
+    margin-top: 150px;
+    height: auto;
+    padding-top: 1px;
+    padding-bottom: 80px;
+    /* border-radius: 50px; */
+    background-color: #7a7a99;
+    box-shadow: inset 20px 20px 60px #767694,
+                inset -20px -20px 60px #9090c7;
+  }
+
   .CardContainer{
     display: flex;
-    /* justify-content: space-evenly; */
     margin: auto;
-    width: 80%;
+    width: 90%;
     height: 52vh;
     padding: 20px;
+    gap:20px;
+    margin-top: 60px;
   }
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 20px 20px 60px #bebebe,
+                inset -20px -20px 60px #ffffff;
     transition: 0.3s;
     width: 100%;
     height: 50vh;
     color: black;
     padding: 20px;
+    backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   }
   
-  .card > img{
+  .card > .PersonImage{
     height: 25vh;
     object-fit:fill;
+    /* border-radius: 5px; */
+    border-radius: 28% 72% 21% 79% / 68% 18% 82% 32%  ;
+
   }
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -158,8 +212,8 @@
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
-    
-    padding: 5px;
+    gap:20px;
+    padding: 20px;
     margin: auto;
     width: 95%;
     text-align: center;
@@ -187,12 +241,22 @@
   }
   
   
-  .ToWhom > .Connecting{
-    height: 37vh;
+  .ToWhom>.Connecting {
+    /* margin-top: 60px; */
+    /* height: calc(82% - 20px); */
+    height: 48vh;
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
+    /* -webkit-flex: 1.5;
+      -ms-flex: 1.5;
+      flex: 1.5; */
     background-image: linear-gradient(red, green, blue);
+    /* border-bottom-right-radius: 590px 100px;
+    border-top-right-radius: 590px 100px;
+    border-bottom-left-radius: 590px 100px;
+    border-top-left-radius: 590px 100px; */
+    word-wrap: break-word;
   }
   
   .testss{
@@ -224,7 +288,8 @@
     width: 95%;
     height: auto;
     padding: 20px;
-    margin-top: 1000px;
+    margin-top: 600px;
+    gap:20px;
   }
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -235,8 +300,9 @@
     padding: 20px;
   }
   
-  .card > img{
+  .card > .PersonImage{
     height: 25vh;
-    object-fit:cover;
+    object-fit:fill;
+    border-radius: 5px;;
   }
 }

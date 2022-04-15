@@ -40,7 +40,7 @@ const Slideshow = () => {
             <div className="each-slide" key={index}>
               <div className='section' >
                 
-                  <img className="test" src={slideImage.url}/>
+                  <img className="test" src={slideImage.url} loading="lazy" alt='slideshow image not found'/>
                   
                   <div className='text-block'>
                     <h1 className='medium'>{slideImage.title}</h1>
