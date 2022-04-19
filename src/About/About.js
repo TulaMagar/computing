@@ -2,8 +2,6 @@ import React from "react";
 import "./About.css";
 import WeTheOne from "../img/pexels-lisa-fotios-3972467.jpg";
 import "bootstrap/dist/css/bootstrap.css";
-import Card from "react-bootstrap/Card";
-import CardGroup from "react-bootstrap/CardGroup";
 
 function About() {
   return (
@@ -71,29 +69,29 @@ function About() {
 
       {/* <h2>Card</h2> */}
 
-    <div className="testing">
+      <div className="testing">
       <div className="CardContainer">
-        <div class="card">
+        <div className="card">
           <img className="PersonImage" src={WeTheOne} alt="Avatar" loading="lazy" style={{ width: "100%" }} />
-          <div class="container">
+          <div className="container">
             <h4>
               <b>Tula Magar</b>
             </h4>
             <p>Owner & Coder..</p>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <img className="PersonImage" src={WeTheOne} alt="Avatar" loading="lazy" style={{ width: "100%" }} />
-          <div class="container">
+          <div className="container">
             <h4>
               <b>Tula Magar</b>
             </h4>
             <p>Owner & Coder..</p>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <img className="PersonImage" src={WeTheOne} alt="Avatar" loading="lazy" style={{ width: "100%" }} />
-          <div class="container">
+          <div className="container">
             <h4>
               <b>Tula Magar</b>
             </h4>

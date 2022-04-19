@@ -78,6 +78,7 @@
   text-decoration:solid;
   color: whitesmoke;
   padding: 20px;
+  margin-bottom: 50px;
 }
 .WhatWeDoInfo{
   color: black;
@@ -324,7 +325,7 @@
     width: 95%;
     height: auto;
     padding: 20px;
-    margin-top: 600px;
+    margin-top: 50px;
     gap:20px;
   }
   .card {

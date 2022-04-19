@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import SlideShow from "../Slideshow/SlideShow.js";
 import "./Home.css";
 import Clean from "../Background/clean.avif";
@@ -6,10 +6,8 @@ import Moon from "../Background/moon.webp";
 import Sea from "../Background/sea.jpg";
 // import { Helmet } from "react-helmet";
 import Globe from "./Globe/giphy.gif";
-import styled, { css } from "styled-components";
 import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
-
+import WeTheOne from "../img/pexels-lisa-fotios-3972467.jpg";
 import UseTitle from '../Title.js';
 
 //Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
@@ -18,19 +16,10 @@ const Home = () => {
   UseTitle("computing home page");
   return (
     <React.Fragment>
-      {/* <Helmet>
-        <meta charSet="utf-8" />
-        <title>computing</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet> */}
-      
-<ScrollAnimation animateIn='fadeIn'
-  animateOut='fadeOut'>
-      <SlideShow />
-      </ScrollAnimation>
 
-      <ScrollAnimation animateIn='fadeIn'
-  animateOut='fadeOut'>
+      <div className="moon"> </div>
+      <SlideShow />
+
       <div className="container-large">
         <div className="flex-container">
           <div className="flex-child magenta">Flex Column 1</div>
@@ -41,10 +30,7 @@ const Home = () => {
           <div className="flex-child green">Flex Column 2</div>
         </div>
       </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn='fadeIn'
-  animateOut='fadeOut'>
-      <p className="context">
+      {/* <p className="context">
         <span>
           Find the similar issues and solution.{" "}
           <strong>
@@ -53,18 +39,29 @@ const Home = () => {
             build it soon!{" "}
           </strong>
         </span>
-      </p>
-      </ScrollAnimation>
+      </p> */}
 
-      <ScrollAnimation animateIn='fadeIn'
-  animateOut='fadeOut'>
+      <div className="whatWeDo">
+        <h1 className="WhatWeDoInfoHeader">Everything you need to know</h1>
+        <p className="WhatWeDoInfo">
+          We have created a fictional band website. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </div>
+
       <div className="container-L-image">
         <div className="Static-container">
           <div className="image">
             <img src={Clean} alt="Clean not found" />
-            <p>
-              <span> </span>
-            </p>
           </div>
 
           <div className="image">
@@ -77,34 +74,74 @@ const Home = () => {
           <div className="image">
             <img src={Clean} alt="Clean not found" />
           </div>
-        </div>
-      </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn='fadeIn'
-  animateOut='fadeOut'>
-      <div className="container-ReachOut">
-        <div className="ReachOut-container">
-          <div className="side">
-            <p>
-              <span>
-                Find the similar issues and solution.{" "}
-                <strong>
-                  {" "}
-                  Not avaiable: Right now, posting a issue isn't avaiable but I
-                  will build it soon!{" "}
-                </strong>{" "}
-                ind the similar issues and solution. Not avaiable: Right now,
-                posting a issue isn't avaiable but I will build it soon!
-              </span>
-            </p>
-          </div>
 
-          <div className="side">
-            <img src={Globe} alt="globe not found" />
+        </div>
+      </div>
+
+      <div className="whatWeDo">
+        <h1 className="WhatWeDoInfoHeader">Benefits</h1>
+        <p className="WhatWeDoInfo">
+          We have created a fictional band website. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </div>
+      
+      <div className="testing">
+      <div className="CardContainer">
+        <div className="card">
+          <img className="PersonImage" src={WeTheOne} alt="Avatar" loading="lazy" style={{ width: "100%" }} />
+          <div className="container">
+            <h4>
+              <b>Tula Magar</b>
+            </h4>
+            <p>Owner & Coder..</p>
+          </div>
+        </div>
+        <div className="card">
+          <img className="PersonImage" src={WeTheOne} alt="Avatar" loading="lazy" style={{ width: "100%" }} />
+          <div className="container">
+            <h4>
+              <b>Tula Magar</b>
+            </h4>
+            <p>Owner & Coder..</p>
+          </div>
+        </div>
+        <div className="card">
+          <img className="PersonImage" src={Globe} alt="Avatar" loading="lazy" style={{ width: "100%" }} />
+          <div className="container">
+            <h4>
+              <b>Tula Magar</b>
+            </h4>
+            <p>Owner & Coder..</p>
           </div>
         </div>
       </div>
-      </ScrollAnimation>
+      </div>
+      <div className="whatWeDo">
+        <h1 className="WhatWeDoInfoHeader">Footer!</h1>
+        <p className="WhatWeDoInfo">
+          We have created a fictional band website. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </div>
     </React.Fragment>
   );
 };

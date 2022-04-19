@@ -5,6 +5,7 @@ import Home from "./Home/Home.js";
 import About from "./About/About.js";
 import Shop from "./Questions/RouterWithBootstrap.js";
 import Login from "./Auth/Login.js";
+import Careers from "./Careers/Careers.js";
 import {
   HashRouter,
   Routes,
@@ -57,28 +58,6 @@ const Blog = () => {
 };
 
 
-// const Blog = () => {
-//   const { blogs } = useParams();
-//   console.log({ blogs });
-
-//   const [BlogItem, setBlogItem] = React.useState();
-
-//   React.useEffect(() => {
-//     const BlogItem = React.lazy(() => import(`./Questions/QuestionList/${blogs}.js`));
-//     console.log({ BlogItem });
-//     setBlogItem(BlogItem);
-//   }, [blogs]);
-
-//   return (
-//     <>
-//       <h1>Blog</h1>
-//       <React.Suspense fallback={<div>Loading...</div>}>
-//         {BlogItem && <BlogItem />}
-//       </React.Suspense>
-//     </>
-//   );
-// };
-
 function App() {
   return (
     <HashRouter>
@@ -88,8 +67,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
-          {/* <Route path="/blogList" element={<Bloglist />} />
-          <Route path="/blogList/:blogs" element={<Blog />} /> */}
+          <Route exact path="/careers" element={<Careers />} />
           <Route exact path="/question" element={<Shop />} />
           <Route path="/question/:blogs" element={<Blog />} />
           <Route exact path="/login" element={<Login />} />

@@ -26,9 +26,7 @@ function Navigation () {
             </Nav>
             <Nav>
               <Nav.Link as={NavLink} to="/about" >About</Nav.Link>
-              {/* <Nav.Link as={NavLink} to="/blogList">
-                Blog
-              </Nav.Link> */}
+              <Nav.Link as={NavLink} to="/careers" >Careers</Nav.Link>
               <Nav.Link as={NavLink} to="/question" >Questions</Nav.Link>
               <Nav.Link as={NavLink} to="/login" >Login</Nav.Link>
             </Nav>
