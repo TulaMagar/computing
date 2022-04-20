@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
+import "./SytleEngine.css";
 import Navigation from "./Navigation/Navigation.js";
 import Home from "./Home/Home.js";
 import About from "./About/About.js";
@@ -15,7 +16,6 @@ import {
   useParams,
 } from "react-router-dom";
 import Footer from "./Footer/Footer";
-import Bloglist from "./BlogList";
 
 // import test from './Questions/QuestionList'
 
@@ -42,7 +42,9 @@ const Blog = () => {
   const [BlogItem, setBlogItem] = React.useState();
 
   React.useEffect(() => {
-    const BlogItem = React.lazy(() => import(`./Questions/QuestionList/${blogs}.js`));
+    const BlogItem = React.lazy(() =>
+      import(`./Questions/QuestionList/${blogs}.js`)
+    );
     console.log({ BlogItem });
     setBlogItem(BlogItem);
   }, [blogs]);
@@ -56,7 +58,6 @@ const Blog = () => {
     </>
   );
 };
-
 
 function App() {
   return (
