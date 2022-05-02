@@ -21,7 +21,6 @@ function RouterWithBootstrap() {
     },
   ];
 
-  // const BlogPath = ["blog1", "blog2", "blog1", "blog2", "blog3-4-5"];
 
   const [filter, setFilter] = useState("");
 
