@@ -17,12 +17,6 @@ import {
 } from "react-router-dom";
 import Footer from "./Footer/Footer";
 
-// import test from './Questions/QuestionList'
-
-// Sitemap: https://www.xml-sitemaps.com/
-//https://www.npmjs.com/package/react-localstorage
-//Login with google : https://www.freakyjolly.com/google-signin-login-button-in-react-js-example-using-react-google_login-package/
-
 const useScrollToTop = () => {
   const location = useLocation();
   useEffect(() => {
