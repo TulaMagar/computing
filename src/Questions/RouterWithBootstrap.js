@@ -17,6 +17,66 @@ function RouterWithBootstrap() {
       title: "blog2 title",
       description: "Coming Soon Microsoft Outlook Navigation Panel",
     },
+    {
+      url: "blog",
+      title: "Coming Soon Microsoft Outlook Navigation Panel",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
+    {
+      url: "blog2",
+      title: "blog2 title",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
+    {
+      url: "blog",
+      title: "Coming Soon Microsoft Outlook Navigation Panel",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
+    {
+      url: "blog2",
+      title: "blog2 title",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
+    {
+      url: "blog",
+      title: "Coming Soon Microsoft Outlook Navigation Panel",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
+    {
+      url: "blog2",
+      title: "blog2 title",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
+    {
+      url: "blog",
+      title: "Coming Soon Microsoft Outlook Navigation Panel",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
+    {
+      url: "blog2",
+      title: "blog2 title",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
+    {
+      url: "blog",
+      title: "Coming Soon Microsoft Outlook Navigation Panel",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
+    {
+      url: "blog2",
+      title: "blog2 title",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
+    {
+      url: "blog",
+      title: "Coming Soon Microsoft Outlook Navigation Panel",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
+    {
+      url: "blog2",
+      title: "blog2 title",
+      description: "Coming Soon Microsoft Outlook Navigation Panel",
+    },
   ];
 
   const [filter, setFilter] = useState("");
@@ -40,12 +100,6 @@ function RouterWithBootstrap() {
           <h1>RIGHT SIDE</h1>
           <br />
           <h1>RIGHT SIDE</h1>
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
           <h1>RIGHT SIDE</h1>
         </div>
 

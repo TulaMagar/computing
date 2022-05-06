@@ -5,23 +5,45 @@
     border-radius: 20px;
     padding: 15px;
 }
-@media (max-width: 767px){
+
+@media (max-width: 640px){
 
     #container{
-        display: flex;
+        display: block;
         flex-wrap: wrap;
-        position: relative;
-        
+        position: relative; 
     }
 
     #left{
-        padding-left: 10px;
+       display: none;
+    }
+    #middle{
+        padding: 10px;
+        margin-top: 5px;;
+    }
+    
+    #right{
+        padding-left: 18px;
+    }
+    
+}
+
+@media (min-width: 641px) and (max-width: 970px){
+
+    #container{
+        display: flex;     
+        position: relative;  
+    }
+
+    #left{
+        padding: 10px;
         width: 30%; 
         position: fixed;
+        text-align: right;
     }
     
     #middle{
-        padding-left: 10px;
+        padding: 10px;
         border-left: 1px solid whitesmoke;
         width: 100%; 
         margin: 0 auto; 
@@ -29,9 +51,7 @@
     }
     
     #right{
-        padding-left: 18px;
-        margin-left: 30%;
-        border-left: 1px solid whitesmoke;
+        display: none;
     }
 
     .input-container{
@@ -47,7 +67,7 @@
     }
 }
 
-@media (min-width:767px){
+@media (min-width:971px){
     #container{
         display: flex;
         flex-direction: row;
@@ -56,11 +76,11 @@
     }
     
     #left{
-        width: 20%; 
+        margin: auto;
+        width: 22%; 
         position: fixed;
-        overflow-y: auto;
-        margin-top: 30px;
-        padding: 25px ;
+        padding-left: 20px;
+        padding-bottom: 20px;
     }
     
     #middle{
@@ -68,7 +88,7 @@
         margin: 0 auto; 
         border-left: 1px solid whitesmoke;
         border-right: 1px solid whitesmoke;
-        margin-left: 18%;
+        margin-left: 23%;
         padding: 20px;
     }
     
@@ -76,7 +96,7 @@
         width: 20%; 
         height:auto;
         text-align: left;
-        padding: 2%;
+        padding: 20px;
         
     }
     
