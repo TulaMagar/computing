@@ -1,9 +1,6 @@
 
 .glassesBackground{
-	/* background:url(images/seascape.jpg) no-repeat 0 0;
-	background-size:cover;
-	border:1px solid #000; */
-  display: flex;
+  position: absolute;
   width: 100px;
   height: 100px;
   background-color: #ffffff10;
@@ -11,15 +8,30 @@
               inset -20px -20px 60px #ffffff10;
 
   border-radius: 50px;
-  animation-name: spin;
-  animation-duration: 15000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: spin 10s ease-in forwards infinite alternate;
 }
 
 @keyframes spin{
-	from { 	transform: rotate(0deg) translateX(80vw); }
-	to   {  transform: rotate(360deg) translateX(80vw); }
+	0% { 	transform: rotate(0deg) translateX(90vw); }
+
+  30%{  transform: rotate(40deg) translateX(90vw);}
+
+  40% {
+    transform: rotate(90deg) translateX(60vw);
+  }
+  50% {
+    transform: rotate(70deg) translateX(10vw);
+  }
+  60% {
+    transform: rotate(0deg) translateX(95vw)
+  }
+  75% {
+    transform: rotate(40deg) translateX(50vw)
+  }
+  85% {
+    transform: rotate(10deg) translateX(0vw)
+  }
+	100%   {  transform: rotate(90deg) translateX(100vh); }
 }
 
 
@@ -33,7 +45,6 @@
 .contin > .weTheOne{
   flex: 50%;
   height: 48vh;
-    /* background-color: aqua; */
 }
 .contin > .Connecting{
   flex:50%;
@@ -46,21 +57,11 @@
   height: 100%;
   width: calc(100% - 20px);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
-  /* border-radius: 50px; */
   background: #e0e0e0;
   box-shadow:  20px 20px 60px #bebebe,
               -20px -20px 60px #ffffff;
   object-fit: cover;
 }
-
-/* .whatWeDo{
-  margin-top: 70px;
-  text-align: center;
-  background-color: #ffffff10;
-  box-shadow: inset 20px 20px 60px #ffffff10,
-              inset -20px -20px 60px #ffffff10;
-  
-} */
 
 .whatWeDo{
   margin: auto;
@@ -82,7 +83,6 @@
 }
 .WhatWeDoInfo{
   color: black;
-  /* border: 1px solid whitesmoke; */
   font-size: 22px !important;
   text-align: left;
   color: whitesmoke;
@@ -90,7 +90,6 @@
 
 @media(min-width:767px){
   .ToWhom{
-    /* height:calc(11vw + 34vh - 2vmin); */
     height: 50vh;
     display: -webkit-flex;
     display: flex;
@@ -108,20 +107,13 @@
     height: 48vh;
     line-height: 48vh;
     text-align: center;
-    /* border-bottom-left-radius: 590px 100px;
-    border-top-left-radius: 590px 100px; */
-  
     border-bottom-right-radius: 590px 100px;
     border-top-right-radius: 590px 100px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     background-image: linear-gradient(rgb(185, 163, 163) 5%, rgb(62, 80, 62) 59%, rgb(127, 127, 204) 155%);
-    /* background-image: linear-gradient(#EDAEF8, #81B1FA); */
-    /* word-wrap: break-word;
-    white-space: pre-line; */
     text-align: left;
     padding: 10px;
-    /* word-break: break-all; */
     
   }
   
@@ -139,7 +131,6 @@
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
-    /* background-image: linear-gradient(red, green, blue); */
     background-image: linear-gradient(rgb(185, 163, 163) 10%, rgb(62, 80, 62) 56%, rgb(151, 151, 240) 170%);
     border-bottom-right-radius: 590px 100px;
     border-top-right-radius: 590px 100px;
@@ -170,7 +161,6 @@
     border-top-left-radius: 590px 100px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-    /* background-image: linear-gradient(red 10%, green 85%, blue 90%); */
     background-image: linear-gradient(rgb(185, 163, 163) 5%, rgb(62, 80, 62) 59%, rgb(133, 133, 204) 150%);
     word-wrap: break-word;
     text-align: left;
@@ -185,13 +175,6 @@
     height: auto;
     padding-top: 10px;
     padding-bottom: 80px;
-    /* border-radius: 50px; */
-    /* background-color: #7a7a99;
-    box-shadow: inset 20px 20px 60px #767694,
-                inset -20px -20px 60px #9090c7; */
-    /* background-color: #ffffff10;
-    box-shadow: inset 20px 20px 60px #ffffff10,
-                inset -20px -20px 60px #ffffff10; */
 }
 
   .CardContainer{
@@ -219,7 +202,6 @@
   .card > .PersonImage{
     height: 25vh;
     object-fit:fill;
-    /* border-radius: 5px; */
     border-radius: 28% 72% 21% 79% / 68% 18% 82% 32%  ;
 
   }
@@ -255,8 +237,6 @@
     height: 30vh;
     line-height: 30vh;
     text-align: center;
-    /* border-bottom-right-radius: 590px 100px;
-    border-top-right-radius: 590px 100px; */
     background-image: linear-gradient(rgb(185, 163, 163) 10%, rgb(62, 80, 62) 56%, rgb(151, 151, 240) 170%);
     border-radius: 8px;
     
@@ -276,21 +256,12 @@
   
   
   .ToWhom>.Connecting {
-    /* margin-top: 60px; */
-    /* height: calc(82% - 20px); */
     height: 30vh;
     line-height: 30vh;
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
-    /* -webkit-flex: 1.5;
-      -ms-flex: 1.5;
-      flex: 1.5; */
     background-image: linear-gradient(rgb(185, 163, 163) 10%, rgb(62, 80, 62) 56%, rgb(151, 151, 240) 170%);
-    /* border-bottom-right-radius: 590px 100px;
-    border-top-right-radius: 590px 100px;
-    border-bottom-left-radius: 590px 100px;
-    border-top-left-radius: 590px 100px; */
     word-wrap: break-word;
     border-radius: 8px;
   }

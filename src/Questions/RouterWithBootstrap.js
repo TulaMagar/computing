@@ -6,8 +6,6 @@ import UseTitle from "../Title.js";
 //https://www.toptal.com/designers/htmlarrows/arrows/
 
 function RouterWithBootstrap() {
-  const textInput = React.createRef(); // React use ref to get input value
-
   const BlogPath = [
     {
       url: "blog",
@@ -20,7 +18,6 @@ function RouterWithBootstrap() {
       description: "Coming Soon Microsoft Outlook Navigation Panel",
     },
   ];
-
 
   const [filter, setFilter] = useState("");
 

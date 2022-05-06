@@ -7,6 +7,7 @@ function About() {
   return (
     <>
       <div className="glassesBackground"> </div>
+
       <div className="contin">
         <div className="weTheOne">
           <img src={WeTheOne} alt="we the one not found" loading="lazy" />{" "}
@@ -45,7 +46,6 @@ function About() {
         </div>
 
         <div className="Connecting">
-          {/* <img className="testss" src={WeTheOne} alt="we the one not found"/>  */}
           <p className="Info">
             We have created a fictional band website. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

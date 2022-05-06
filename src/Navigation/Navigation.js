@@ -13,7 +13,7 @@ function Navigation() {
         sticky="top"
         expand="sm"
         variant="dark"
-        className="background color "
+        className="background COLOR"
       >
         <Container>
           <Navbar.Brand href="#home"></Navbar.Brand>

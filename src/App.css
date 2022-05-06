@@ -1,26 +1,8 @@
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 10vh;
-  background: rgb(73, 79, 82);
-  color: white;
-}
-
-.nav-links{
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-}
-
-.background{
-  /* background-color: rgb(49, 49, 49); */
+.background {
   background-image: url("./Background/HomeBackground.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: whitesmoke;
-  /* color: black; */
+  opacity: 0.9;
 }

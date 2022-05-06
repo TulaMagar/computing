@@ -1,8 +1,8 @@
-.color {
-
-    color: white;
+.COLOR {
     font-size: 21px;
     font-weight: bold;
+    min-height: 10vh;
+    color: rgb(179, 21, 21);
     
 }
 .margin{
