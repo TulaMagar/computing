@@ -6,6 +6,12 @@
     padding: 15px;
 }
 
+@media (max-height: 732px ){
+
+    #left{
+        overflow: scroll;
+    }
+}
 @media (max-width: 640px){
 
     #container{
