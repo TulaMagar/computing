@@ -8,7 +8,7 @@
               inset -20px -20px 60px #ffffff10;
 
   border-radius: 50px;
-  animation: spin 10s ease-in forwards infinite alternate;
+  animation: spin 10s linear forwards infinite alternate;
 }
 
 @keyframes spin{
@@ -69,8 +69,20 @@
   margin-top: 70px;
   text-align: center;
   border: 1px solid whitesmoke;
+  padding: 30px;  
+  resize: both;
+  overflow: auto;
+}
+
+.Footer {
+  margin: auto;
+  width: 90%;
+  margin-top: 70px;
+  text-align: center;
+  border: 1px solid whitesmoke;
   padding: 30px;
-  
+  column-count: 3;
+
 }
 
 .WhatWeDoInfoHeader{

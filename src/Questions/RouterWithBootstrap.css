@@ -8,8 +8,11 @@
 
 @media (max-height: 732px ){
 
-    #left{
-        overflow: scroll;
+    #left {
+        top: 73px;
+        bottom: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 }
 @media (max-width: 640px){

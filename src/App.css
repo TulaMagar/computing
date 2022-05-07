@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .background {
   background-image: url("./Background/HomeBackground.jpg");
   background-size: cover;
@@ -5,4 +9,32 @@
   background-repeat: no-repeat;
   color: whitesmoke;
   opacity: 0.9;
+  animation: gradient 120s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.Logo{
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 50px;
+}
+
+.Logo > a{
+  color: whitesmoke;
+}
+
+.Logo>a:hover {
+  color: rgb(197, 188, 55);
 }

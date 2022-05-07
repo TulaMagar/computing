@@ -128,7 +128,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="whatWeDo">
+      <div className="Footer">
         <h1 className="WhatWeDoInfoHeader">Footer!</h1>
         <p className="WhatWeDoInfo">
           We have created a fictional band website. Lorem ipsum dolor sit amet,
