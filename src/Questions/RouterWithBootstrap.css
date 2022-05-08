@@ -9,8 +9,8 @@
 @media (max-height: 732px ){
 
     #left {
-        top: 73px;
-        bottom: 0;
+        top: 85px;
+        height: 88vh;
         overflow-y: scroll;
         overflow-x: hidden;
     }
@@ -47,7 +47,11 @@
     #left{
         padding: 10px;
         width: 30%; 
-        position: fixed;
+        position: -webkit-sticky;
+        position: sticky;
+        align-self: flex-start;
+        padding-right: 20px;
+        padding-bottom: 20px;
         text-align: right;
     }
     
@@ -56,7 +60,6 @@
         border-left: 1px solid whitesmoke;
         width: 100%; 
         margin: 0 auto; 
-        margin-left: 30%;
     }
     
     #right{
@@ -80,16 +83,17 @@
     #container{
         display: flex;
         flex-direction: row;
-        position: relative;
-        
     }
     
     #left{
-        margin: auto;
         width: 22%; 
-        position: fixed;
-        padding-left: 20px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 84px;
+        align-self: flex-start;
+        padding-right: 20px;
         padding-bottom: 20px;
+        text-align: right;
     }
     
     #middle{
@@ -97,16 +101,16 @@
         margin: 0 auto; 
         border-left: 1px solid whitesmoke;
         border-right: 1px solid whitesmoke;
-        margin-left: 23%;
-        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
     }
     
     #right{
         width: 20%; 
         height:auto;
         text-align: left;
-        padding: 20px;
-        
+        padding: 20px;    
     }
     
     

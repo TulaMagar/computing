@@ -1,4 +1,41 @@
-.buttom-Footer{
+.Footer {
+    text-align: center;
+    border: 1px solid whitesmoke;
+    padding: 30px;
+    padding-bottom: 40px;
+    column-count: 3;
+}
 
-    background-color: none;
+.HeadingTitle {
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+    text-decoration: solid;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.WhatWeDoInfo {
+    color: black;
+    font-size: 22px !important;
+    text-align: left;
+    color: whitesmoke;
+}
+
+@media (max-width: 640px) {
+
+    .Footer {
+        text-align: center;
+        border: 1px solid whitesmoke;
+        column-count: 1;
+    }
+
+}
+
+@media (min-width: 641px) and (max-width: 970px){
+    .Footer {
+        text-align: center;
+        border: 1px solid whitesmoke;
+        column-count: 1;
+    }
 }
