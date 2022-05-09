@@ -1,8 +1,11 @@
+.FullWide{
+    border: 1px solid whitesmoke;
+    padding: 30px 5px;
+}
 .Footer {
     text-align: center;
-    border: 1px solid whitesmoke;
-    padding: 30px;
-    padding-bottom: 40px;
+    margin: auto;
+    width: 90%;
     column-count: 3;
 }
 

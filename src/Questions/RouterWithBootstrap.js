@@ -88,7 +88,7 @@ function RouterWithBootstrap() {
       <div id="container">
         <div id="left">
           <br />
-          <h1>RIGHT SIDE1</h1>
+          <h1>RIGHTTT SIDE1</h1>
           <br />
           <h1>RIGHT SIDE2</h1>
           <br />
@@ -100,7 +100,7 @@ function RouterWithBootstrap() {
           <br />
           <h1>RIGHT SIDE6</h1>
           <br />
-          <h1>RIGHT SIDE7</h1>
+          <h1>RIGHTTT SIDE7</h1>
         </div>
 
         <div id="middle">
@@ -222,7 +222,7 @@ function RouterWithBootstrap() {
           <br />
           <h1>RIGHT SIDE</h1>
           <br />
-          <h1>RIGHT SIDE</h1>
+          <h1>RIGHTT SIDE</h1>
           <br />
         </div>
       </div>
