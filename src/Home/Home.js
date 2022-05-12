@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import SlideShow from "../Slideshow/SlideShow.js";
 import "./Home.css";
 import Clean from "../Background/clean.avif";
@@ -10,6 +10,17 @@ import WeTheOne from "../img/pexels-lisa-fotios-3972467.jpg";
 import UseTitle from "../Title.js";
 
 const Home = () => {
+  const myref = useRef();
+  const [visible, setVisible] = useState();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setVisible(entry.isIntersecting);
+    });
+    observer.observe(myref.current);
+  }, []);
+
   UseTitle("computing home page");
   return (
     <React.Fragment>
@@ -46,18 +57,18 @@ const Home = () => {
       <div className="container-L-image">
         <div className="Static-container">
           <div className="image">
-            <img src={Clean} alt="Clean not found" />
+            <img loading="lazy" src={Clean} alt="Clean not found" />
           </div>
 
           <div className="image">
-            <img src={Moon} alt="Clean not found" />
+            <img loading="lazy" src={Moon} alt="Clean not found" />
           </div>
           <div className="image">
-            <img src={Sea} alt="Clean not found" />
+            <img loading="lazy" src={Sea} alt="Clean not found" />
           </div>
 
           <div className="image">
-            <img src={Clean} alt="Clean not found" />
+            <img loading="lazy" src={Clean} alt="Clean not found" />
           </div>
         </div>
       </div>
@@ -81,7 +92,11 @@ const Home = () => {
 
       <div className="testing">
         <div className="CardContainer">
-          <div className="card">
+          <div
+            className="card"
+            ref={myref}
+            id={`${visible ? "ComeFromLeft" : ""}`}
+          >
             <img
               className="PersonImage"
               src={WeTheOne}
@@ -96,7 +111,11 @@ const Home = () => {
               <p>Owner & Coder..</p>
             </div>
           </div>
-          <div className="card">
+          <div
+            className="card"
+            ref={myref}
+            id={`${visible ? "SmallToBig" : ""}`}
+          >
             <img
               className="PersonImage"
               src={WeTheOne}
@@ -111,7 +130,11 @@ const Home = () => {
               <p>Owner & Coder..</p>
             </div>
           </div>
-          <div className="card">
+          <div
+            className="card"
+            ref={myref}
+            id={`${visible ? "ComeFromRight" : ""}`}
+          >
             <img
               className="PersonImage"
               src={Globe}
@@ -123,7 +146,7 @@ const Home = () => {
               <h4>
                 <b>Tula Magar</b>
               </h4>
-              <p>Owner & Coder..</p>
+              <p>Owner & Coders..</p>
             </div>
           </div>
         </div>

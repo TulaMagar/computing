@@ -99,7 +99,7 @@ function About() {
               <p>Owner & Coder..</p>
             </div>
           </div>
-          <div className="card">
+          <div className="card ComeFromRight">
             <img
               className="PersonImage"
               src={WeTheOne}
