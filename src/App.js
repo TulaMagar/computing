@@ -57,7 +57,7 @@ function App() {
   return (
     <HashRouter>
       <ScrollToTop />
-      <div className="App background">
+      <div lazy="loading" className="App background">
         <Navigation />
         <Routes>
           <Route exact path="/" element={<Home />} />

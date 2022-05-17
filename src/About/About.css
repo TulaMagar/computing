@@ -245,18 +245,17 @@
   }
 
   #SmallToBig {
-    animation: small 1s ease-in;
+    animation: smalls 1s ease-in;
   }
 
-  @keyframes small {
+  @keyframes smalls {
     from {
-      scale: 0.5;
-    }
-
-    to {
-      scale: 1;
-    }
+      transform: scale(0);
   }
+  to {
+     transform: scale(1);
+  }
+}
 }
 
 
@@ -329,9 +328,6 @@
     word-wrap: break-word;
     border-radius: 8px;
   }
-
-
-
 
   .CardContainer{
     display: flex;
