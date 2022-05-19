@@ -109,7 +109,12 @@ function About() {
               <h4>
                 <b>Tula Magar</b>
               </h4>
-              <p>Owner & Coder..</p>
+              <h5>Owner & Coder..</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis vitae, sapiente placeat facere molestiae omnis
+                tempore facilis dolor sint quo?
+              </p>
             </div>
           </div>
           <div className="card ComeFromRight">
@@ -124,7 +129,12 @@ function About() {
               <h4>
                 <b>Tula Magar</b>
               </h4>
-              <p>Owner & Coder..</p>
+              <h5>Owner & Coder..</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis vitae, sapiente placeat facere molestiae omnis
+                tempore facilis dolor sint quo?
+              </p>
             </div>
           </div>
         </div>
