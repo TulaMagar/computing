@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./About.css";
 import WeTheOne from "../img/pexels-lisa-fotios-3972467.jpg";
 import "bootstrap/dist/css/bootstrap.css";
+import UseTitle from "../Title.js";
 
 function About() {
+  const myref = useRef();
+  const [visible, setVisible] = useState();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setVisible(entry.isIntersecting);
+    });
+    observer.observe(myref.current);
+  }, []);
+  console.log(myref);
+  console.log(visible);
+  UseTitle("About Computing");
+
   return (
-    <>
+    <React.Fragment>
       <div className="testing">
         <div className="Respawn">
           <div className="glassesBackground"> </div>
@@ -42,8 +57,14 @@ function About() {
         </p>
       </div>
 
+
+
       <div className="ToWhom">
-        <div className="weTheOne">
+        <div 
+          className="weTheOne"
+          ref={myref}
+          id={`${visible ? "Left_Filp" : ""}`}
+          >
           <p className="Info">
             We have created a fictional band website. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -73,6 +94,8 @@ function About() {
           </p>
         </div>
       </div>
+
+
 
       <div className="Team">
         <h1 className="HeadingTitle">Team</h1>
@@ -139,7 +162,7 @@ function About() {
           </div>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

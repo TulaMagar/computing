@@ -132,9 +132,25 @@
 
  }
 
+ .Info{
+    
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 22px;
+  padding: 10px;
+
+}
+
+#Left_Filp{
+  background-color: aqua;
+}
+
 @media(min-width:767px){
   .ToWhom{
-    height: 50vh;
+    height: auto;
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
@@ -149,7 +165,6 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    height: 48vh;
     line-height: 48vh;
     text-align: center;
     border-bottom-right-radius: 590px 100px;
@@ -161,18 +176,22 @@
     padding: 10px;
     
   }
+
+  #Left_Filp{
+    background-color: aqua;
+  }
   
-  .Info{
+  
+  /* .Info{
     font-size: calc(0.6vw - 0.7vh + 2vmin);
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
     word-break: break-word;
   
-  }
+  } */
   
   .ToWhom > .Connecting{
-    height: 48vh;
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
@@ -199,15 +218,13 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    height: 48vh;
-    line-height: 48vh;
+    line-height: 55vh;
     text-align: center;
     border-bottom-left-radius: 590px 100px;
     border-top-left-radius: 590px 100px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     background-image: linear-gradient(rgb(185, 163, 163) 5%, rgb(62, 80, 62) 59%, rgb(133, 133, 204) 150%);
-    word-wrap: break-word;
     text-align: left;
     padding: 10px;
     
@@ -318,34 +335,14 @@
   }
 
   .ToWhom > .weTheOne{
-
-    height: 30vh;
-    line-height: 30vh;
     text-align: center;
     background-image: linear-gradient(rgb(185, 163, 163) 10%, rgb(62, 80, 62) 56%, rgb(151, 151, 240) 170%);
     border-radius: 8px;
     
   }
   
-  .Info{
-    
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-    word-wrap: break-word;
-    text-align: left;
-    font-size: 22px;
-    padding: 10px;
-  
-  }
-  
   
   .ToWhom>.Connecting {
-    height: 30vh;
-    line-height: 30vh;
-    -webkit-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
     background-image: linear-gradient(rgb(185, 163, 163) 10%, rgb(62, 80, 62) 56%, rgb(151, 151, 240) 170%);
     word-wrap: break-word;
     border-radius: 8px;
@@ -360,11 +357,6 @@
   
   
   .ToWhom > .Third{
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    height: 30vh;
-    line-height: 30vh;
     text-align: center;
     background-image: linear-gradient(rgb(185, 163, 163) 5%, rgb(62, 80, 62) 59%, rgb(133, 133, 204) 150%);
     word-wrap: break-word;

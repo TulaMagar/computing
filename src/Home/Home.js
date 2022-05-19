@@ -20,9 +20,7 @@ const Home = () => {
     });
     observer.observe(myref.current);
   }, []);
-  console.log(visible);
-  console.log(myref);
-  UseTitle("computing home page");
+  UseTitle("computing");
   return (
     <React.Fragment>
       <SlideShow />

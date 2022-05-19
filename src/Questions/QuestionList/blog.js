@@ -146,8 +146,8 @@ function blog() {
                 animateOut="bounceOutLeft"
               >
                 <h2>
-                  <a href="https://daneden.github.io/animate.css/">
-                    Animate.css
+                  <a href="https://techcomputinginfo.com/">
+                    website
                   </a>
                 </h2>
               </ScrollAnimation>
