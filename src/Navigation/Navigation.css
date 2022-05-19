@@ -2,11 +2,7 @@
     font-size: 21px;
     font-weight: bold;
     min-height: 10vh;
-    color: rgb(179, 21, 21);
-    
-}
-.margin{
-    min-height: 10vh;
+    color: #6c757d
 }
 
 .nav-list{

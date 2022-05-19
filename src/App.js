@@ -29,9 +29,32 @@ const ScrollToTop = () => {
   return null;
 };
 
+
+class ErrorHandler extends React.Component {
+
+  state = {
+    hasError: false,
+  };
+
+  static getDerivedStateFromError(err) {
+    return { hasError: true };
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <p>
+          Loading has failed. Try refreshing the browser!
+        </p>
+      );
+    }
+
+    return this.props.children;
+  }
+
+}
 const Blog = () => {
   const { blogs } = useParams();
-  console.log({ blogs });
 
   const [BlogItem, setBlogItem] = React.useState();
 
@@ -39,16 +62,16 @@ const Blog = () => {
     const BlogItem = React.lazy(() =>
       import(`./Questions/QuestionList/${blogs}.js`)
     );
-    console.log({ BlogItem });
     setBlogItem(BlogItem);
   }, [blogs]);
 
   return (
     <>
-      {/* <h1>Blog</h1> */}
-      <React.Suspense fallback={<div>Loading...</div>}>
-        {BlogItem && <BlogItem />}
-      </React.Suspense>
+      <ErrorHandler>
+        <React.Suspense fallback={<div className="wait"></div>}>
+          {BlogItem && <BlogItem />}
+        </React.Suspense>
+      </ErrorHandler>
     </>
   );
 };
