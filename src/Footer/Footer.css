@@ -3,6 +3,7 @@
     padding: 30px 5px;
 }
 .Footer {
+    position: sticky;
     text-align: center;
     margin: auto;
     width: 90%;
@@ -29,7 +30,6 @@
 
     .Footer {
         text-align: center;
-        border: 1px solid whitesmoke;
         column-count: 1;
     }
 
@@ -37,8 +37,7 @@
 
 @media (min-width: 641px) and (max-width: 970px){
     .Footer {
-        text-align: center;
-        border: 1px solid whitesmoke;
+        text-align: center; 
         column-count: 1;
     }
 }

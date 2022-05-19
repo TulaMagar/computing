@@ -6,7 +6,15 @@ import "bootstrap/dist/css/bootstrap.css";
 function About() {
   return (
     <>
-      <div className="glassesBackground"> </div>
+      <div className="testing">
+        <div className="Respawn">
+          <div className="glassesBackground"> </div>
+          <div className="glassesBackground"> </div>
+          <div className="glassesBackground"> </div>
+          <div className="glassesBackground"> </div>
+          <div className="glassesBackground"> </div>
+        </div>
+      </div>
 
       <div className="contin">
         <div className="weTheOne">
@@ -66,7 +74,7 @@ function About() {
         </div>
       </div>
 
-      <div className="testing">
+      <div className="Team">
         <h1 className="HeadingTitle">Team</h1>
         <div className="CardContainer">
           <div className="card">
@@ -81,7 +89,12 @@ function About() {
               <h4>
                 <b>Tula Magar</b>
               </h4>
-              <p>Owner & Coder..</p>
+              <h5>Owner & Coder..</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis vitae, sapiente placeat facere molestiae omnis
+                tempore facilis dolor sint quo?
+              </p>
             </div>
           </div>
           <div className="card">
@@ -96,7 +109,12 @@ function About() {
               <h4>
                 <b>Tula Magar</b>
               </h4>
-              <p>Owner & Coder..</p>
+              <h5>Owner & Coder..</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis vitae, sapiente placeat facere molestiae omnis
+                tempore facilis dolor sint quo?
+              </p>
             </div>
           </div>
           <div className="card ComeFromRight">
@@ -111,7 +129,12 @@ function About() {
               <h4>
                 <b>Tula Magar</b>
               </h4>
-              <p>Owner & Coder..</p>
+              <h5>Owner & Coder..</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis vitae, sapiente placeat facere molestiae omnis
+                tempore facilis dolor sint quo?
+              </p>
             </div>
           </div>
         </div>
