@@ -90,7 +90,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="testing">
+      <div className="Team">
         <div className="CardContainer">
           <div
             className="card"

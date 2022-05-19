@@ -1,6 +1,16 @@
 
-.glassesBackground{
+.Respawn{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
   position: absolute;
+  bottom: 0;
+}
+
+.glassesBackground{
   width: 100px;
   height: 100px;
   background-color: #ffffff10;
@@ -8,32 +18,44 @@
               inset -20px -20px 60px #ffffff10;
 
   border-radius: 50px;
+}
+
+.Respawn div:nth-child(1){
+
+  animation: spin 5s linear forwards infinite alternate;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  overflow-y: hidden;
+}
+.Respawn div:nth-child(2) {
+
+  animation: spin 6s linear forwards infinite alternate;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+.Respawn div:nth-child(3) {
+
+  animation: spin 7s linear forwards infinite alternate;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+}
+.Respawn div:nth-child(4) {
+
+  animation: spin 4s linear forwards infinite alternate;
+  width: 110px;
+  height: 110px;
+  border-radius: 50px;
+}
+.Respawn div:nth-child(5) {
+
   animation: spin 10s linear forwards infinite alternate;
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
 }
-
-@keyframes spin{
-	0% { 	transform: rotate(0deg) translateX(90vw); }
-
-  30%{  transform: rotate(40deg) translateX(90vw);}
-
-  40% {
-    transform: rotate(90deg) translateX(60vw);
-  }
-  50% {
-    transform: rotate(70deg) translateX(10vw);
-  }
-  60% {
-    transform: rotate(0deg) translateX(95vw)
-  }
-  75% {
-    transform: rotate(40deg) translateX(50vw)
-  }
-  85% {
-    transform: rotate(10deg) translateX(0vw)
-  }
-	100%   {  transform: rotate(90deg) translateX(100vh); }
-}
-
 
 .contin{
   height:50vh;
@@ -41,6 +63,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
 }
 .contin > .weTheOne{
   flex: 50%;
@@ -73,6 +96,7 @@
   padding: 30px;  
   resize: both;
   overflow: auto;
+  position: relative;
 }
 
 .WhatWeDoInfoHeader{
@@ -89,6 +113,24 @@
   text-align: left;
   color: whitesmoke;
 }
+ @keyframes spin {
+   0% {
+     transform: translateY(2000px);
+   }
+
+   40% {
+     background-color: aqua;
+   }
+
+   70% {
+     background-color: rgb(187, 20, 20);
+   }
+
+   100% {
+     transform: translateY(-1000px);
+   }
+
+ }
 
 @media(min-width:767px){
   .ToWhom{
@@ -100,6 +142,7 @@
     width: 90%;
     text-align: center;
     margin-top: 100px;
+    position: relative;
   }
 
   .ToWhom > .weTheOne{
@@ -170,7 +213,7 @@
     
   }
   
-  .testing{
+  .Team{
     margin: auto;
     width: 90%;
     margin-top: 50px;
@@ -183,7 +226,7 @@
     display: flex;
     margin: auto;
     width: 100%;
-    height: 52vh;
+    height: auto;
     gap:20px;
     margin-top: 60px;
   }
@@ -194,7 +237,6 @@
                 inset -20px -20px 60px #e2c5e9;
     transition: 0.3s;
     width: 100%;
-    height: 50vh;
     color: black;
     padding: 20px;
     backdrop-filter: blur(12px);
@@ -330,9 +372,6 @@
     border-radius: 8px;
   }
 
-
-
-
   .CardContainer{
     display: flex;
     flex-direction: column;
@@ -347,14 +386,31 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 100%;
-    height: 50vh;
     color: black;
     padding: 20px;
   }
   
   .card > .PersonImage{
     height: 25vh;
-    object-fit:fill;
-    border-radius: 5px;;
+    object-fit: cover;
+    border-radius: 28% 72% 21% 79% / 68% 18% 82% 32%;
   }
+    @keyframes spin {
+      0% {
+        transform: translateY(4400px);
+      }
+  
+      40% {
+        background-color: aqua;
+      }
+  
+      70% {
+        background-color: rgb(187, 20, 20);
+      }
+  
+      100% {
+        transform: translateY(-1050px);
+      }
+  
+    }
 }
