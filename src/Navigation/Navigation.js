@@ -1,40 +1,43 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Navigation.css";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import 'bootstrap/dist/js/bootstrap.bundle';
 import { NavLink } from "react-router-dom";
 
 //https://react-bootstrap.github.io/components/navbar/
-// Fix nav bar this link
+
 function Navigation() {
+  const [expanded, setExpanded] = useState(false);
   return (
     <>
       <Navbar
         collapseOnSelect
         sticky="top"
-        expand="sm"
-        variant="dark"
+        expand="lg"
+        bg="dark" variant="dark"
         className="background COLOR"
+        expanded={expanded}
       >
         <Container>
           <Navbar.Brand href="#home"></Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse className="mobile-nav" id="responsive-navbar-nav">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav"  onClick={() => setExpanded(expanded ? false : "expanded")} />
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={NavLink} to="/">
+              <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/">
                 Home
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link as={NavLink} to="/about">
+              <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/about">
                 About
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/careers">
+              <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/careers">
                 Careers
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/question">
+              <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/question">
                 Questions
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/login">
+              <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/login">
                 Login
               </Nav.Link>
             </Nav>
