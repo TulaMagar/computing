@@ -16,7 +16,6 @@
   background-color: #ffffff10;
   box-shadow: inset 20px 20px 60px #ffffff10,
               inset -20px -20px 60px #ffffff10;
-
   border-radius: 50px;
 }
 
@@ -87,11 +86,9 @@
 }
 
 .whatWeDo{
-  position: relative;
   margin: auto;
   width: 90%;
   margin-top: 70px;
-  text-align: center;
   border: 1px solid whitesmoke;
   padding: 30px;  
   resize: both;
@@ -104,8 +101,7 @@
   color: black;
   text-decoration:solid;
   color: whitesmoke;
-  padding: 20px;
-  margin-bottom: 50px;
+  text-align: center;
 }
 .WhatWeDoInfo{
   color: black;
@@ -113,6 +109,8 @@
   text-align: left;
   color: whitesmoke;
 }
+
+
  @keyframes spin {
    0% {
      transform: translateY(2000px);
@@ -273,13 +271,11 @@
   .card {
     width: calc(100% - 20px);
     background: #e0e0e0;
-    box-shadow: inset 20px 20px 60px #d0e7e6,
-                inset -20px -20px 60px #e2c5e9;
+    box-shadow: inset 20px 20px 60px #a1c9c9,
+                inset -20px -20px 60px #7ba3a3;
     transition: 0.3s;
     color: black;
     padding: 20px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     position: absolute;
   }
   
@@ -294,9 +290,6 @@
     border-radius: 100px;
     margin-top: -100px;
     border:5px solid rgb(53, 52, 52);
-
-    /* border-bottom: 10px solid transparent;
-    border-image: url("../Background/HomeBackground.jpg") 10% round; */
   }
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);

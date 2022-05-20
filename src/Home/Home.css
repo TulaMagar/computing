@@ -27,10 +27,16 @@
     padding: 10px;
     margin: 10px;
     border: 5px solid wheat;
+    background-color: rgb(53, 52, 52);
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
 }
 
  .flex-child:hover {
-    /* background-color: blue; */
+    transform: rotate(0deg);
     border: none;
 }
 

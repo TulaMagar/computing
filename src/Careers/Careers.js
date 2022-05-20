@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
+import UseTitle from "../Title.js";
 
-export default class Careers extends Component {
-  render() {
-    return (
-      <div style={{marginTop: "20vh", width:"100vw", height:"100vh", textAlign:"center", fontSize:"100px" }}>Careers page will update soon!</div>
-    )
-  }
+const Careers = () => {
+  UseTitle("Computing Careers");
+  return (
+    <div style={{marginTop: "20vh", width:"100vw", height:"100vh", textAlign:"center", fontSize:"100px" }}>Careers page will update soon!</div>
+  )
+
 }
+
+export default Careers;

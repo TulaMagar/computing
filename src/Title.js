@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import {useEffect} from 'react'
 
 function Title(title) {
     useEffect(() => {
@@ -7,7 +7,7 @@ function Title(title) {
       return () => {
         document.title = prevTitle
       }
-    }, [])
+    }, [title])
   }
 
 export default Title;

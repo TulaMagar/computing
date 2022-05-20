@@ -15,8 +15,6 @@ function About() {
     });
     observer.observe(myref.current);
   }, []);
-  console.log(myref);
-  console.log(visible);
   UseTitle("About Computing");
 
   return (
@@ -41,7 +39,7 @@ function About() {
       </div>
 
       <div className="whatWeDo">
-        <h1 className="WhatWeDoInfoHeader HeadingTitle">What we do!</h1>
+        <h1 className="WhatWeDoInfoHeader">What we do!</h1>
         <p className="WhatWeDoInfo">
           We have created a fictional band website. Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
