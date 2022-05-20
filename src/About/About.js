@@ -57,14 +57,12 @@ function About() {
         </p>
       </div>
 
-
-
       <div className="ToWhom">
-        <div 
+        <div
           className="weTheOne"
           ref={myref}
           id={`${visible ? "Left_Filp" : ""}`}
-          >
+        >
           <p className="Info">
             We have created a fictional band website. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -84,7 +82,11 @@ function About() {
           </p>
         </div>
 
-        <div className="Third">
+        <div
+          className="Third"
+          ref={myref}
+          id={`${visible ? "Right_Filp" : ""}`}
+        >
           <p className="Info">
             We have created a fictional band website. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -94,8 +96,6 @@ function About() {
           </p>
         </div>
       </div>
-
-
 
       <div className="Team">
         <h1 className="HeadingTitle">Team</h1>

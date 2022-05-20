@@ -144,9 +144,9 @@
 
 }
 
-#Left_Filp{
+/* #Left_Filp{
   background-color: aqua;
-}
+} */
 
 @media(min-width:767px){
   .ToWhom{
@@ -178,9 +178,18 @@
   }
 
   #Left_Filp{
-    background-color: aqua;
+    animation: Left 5s ease-in;
   }
   
+  @keyframes Left {
+    0%{
+      transform: scaleX(-1) translateX(-100%);
+    }
+    100%{
+      left: 0%;
+      transform: rotateY(0deg);
+    }
+  }
   
   /* .Info{
     font-size: calc(0.6vw - 0.7vh + 2vmin);
@@ -228,6 +237,21 @@
     text-align: left;
     padding: 10px;
     
+  }
+
+  #Right_Filp {
+    animation: Right 5s ease-in;
+  }
+
+  @keyframes Right {
+    0% {
+      transform: scaleX(-1) translateX(100%);
+    }
+
+    100% {
+      left: 0%;
+      transform: rotateY(0deg);
+    }
   }
   
   .Team{
