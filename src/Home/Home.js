@@ -89,6 +89,7 @@ const Home = () => {
         </p>
       </div>
 
+      <h1 className="HeadingTitle">Team</h1>
       <div className="Team">
         <div className="CardContainer">
           <div
@@ -101,9 +102,8 @@ const Home = () => {
               src={WeTheOne}
               alt="Avatar"
               loading="lazy"
-              style={{ width: "100%" }}
             />
-            <div className="container">
+            <div className="containert">
               <h4>
                 <b>Tula Magar</b>
               </h4>
@@ -125,9 +125,9 @@ const Home = () => {
               src={WeTheOne}
               alt="Avatar"
               loading="lazy"
-              style={{ width: "100%" }}
+              // style={{ width: "100%" }}
             />
-            <div className="container">
+            <div className="containert">
               <h4>
                 <b>Tula Magar</b>
               </h4>
@@ -149,9 +149,9 @@ const Home = () => {
               src={Globe}
               alt="Avatar"
               loading="lazy"
-              style={{ width: "100%" }}
+              // style={{ width: "100%" }}
             />
-            <div className="container">
+            <div className="containert">
               <h4>
                 <b>Tula Magar</b>
               </h4>
@@ -197,9 +197,9 @@ const Home = () => {
           consequat.
         </p>
       </div>
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
     </React.Fragment>
   );
 };

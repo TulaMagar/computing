@@ -97,8 +97,8 @@ function About() {
         </div>
       </div>
 
+      <h1 className="HeadingTitle">Team</h1>
       <div className="Team">
-        <h1 className="HeadingTitle">Team</h1>
         <div className="CardContainer">
           <div className="card">
             <img
@@ -106,9 +106,8 @@ function About() {
               src={WeTheOne}
               alt="Avatar"
               loading="lazy"
-              style={{ width: "100%" }}
             />
-            <div className="container">
+            <div className="containert">
               <h4>
                 <b>Tula Magar</b>
               </h4>
@@ -126,9 +125,8 @@ function About() {
               src={WeTheOne}
               alt="Avatar"
               loading="lazy"
-              style={{ width: "100%" }}
             />
-            <div className="container">
+            <div className="containert">
               <h4>
                 <b>Tula Magar</b>
               </h4>
@@ -140,15 +138,14 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="card ComeFromRight">
+          <div className="card">
             <img
               className="PersonImage"
               src={WeTheOne}
               alt="Avatar"
               loading="lazy"
-              style={{ width: "100%" }}
             />
-            <div className="container">
+            <div className="containert">
               <h4>
                 <b>Tula Magar</b>
               </h4>
