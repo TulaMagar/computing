@@ -1,88 +1,16 @@
 import React, { useState, useEffect } from "react";
-import "./RouterWithBootstrap.css";
+import "./Questions_List.css";
+import { BlogPath } from "../Data/Link_Path.js";
 import { Link } from "react-router-dom";
 import UseTitle from "../Title.js";
 
 //https://www.toptal.com/designers/htmlarrows/arrows/
 
-function RouterWithBootstrap() {
-  const BlogPath = [
-    {
-      url: "blog",
-      title: "Coming Soon Microsoft Outlook Navigation Panel",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog2",
-      title: "blog2 title",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog",
-      title: "Coming Soon Microsoft Outlook Navigation Panel",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog2",
-      title: "blog2 title",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog",
-      title: "Coming Soon Microsoft Outlook Navigation Panel",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog2",
-      title: "blog2 title",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog",
-      title: "Coming Soon Microsoft Outlook Navigation Panel",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog2",
-      title: "blog2 title",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog",
-      title: "Coming Soon Microsoft Outlook Navigation Panel",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog2",
-      title: "blog2 title",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog",
-      title: "Coming Soon Microsoft Outlook Navigation Panel",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog2",
-      title: "blog2 title",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog",
-      title: "Coming Soon Microsoft Outlook Navigation Panel",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-    {
-      url: "blog2",
-      title: "blog2 title",
-      description: "Coming Soon Microsoft Outlook Navigation Panel",
-    },
-  ];
-
+function Questions_List() {
   const [filter, setFilter] = useState("");
 
   useEffect(() => {});
-  UseTitle("computing question and answer");
+  UseTitle("Computing Question and Answer");
   return (
     <>
       <div id="container">
@@ -230,4 +158,4 @@ function RouterWithBootstrap() {
   );
 }
 
-export default RouterWithBootstrap;
+export default Questions_List;

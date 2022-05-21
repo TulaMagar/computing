@@ -1,5 +1,5 @@
 import React from "react";
-import "../RouterWithBootstrap.css";
+import "../Questions_List.css";
 import ComingSoon from "../../img/ComingSoon.png";
 import NewUpdate from "../../img/NewUpdate.png";
 import Version from "../../img/Version.PNG";
@@ -146,9 +146,7 @@ function blog() {
                 animateOut="bounceOutLeft"
               >
                 <h2>
-                  <a href="https://techcomputinginfo.com/">
-                    website
-                  </a>
+                  <a href="https://techcomputinginfo.com/">website</a>
                 </h2>
               </ScrollAnimation>
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../RouterWithBootstrap.css";
+import "../Questions_List.css";
 import ComingSoon from "../../img/ComingSoon.png";
 import NewUpdate from "../../img/NewUpdate.png";
 import Version from "../../img/Version.PNG";

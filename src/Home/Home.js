@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import SlideShow from "../Slideshow/SlideShow.js";
 import "./Home.css";
-import myGa from '../MyGa.js';
+import myGa from "../MyGa.js";
 import Clean from "../Background/clean.avif";
 import Moon from "../Background/moon.webp";
 import Sea from "../Background/sea.jpg";
@@ -11,7 +11,13 @@ import WeTheOne from "../img/pexels-lisa-fotios-3972467.jpg";
 import UseTitle from "../Title.js";
 
 const Home = () => {
-  const [myref, Ref, Ref2, Ref3, Ref4] = [useRef(), useRef(), useRef(),useRef(),useRef()];
+  const [myref, Ref, Ref2, Ref3, Ref4] = [
+    useRef(),
+    useRef(),
+    useRef(),
+    useRef(),
+    useRef(),
+  ];
   const [visible, setVisible] = useState();
 
   useEffect(() => {
@@ -26,39 +32,49 @@ const Home = () => {
     myGa();
   }, []);
 
-  const MoveToBenefits = () => window.scrollTo({
-    top: Ref.current.offsetTop - 115, 
-    behavior: "smooth"
-  })
+  const MoveToBenefits = () =>
+    window.scrollTo({
+      top: Ref.current.offsetTop - 115,
+      behavior: "smooth",
+    });
 
-  const MoveToTeam = () => window.scrollTo({
-    top: Ref2.current.offsetTop - 115,
-    behavior: "smooth"
-  })
+  const MoveToTeam = () =>
+    window.scrollTo({
+      top: Ref2.current.offsetTop - 115,
+      behavior: "smooth",
+    });
 
+  const MoveToMission = () =>
+    window.scrollTo({
+      top: Ref3.current.offsetTop - 115,
+      behavior: "smooth",
+    });
 
-  const MoveToMission = () => window.scrollTo({
-    top: Ref3.current.offsetTop - 115, 
-    behavior: "smooth"
-  })
+  const Move = () =>
+    window.scrollTo({
+      top: Ref4.current.offsetTop - 115,
+      behavior: "smooth",
+    });
 
-
-  const Move = () => window.scrollTo({
-    top: Ref4.current.offsetTop - 115,
-    behavior: "smooth"
-  })  
-
-  UseTitle("computing");
+  UseTitle("Computing");
   return (
     <React.Fragment>
       <SlideShow />
 
-      <div className="container-large" >
+      <div className="container-large">
         <div className="flex-container">
-          <button className="flex-child magenta" onClick={MoveToBenefits}>Move To Benefits</button>
-          <button className="flex-child green" onClick={MoveToTeam}>Move To Team</button>
-          <button className="flex-child magenta" onClick={MoveToMission}>Move To Mission</button>
-          <button className="flex-child green" onClick={Move}>Move To Gain</button>
+          <button className="flex-child magenta" onClick={MoveToBenefits}>
+            Move To Benefits
+          </button>
+          <button className="flex-child green" onClick={MoveToTeam}>
+            Move To Team
+          </button>
+          <button className="flex-child magenta" onClick={MoveToMission}>
+            Move To Mission
+          </button>
+          <button className="flex-child green" onClick={Move}>
+            Move To Gain
+          </button>
         </div>
       </div>
 
@@ -79,7 +95,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="container-L-image" >
+      <div className="container-L-image">
         <div className="Static-container">
           <div className="image">
             <img loading="lazy" src={Clean} alt="Clean not found" />
@@ -115,7 +131,9 @@ const Home = () => {
         </p>
       </div>
 
-      <h1 className="HeadingTitle" ref={Ref2} >Team</h1>
+      <h1 className="HeadingTitle" ref={Ref2}>
+        Team
+      </h1>
       <div className="Team">
         <div className="CardContainer">
           <div

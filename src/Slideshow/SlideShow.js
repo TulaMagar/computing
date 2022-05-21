@@ -1,31 +1,8 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import PastPresentFuture from "./SlideshowImage/pastPresentFuture.png";
-import OlOl from "./SlideshowImage/olol.jpg";
-import Meeting from "./SlideshowImage/meeting.jpg";
-import Cute from "./SlideshowImage/cute.jpg";
 import "./Slideshow.css";
-
-const slideImages = [
-  {
-    url: PastPresentFuture,
-    title: "Evolving",
-    caption: "Computing updates",
-  },
-  {
-    url: OlOl,
-    caption: "🤔",
-  },
-  {
-    url: Meeting,
-    caption: "👏",
-  },
-  {
-    url: Cute,
-    caption: "😀",
-  },
-];
+import { slideImages } from "../Data/Slideshow_path.js";
 
 const Slideshow = () => {
   return (

@@ -4,7 +4,7 @@ import "./SytleEngine.css";
 import Navigation from "./Navigation/Navigation.js";
 import Home from "./Home/Home.js";
 import About from "./About/About.js";
-import Shop from "./Questions/RouterWithBootstrap.js";
+import Shop from "./Questions/Questions_List.js";
 import Login from "./Auth/Login.js";
 import Careers from "./Careers/Careers.js";
 import {
@@ -29,9 +29,7 @@ const ScrollToTop = () => {
   return null;
 };
 
-
 class ErrorHandler extends React.Component {
-
   state = {
     hasError: false,
   };
@@ -42,16 +40,11 @@ class ErrorHandler extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      return (
-        <p>
-          Loading has failed. Try refreshing the browser!
-        </p>
-      );
+      return <p>Loading has failed. Try refreshing the browser!</p>;
     }
 
     return this.props.children;
   }
-
 }
 const Blog = () => {
   const { blogs } = useParams();
