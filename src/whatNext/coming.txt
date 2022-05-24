@@ -2,8 +2,7 @@
     Home Page 
     About Page 
 
-# Change 
-    About Page content in Question Page
+# make code more readable 
 
 
 

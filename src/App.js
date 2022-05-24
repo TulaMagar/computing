@@ -4,7 +4,7 @@ import "./SytleEngine.css";
 import Navigation from "./Navigation/Navigation.js";
 import Home from "./Home/Home.js";
 import About from "./About/About.js";
-import Shop from "./Questions/Questions_List.js";
+import Questions_List from "./Questions/Questions_List.js";
 import Login from "./Auth/Login.js";
 import Careers from "./Careers/Careers.js";
 import {
@@ -40,13 +40,13 @@ class ErrorHandler extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      return <p>Loading has failed. Try refreshing the browser!</p>;
+      return <p className="loading">Loading has failed. Try refreshing the browser!</p>;
     }
 
     return this.props.children;
   }
 }
-const Blog = () => {
+const Blog = (test) => {
   const { blogs } = useParams();
 
   const [BlogItem, setBlogItem] = React.useState();
@@ -79,7 +79,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/careers" element={<Careers />} />
-          <Route exact path="/question" element={<Shop />} />
+          <Route exact path="/question" element={<Questions_List />} />
           <Route path="/question/:blogs" element={<Blog />} />
           <Route exact path="/login" element={<Login />} />
           <Route path="*" element={<Navigate to="/" replace />} />

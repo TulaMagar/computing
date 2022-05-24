@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from "react";
 import SlideShow from "../Slideshow/SlideShow.js";
 import "./Home.css";
 import myGa from "../MyGa.js";
-import Clean from "../Background/clean.avif";
 import Moon from "../Background/moon.webp";
 import Sea from "../Background/sea.jpg";
 import Globe from "./Globe/giphy.gif";
@@ -98,7 +97,7 @@ const Home = () => {
       <div className="container-L-image">
         <div className="Static-container">
           <div className="image">
-            <img loading="lazy" src={Clean} alt="Clean not found" />
+            <img loading="lazy" src={Sea} alt="Clean not found" />
           </div>
 
           <div className="image">
@@ -109,7 +108,7 @@ const Home = () => {
           </div>
 
           <div className="image">
-            <img loading="lazy" src={Clean} alt="Clean not found" />
+            <img loading="lazy" src={Moon} alt="Clean not found" />
           </div>
         </div>
       </div>
