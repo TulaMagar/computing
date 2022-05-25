@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcomputing=self.webpackChunkcomputing||[]).push([[857],{5857:function(t,e,n){n.r(e),n.d(e,{default:function(){return u}});n(2791);var i=n(184);function u(){return(0,i.jsx)("div",{style:{marginTop:"20vh",width:"100vw",height:"100vh",textAlign:"center",fontSize:"100px"},children:"How to Upgrade React?"})}}}]);
+//# sourceMappingURL=857.b6a26ab2.chunk.js.map

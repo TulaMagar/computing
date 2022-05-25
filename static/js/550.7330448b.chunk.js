@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcomputing=self.webpackChunkcomputing||[]).push([[550],{2550:function(t,n,e){e.r(n),e.d(n,{default:function(){return r}});e(2791);var i=e(184);function r(){return(0,i.jsx)("div",{style:{marginTop:"20vh",width:"100vw",height:"100vh",textAlign:"center",fontSize:"100px"},children:"How to Create Nav Bar Using BootStrap in React?"})}}}]);
+//# sourceMappingURL=550.7330448b.chunk.js.map
