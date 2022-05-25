@@ -4,9 +4,10 @@ import "./SytleEngine.css";
 import Navigation from "./Navigation/Navigation.js";
 import Home from "./Home/Home.js";
 import About from "./About/About.js";
-import Questions_List from "./Questions/Questions_List.js";
+import QuestionsList from "./Questions/Questions_List.js";
 import Login from "./Auth/Login.js";
 import Careers from "./Careers/Careers.js";
+
 import {
   HashRouter,
   Routes,
@@ -79,7 +80,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/careers" element={<Careers />} />
-          <Route exact path="/question" element={<Questions_List />} />
+          <Route exact path="/question" element={<QuestionsList />} />
           <Route path="/question/:blogs" element={<Blog />} />
           <Route exact path="/login" element={<Login />} />
           <Route path="*" element={<Navigate to="/" replace />} />

@@ -3,14 +3,10 @@ import "../Questions_List.css";
 import "bootstrap/dist/css/bootstrap.css";
 import UseTitle from "../../Title.js";
 import "../QuestionList/TitleInReact.css"
-import {Link} from "react-router-dom";
-
-import Blog  from "../../Questions/QuestionList/blog.js";
 
 function TitleInReact() {
   UseTitle("How to Create Title in React?");
 
-  const BlogItem = () => { <Blog/> }
   const [ShowIframe, SetShowIframe] = useState(false);
   return (
     <>
@@ -45,16 +41,25 @@ function TitleInReact() {
 
           <h3 className="ReactTitleBegin">Let's begin</h3>
           <p>
-              I am going to create a seperate file called Title.js in my src folder. In Title file, I am going to create a custom react hook and export it at the end. 
+              First, let's create a seperate file and name Title.js in the src folder from the react project. Title.js file going to be a custom component that we are 
+              going to create and export the component. Now, we can able to reuse the Title.js component to other files such as App.js. If we want to reuse the Title.js then
+              we must import the Title.js in the other files such as App.js and pass the programming string as a title of the page. The example is given below in react code
           </p>
-          {ShowIframe ? <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CI_mFIfFars" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowFullScreen></iframe> : null}
-          <button onClick={() => SetShowIframe(!ShowIframe)}>teswt</button>
-          <button><a href="https://techcomputinginfo.com/#/question/blog">For example, relating questions</a></button>
-          <button onClick={BlogItem()}>testtt</button>
+          
+          {ShowIframe ? <iframe src="https://codesandbox.io/embed/how-to-display-html-file-when-clicks-on-list-of-links-in-react-forked-k9ypqg?fontsize=14&hidenavigation=2&theme=dark"
+            className="code"
+            title="how-to-display-html-file-when-clicks-on-list-of-links-in-react (forked)"
+            allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+            sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+          ></iframe>: null}
+          <button onClick={() => SetShowIframe(!ShowIframe)}>{!ShowIframe ? `LiveCodeEditor` : `CloseLiveEditor`}</button>
         </div>
 
         <div id="right">
-          <h1>RIGHT SIDE</h1>
+          <h3 style={{color:"lightblue"}}>Related Question and Answer</h3>
+          <button><a href="https://techcomputinginfo.com/#/question/blog">For example, relating questions For example, relating questions For example, relating questions</a></button>
+          <br />
+          <button><a href="https://techcomputinginfo.com/#/question/blog">For example, relating questions</a></button>
           <br />
           <h1>RIGHT SIDE</h1>
           <br />
@@ -103,36 +108,12 @@ function TitleInReact() {
           <h1>RIGHT SIDE</h1>
           <br />
           <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
           <h1>RIGHT SIDE</h1>
           <br />
           <h1>RIGHT SIDE</h1>
           <br />
           <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
+
           <br />
         </div>
       </div>
