@@ -4,7 +4,7 @@
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: var(--text-center);
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -61,7 +61,7 @@
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: var(--text-center);
   
 }
 .contin > .weTheOne{
@@ -89,7 +89,7 @@
   margin: auto;
   width: 90%;
   margin-top: 70px;
-  border: 1px solid whitesmoke;
+  border: 1px solid var(--text-color);
   padding: 30px;  
   resize: both;
   overflow: auto;
@@ -98,16 +98,12 @@
 
 .WhatWeDoInfoHeader{
   font-weight: bold;
-  color: black;
   text-decoration:solid;
-  color: whitesmoke;
   text-align: center;
 }
 .WhatWeDoInfo{
-  color: black;
   font-size: 22px !important;
   text-align: left;
-  color: whitesmoke;
 }
 
 
@@ -142,9 +138,6 @@
 
 }
 
-/* #Left_Filp{
-  background-color: aqua;
-} */
 
 @media(min-width:767px){
   .ToWhom{
@@ -154,7 +147,7 @@
     flex-direction: row;
     margin: auto;
     width: 90%;
-    text-align: center;
+    text-align: var(--text-center);
     margin-top: 100px;
     position: relative;
   }
@@ -164,7 +157,7 @@
     -ms-flex: 1;
     flex: 1;
     line-height: 48vh;
-    text-align: center;
+    text-align: var(--text-center);
     border-bottom-right-radius: 590px 100px;
     border-top-right-radius: 590px 100px;
     border-bottom-left-radius: 20px;
@@ -199,8 +192,8 @@
     border-bottom-left-radius: 590px 100px;
     border-top-left-radius: 590px 100px;
     line-height: 48vh;
-    text-align: center;
-    text-align: left;
+    text-align: var(--text-center);
+    text-align: var(--text-left);
     padding: 10px;
   }
   
@@ -217,13 +210,13 @@
     -ms-flex: 1;
     flex: 1;
     line-height: 55vh;
-    text-align: center;
+    text-align: var(--text-center);
     border-bottom-left-radius: 590px 100px;
     border-top-left-radius: 590px 100px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     background-image: linear-gradient(rgb(185, 163, 163) 5%, rgb(62, 80, 62) 59%, rgb(133, 133, 204) 150%);
-    text-align: left;
+    text-align: var(--text-left);
     padding: 10px;
     
   }
@@ -256,12 +249,6 @@
   }
 
   .CardContainer{
-    /* display: flex;
-    margin: auto;
-    height: auto;
-    gap:20px;
-    margin-top: 150px; */
-
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -278,6 +265,10 @@
     padding: 20px;
     position: absolute;
   }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
   
   .card > .PersonImage{
     position: absolute;
@@ -289,10 +280,7 @@
     width: 200px;
     border-radius: 100px;
     margin-top: -100px;
-    border:5px solid rgb(53, 52, 52);
-  }
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border:5px solid var(--background-color);
   }
   
   .containert {
@@ -356,12 +344,12 @@
     padding: 20px;
     margin: auto;
     width: 95%;
-    text-align: center;
+    text-align: var(--text-center);
     margin-top: 30px;
   }
 
   .ToWhom > .weTheOne{
-    text-align: center;
+    text-align: var(--text-center);
     background-image: linear-gradient(rgb(185, 163, 163) 10%, rgb(62, 80, 62) 56%, rgb(151, 151, 240) 170%);
     border-radius: 8px;
     
@@ -383,7 +371,7 @@
   
   
   .ToWhom > .Third{
-    text-align: center;
+    text-align: var(--text-center);
     background-image: linear-gradient(rgb(185, 163, 163) 5%, rgb(62, 80, 62) 59%, rgb(133, 133, 204) 150%);
     word-wrap: break-word;
     border-radius: 8px;

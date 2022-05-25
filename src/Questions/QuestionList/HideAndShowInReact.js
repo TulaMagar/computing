@@ -1,7 +1,117 @@
-import React from 'react'
+import React from "react";
+import UseTitle from "../../Title.js";
 
-export default function HideAndShowInReact() {
+//https://www.toptal.com/designers/htmlarrows/arrows/
+
+function HideAndShowInReact() {
+  UseTitle("Computing Question and Answer");
   return (
-    <div style={{marginTop: "20vh", width:"100vw", height:"100vh", textAlign:"center", fontSize:"100px" }}>How to Hide and Show things in React?</div>
-  )
+    <>
+      <div id="container">
+        <div id="left">
+          <br />
+          <h1>RIGHTTT SIDE1</h1>
+          <br />
+          <h1>RIGHT SIDE2</h1>
+          <br />
+          <h1>RIGHT SIDE3</h1>
+          <br />
+          <h1>RIGHT SIDE4</h1>
+          <br />
+          <h1>RIGHT SIDE5</h1>
+          <br />
+          <h1>RIGHT SIDE6</h1>
+          <br />
+          <h1>RIGHTTT SIDE7</h1>
+        </div>
+
+        <div id="middle"></div>
+
+        <div id="right">
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHT SIDE</h1>
+          <br />
+          <h1>RIGHTT SIDE</h1>
+          <br />
+        </div>
+      </div>
+    </>
+  );
 }
+
+export default HideAndShowInReact;

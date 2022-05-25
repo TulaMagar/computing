@@ -1,0 +1,25 @@
+:root{
+
+    /* Colors */
+    --background-color: rgb(53, 52, 52);
+
+
+    /* Text Colors */
+    --default-text-color: rgb(255, 255, 255);
+    --Black-text-color: black;
+    --question-link-color: rgb(197, 188, 55);
+
+
+    /* Position */
+
+    --text-center: center;
+    --text-left: left;
+
+
+    /* Fonts */
+
+
+
+
+    /* Flexs */
+}

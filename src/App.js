@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "./CSS_Variables.css";
 import "./App.css";
 import "./SytleEngine.css";
 import Navigation from "./Navigation/Navigation.js";
@@ -41,7 +42,11 @@ class ErrorHandler extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      return <p className="loading">Loading has failed. Try refreshing the browser!</p>;
+      return (
+        <p className="loading">
+          Loading has failed. Try refreshing the browser!
+        </p>
+      );
     }
 
     return this.props.children;
@@ -62,7 +67,7 @@ const Blog = (test) => {
   return (
     <>
       <ErrorHandler>
-        <React.Suspense fallback={<div className="wait"></div>}>
+        <React.Suspense fallback={<div className="loading"></div>}>
           {BlogItem && <BlogItem />}
         </React.Suspense>
       </ErrorHandler>

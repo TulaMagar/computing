@@ -3,48 +3,30 @@
 }
 
 .background {
-  /* background-image: url("./Background/HomeBackground.jpg"); */
-  background-color: rgb(53, 52, 52);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: whitesmoke;
+  background-color: var(--background-color);
+  color: var(--default-text-color); /* default text color for all the pages*/
   opacity: 0.9;
-  animation: gradient 120s linear infinite;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .Logo{
-  text-align: center;
+  text-align: var(--text-center);
   padding: 30px;
   padding-bottom: 50px;
 }
 
-.Logo > a{
-  color: whitesmoke;
+.Logo > a {
+  color: var(--default-text-color);
 }
 
 .Logo>a:hover {
-  color: rgb(197, 188, 55);
+  color: var(--question-link-color);
 }
 
-.wait{
+.loading{
   margin: auto;
-  border: 20px solid #000000;
+  border: 20px solid var(--Black-text-color);
   border-radius: 50%;
-  border-top: 20px solid #e9c112;
+  border-top: 20px solid var(--question-link-color);
   width: 200px;
   height: 200px;
   animation: spinner 1.5s linear infinite;
