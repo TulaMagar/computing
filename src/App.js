@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./CSS_Variables.css";
 import "./App.css";
-import "./SytleEngine.css";
 import Navigation from "./Navigation/Navigation.js";
 import Home from "./Home/Home.js";
 import About from "./About/About.js";
