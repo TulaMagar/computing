@@ -51,18 +51,17 @@ function TitleInReact() {
             App.js. If we want to reuse the Title.js then we must import the
             Title.js in the other files such as App.js and pass the programming
             string as a title of the page. The example is given below in react
-            code and tap on <i class="material-icons">menu</i> to expand. It is
-            located on the top left side.
+            code and tap on <i className="material-icons">menu</i> to expand. It
+            is located on the top left side.
           </p>
 
           {!ShowIframe ? (
             <iframe
               loading="lazy"
-              src="https://codesandbox.io/embed/titleinreact-v9k6dx?fontsize=14&hidenavigation=1&theme=dark"
+              // src="https://codesandbox.io/s/titleinreact-v9k6dx?file=/package.json"  // codesandbox link
+              src="https://stackblitz.com/edit/react-ts-7rzdzj?file=Title.tsx,App.tsx" // stackblitz link
               className="code"
               title="TitleInReact"
-              allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-              sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
             ></iframe>
           ) : null}
           <button onClick={() => SetShowIframe(!ShowIframe)}>

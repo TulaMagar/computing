@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import SlideShow from "../Slideshow/SlideShow.js";
 import "./Home.css";
-import myGa from "../MyGa.js";
 import Moon from "../Background/moon.webp";
 import Sea from "../Background/sea.jpg";
 import Globe from "./Globe/giphy.gif";
@@ -26,10 +25,6 @@ const Home = () => {
     });
     observer.observe(myref.current);
   }, [myref]);
-
-  useEffect(() => {
-    myGa();
-  }, []);
 
   const MoveToBenefits = () =>
     window.scrollTo({
