@@ -57,15 +57,15 @@ function TitleInReact() {
 
           {!ShowIframe ? (
             <iframe
-              loading="lazy"
               // src="https://codesandbox.io/s/titleinreact-v9k6dx?file=/package.json"  // codesandbox link
-              src="https://stackblitz.com/edit/react-ts-7rzdzj?file=Title.tsx,App.tsx" // stackblitz link
+              src="https://stackblitz.com/edit/react-8hfq6z?embed=1&file=src/App.js,src/Title.js" // stackblitz link
+              // src="https://stackblitz.com/edit/react-ts-7rzdzj?embed=1&file=App.tsx"
               className="code"
               title="TitleInReact"
             ></iframe>
           ) : null}
           <button onClick={() => SetShowIframe(!ShowIframe)}>
-            {!ShowIframe ? `LiveCodeEditor` : `CloseLiveEditor`}
+            {!ShowIframe ? `CloseLiveEditor` : `LiveCodeEditor`}
           </button>
         </div>
 
