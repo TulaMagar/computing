@@ -40,9 +40,11 @@ export const BlogPath = [
       "Sometimes we want to change the button color when we click and select items on it",
   },
   {
-    url: "blog2",
-    title: "blog2 title",
-    description: "Coming Soon Microsoft Outlook Navigation Panel",
+    url: "PyScriptIntro",
+    title: "Getting started with PyScript",
+    description: `Based on Pyscript, PyScript is a Pythonic alternative to Scratch, JSFiddle, and other "easy to use" 
+    programming frameworks, with the goal of making the web a friendly, hackable place where anyone can author 
+    interesting and interactive applications.`,
   },
   {
     url: "blog",

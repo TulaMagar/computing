@@ -45,3 +45,17 @@
   padding: 20px;
   text-align: center;
 }
+
+
+.NoUnderLine{
+  text-decoration: none;
+  color: var(--question-link-color);
+}
+
+.pyScriptFullPath{
+  color: var(--question-link-color);
+}
+.CodeSampleBackground{
+  background-color: var(--SampleCode-background);
+  height: 70px;
+}
