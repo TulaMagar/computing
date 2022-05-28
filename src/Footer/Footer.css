@@ -1,43 +1,31 @@
-.FullWide{
-    border: 1px solid whitesmoke;
-    padding: 30px 5px;
+.FooterBackgroundColor{
+    background-color: var(--Footer-Background-Color)
 }
-.Footer {
-    position: sticky;
-    text-align: center;
+.FooterWidth{
+    height: auto;
     margin: auto;
     width: 90%;
-    column-count: 3;
+    padding: 10px;
+}
+.FooterContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 25px;
 }
 
-.HeadingTitle {
-    font-weight: bold;
-    font-size: 28px;
-    color: black;
-    text-decoration: solid;
-    color: whitesmoke;
-    padding: 20px;
+.FooterLinkColors{
+    text-decoration: none;
+    color: var(--default-text-color)
 }
 
-.WhatWeDoInfo {
-    color: black;
-    font-size: 22px !important;
-    text-align: left;
-    color: whitesmoke;
+.FooterLinkColors:hover,
+.FooterLinkColors:active {
+    text-decoration: underline;
+    color: var(--question-link-color)
 }
 
-@media (max-width: 640px) {
-
-    .Footer {
-        text-align: center;
-        column-count: 1;
-    }
-
-}
-
-@media (min-width: 641px) and (max-width: 970px){
-    .Footer {
-        text-align: center; 
-        column-count: 1;
-    }
+.FooterContainer > div > li{
+    list-style: none;
 }

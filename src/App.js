@@ -7,6 +7,7 @@ import About from "./About/About.js";
 import QuestionsList from "./Questions/Questions_List.js";
 import Login from "./Auth/Login.js";
 import Careers from "./Careers/Careers.js";
+import Contact from "./Contact.js";
 
 import {
   HashRouter,
@@ -87,15 +88,14 @@ function App() {
           <Route exact path="/question" element={<QuestionsList />} />
           <Route path="/question/:blogs" element={<Blog />} />
           <Route exact path="/login" element={<Login />} />
+
+          {/* Links for Footer */}
+          <Route exact path="/contact" element={<Contact />} />
+
+          {/* Redirect to home page if page not found*/}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
-        <div className="Logo">
-          <a href="https://iconscout.com/icons/tmall" rel="noopener">
-            Tmall Logo Icon
-          </a>{" "}
-          on <a href="https://iconscout.com">Iconscout</a>
-        </div>
       </div>
     </HashRouter>
   );
