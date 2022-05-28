@@ -57,5 +57,23 @@
 }
 .CodeSampleBackground{
   background-color: var(--SampleCode-background);
-  height: 70px;
+  padding: 20px;
+}
+.testcolor{
+  color: var(--question-link-color);
+}
+.pl-kos{
+  color: var(--default-text-color);
+}
+.pl-ent{
+  color: rgb(135, 216, 243);
+}
+.pl-c1{
+  color: rgb(118, 247, 128);
+}
+.pl-s{
+  color: var(--question-link-color);
+}
+.copy{
+  float: right;
 }
