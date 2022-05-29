@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navigation.css";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/js/bootstrap.bundle";
 import { NavLink } from "react-router-dom";
 
@@ -10,36 +10,47 @@ function Navigation() {
   const [expanded, setExpanded] = useState(false);
   return (
     <>
-      <Navbar
-        collapseOnSelect
-        sticky="top"
-        expand="lg"
-        bg="dark"
-        variant="dark"
-        className="background COLOR"
-        expanded={expanded}
-      >
-        <Container>
-          <Navbar.Brand onClick={() => setExpanded(false)} as={NavLink} to="/">
+      <div className="size">
+        <Navbar
+          collapseOnSelect
+          sticky="top"
+          expand="lg"
+          variant="dark"
+          className="bg"
+          expanded={expanded}
+        >
+          <Navbar.Brand
+            className="margin-left"
+            onClick={() => setExpanded(false)}
+            as={NavLink}
+            to="/"
+          >
             Computing
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             onClick={() => setExpanded(expanded ? false : "expanded")}
           />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
+          <Navbar.Collapse className="fl" id="responsive-navbar-nav">
+            <Nav className="me-auto justify-content-end margin-left">
               {/* <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/">
-                Home
-              </Nav.Link> */}
+              Home
+            </Nav.Link> */}
             </Nav>
-            <Nav>
+            <Nav className="margin-right">
               <Nav.Link
                 onClick={() => setExpanded(false)}
                 as={NavLink}
                 to="/about"
               >
                 About
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => setExpanded(false)}
+                as={NavLink}
+                to="/careers"
+              >
+                Career
               </Nav.Link>
               <Nav.Link
                 onClick={() => setExpanded(false)}
@@ -57,8 +68,8 @@ function Navigation() {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
-      </Navbar>
+        </Navbar>
+      </div>
     </>
   );
 }

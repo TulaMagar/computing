@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import SlideShow from "../Slideshow/SlideShow.js";
+import Slideshow from "../Slideshow/SlideShow.js";
 import "./Home.css";
 import Moon from "../Background/moon.webp";
 import Sea from "../Background/sea.jpg";
@@ -53,7 +53,7 @@ const Home = () => {
   UseTitle("Computing");
   return (
     <React.Fragment>
-      <SlideShow />
+      <Slideshow />
 
       <div className="container-large">
         <div className="flex-container">

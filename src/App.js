@@ -9,7 +9,7 @@ import {
   Contact,
   Tour,
 } from "./Import/Import.js";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
   HashRouter,
   Routes,
@@ -80,7 +80,7 @@ function App() {
   return (
     <HashRouter>
       <ScrollToTop />
-      <div lazy="loading" className="App background">
+      <div lazy="loading" className="App">
         <Navigation />
         <Routes>
           <Route exact path="/" element={<Home />} />

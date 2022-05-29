@@ -1,13 +1,22 @@
 import React from "react";
-import { Slide } from "react-slideshow-image";
+import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import "./Slideshow.css";
 import { slideImages } from "../Data/Slideshow_path.js";
 
+const zoomOutProperties = {
+  duration: 5000,
+  transitionDuration: 500,
+  infinite: true,
+  indicators: true,
+  scale: 0.4,
+  arrows: true,
+};
+
 const Slideshow = () => {
   return (
     <div className="slide-container">
-      <Slide>
+      <Zoom {...zoomOutProperties}>
         {slideImages.map((slideImage, index) => (
           <div className="each-slide" key={index}>
             <div className="section">
@@ -25,7 +34,7 @@ const Slideshow = () => {
             </div>
           </div>
         ))}
-      </Slide>
+      </Zoom>
     </div>
   );
 };
