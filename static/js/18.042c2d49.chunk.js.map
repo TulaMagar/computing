@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/18.042c2d49.chunk.js","mappings":"4KAEe,SAASA,IACtB,OAAO","sources":["Questions/QuestionList/FooterInReact.js"],"sourcesContent":["import React from \"react\";\n\nexport default function FooterInReact() {\n  return <div>FooterInReact</div>;\n}\n"],"names":["FooterInReact"],"sourceRoot":""}
