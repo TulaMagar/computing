@@ -3,8 +3,10 @@
     position: sticky;
     padding: relative;
     top: 0;
-    z-index: 1;
-    background-color: var(--background-color);
+    z-index: 100; /* giving higher number to make sure it stays on top */
+    /* background-color: #ffffff10;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px); */
 }
 .bg{
     opacity: 0.9;
