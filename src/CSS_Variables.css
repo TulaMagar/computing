@@ -6,10 +6,17 @@
 
     /* Text Colors */
     --default-text-color: rgb(255, 255, 255);
+    --Mini-info-bg-color: rgb(33, 186, 197);
     --Black-text-color: black;
     --question-link-color: rgb(197, 188, 55);
     --SampleCode-background: #000000;
-    --Footer-Background-Color: #737373;
+    --Footer-Background-Color: #00539CFF !important;
+    --Paragraph-Background-Color: #6A8A82 !important;
+    --Everything-Background-Color: #455073 !important;
+    --Bg-Benefit-Color: #1f376a !important;
+    --Learn-Background-Color: #3CA3A3 !important;
+    --Mission-Background-Color: #132237!important;
+
 
     /* Position */
 

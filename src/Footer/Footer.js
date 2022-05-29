@@ -12,6 +12,7 @@ function Footer() {
         <div className="FooterWidth">
           <div className="FooterContainer">
             <div className="LeftFooter">
+              <h3 className="Footer_Column_Header">Company</h3>
               <li>
                 {" "}
                 <Link className="FooterLinkColors" to="/contact">
@@ -26,9 +27,24 @@ function Footer() {
                   about{" "}
                 </Link>
               </li>
+              <li>
+                {" "}
+                <Link className="FooterLinkColors" to="/careers">
+                  {" "}
+                  Career{" "}
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link className="FooterLinkColors" to="/tour">
+                  {" "}
+                  Tour{" "}
+                </Link>
+              </li>
             </div>
 
             <div className="MiddleFooter">
+              <h3 className="Footer_Column_Header">Product</h3>
               <li>
                 {" "}
                 <Link className="FooterLinkColors" to="/contact">
@@ -46,6 +62,7 @@ function Footer() {
             </div>
 
             <div className="RightFooter">
+              <h3 className="Footer_Column_Header">Social</h3>
               <li>
                 {" "}
                 <Link className="FooterLinkColors" to="/contact">

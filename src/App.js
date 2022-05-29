@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
-import "./CSS_Variables.css";
-import "./App.css";
-import Navigation from "./Navigation/Navigation.js";
-import Home from "./Home/Home.js";
-import About from "./About/About.js";
-import QuestionsList from "./Questions/Questions_List.js";
-import Login from "./Auth/Login.js";
-import Careers from "./Careers/Careers.js";
-import Contact from "./Contact.js";
+import {
+  Navigation,
+  Home,
+  About,
+  QuestionsList,
+  Login,
+  Careers,
+  Contact,
+  Tour,
+} from "./Import/Import.js";
 
 import {
   HashRouter,
@@ -91,6 +92,7 @@ function App() {
 
           {/* Links for Footer */}
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/tour" element={<Tour />} />
 
           {/* Redirect to home page if page not found*/}
           <Route path="*" element={<Navigate to="/" replace />} />
