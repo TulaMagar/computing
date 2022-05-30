@@ -16,10 +16,7 @@
     min-height: 10vh;
     margin: auto;
     width: 90%;
-    left: 100px;
-    padding: calc(25px + 2px);
-   
-    
+    padding: 20px;
 }
 .change-color{
     color: var(--default-text-color);
