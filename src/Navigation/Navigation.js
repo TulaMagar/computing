@@ -3,11 +3,14 @@ import "./Navigation.css";
 import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/js/bootstrap.bundle";
 import { NavLink } from "react-router-dom";
+import { GoogleLogin, GoogleLogout } from "react-google-login";
 
 //https://stackoverflow.com/questions/40491483/hide-collapse-navbar-after-link-click-react-redux-react-bootstrap
 
 function Navigation() {
   const [expanded, setExpanded] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <>
       <div className="size">
@@ -15,6 +18,7 @@ function Navigation() {
           collapseOnSelect
           sticky="top"
           expand="lg"
+          // bg="dark"
           variant="dark"
           className="bg"
           expanded={expanded}
@@ -37,11 +41,12 @@ function Navigation() {
               Home
             </Nav.Link> */}
             </Nav>
-            <Nav className="margin-right">
+            <Nav>
               <Nav.Link
                 onClick={() => setExpanded(false)}
                 as={NavLink}
                 to="/about"
+                className="change-color"
               >
                 About
               </Nav.Link>
@@ -59,13 +64,43 @@ function Navigation() {
               >
                 Questions
               </Nav.Link>
-              <Nav.Link
-                onClick={() => setExpanded(false)}
-                as={NavLink}
-                to="/login"
-              >
-                Login
+
+              <Nav.Link onClick={() => setExpanded(false)}>
+                <GoogleLogin
+                  clientId="362106271336-lvllg1b0gt944t15dkdlkrs165s387v9.apps.googleusercontent.com"
+                  render={(renderProps) => (
+                    <button
+                      className="login"
+                      onClick={renderProps.onClick}
+                      disabled={renderProps.disabled}
+                    >
+                      Login
+                    </button>
+                  )}
+                  buttonText="Login"
+                  isSignedIn={true}
+                  cookiePolicy={"single_host_origin"}
+                  onSuccess={(response) => {
+                    setIsLoggedIn(() => {
+                      return { isLoggedIn: true };
+                    });
+                  }}
+                  onFailure={(response) => {
+                    setIsLoggedIn(() => {
+                      return { isLoggedIn: false };
+                    });
+                  }}
+                />
               </Nav.Link>
+              {/* <GoogleLogout
+                clientId="362106271336-lvllg1b0gt944t15dkdlkrs165s387v9.apps.googleusercontent.com"
+                buttonText="Logout"
+                onLogoutSuccess={(response) => {
+                  setIsLoggedIn(() => {
+                    return { isLoggedIn: false };
+                  });
+                }}
+              ></GoogleLogout> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

@@ -8,6 +8,7 @@ import {
   Careers,
   Contact,
   Tour,
+  LogoutButton,
 } from "./Import/Import.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
