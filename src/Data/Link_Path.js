@@ -47,9 +47,10 @@ export const BlogPath = [
     interesting and interactive applications.`,
   },
   {
-    url: "blog",
-    title: "Coming Soon Microsoft Outlook Navigation Panel",
-    description: "Coming Soon Microsoft Outlook Navigation Panel",
+    url: "FooterInReact",
+    title: "How to create footer in React?",
+    description:
+      "Sometimes we want to create a footer in react and add links of website resource to the bottom of the page",
   },
   {
     url: "blog2",

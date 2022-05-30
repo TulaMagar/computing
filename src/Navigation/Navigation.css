@@ -17,7 +17,7 @@
     margin: auto;
     width: 90%;
     left: 100px;
-    padding: 25px;
+    padding: calc(25px + 2px);
    
     
 }
