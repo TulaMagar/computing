@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcomputing=self.webpackChunkcomputing||[]).push([[18],{3018:function(n,t,u){u.r(t),u.d(t,{default:function(){return c}});u(2791);var e=u(184);function c(){return(0,e.jsx)("div",{children:"FooterInReact"})}}}]);
-//# sourceMappingURL=18.042c2d49.chunk.js.map
