@@ -52,6 +52,7 @@ function Footer() {
                   contact{" "}
                 </Link>
               </li>
+
               <li>
                 {" "}
                 <Link className="FooterLinkColors" to="/about">
@@ -60,7 +61,23 @@ function Footer() {
                 </Link>
               </li>
             </div>
-
+            <div className="Right_Footer">
+              <h3 className="Footer_Column_Header">Improve</h3>
+              <li>
+                {" "}
+                <Link className="FooterLinkColors" to="/survey">
+                  {" "}
+                  Survey{" "}
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link className="FooterLinkColors" to="/about">
+                  {" "}
+                  about{" "}
+                </Link>
+              </li>
+            </div>
             <div className="RightFooter">
               <h3 className="Footer_Column_Header">Social</h3>
               <li>

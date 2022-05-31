@@ -4,11 +4,13 @@ import {
   Home,
   About,
   QuestionsList,
+  Books,
   Login,
   Careers,
   Contact,
   Tour,
-  LogoutButton,
+  Survey,
+  // LogoutButton,
 } from "./Import/Import.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -88,12 +90,14 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/careers" element={<Careers />} />
           <Route exact path="/question" element={<QuestionsList />} />
+          <Route exact path="/book" element={<Books />} />
           <Route path="/question/:blogs" element={<Blog />} />
           <Route exact path="/login" element={<Login />} />
 
           {/* Links for Footer */}
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/tour" element={<Tour />} />
+          <Route exact path="/survey" element={<Survey />} />
 
           {/* Redirect to home page if page not found*/}
           <Route path="*" element={<Navigate to="/" replace />} />

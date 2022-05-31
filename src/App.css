@@ -7,7 +7,6 @@
 .App{
   background-color: var(--background-color);
   color: var(--default-text-color); /* default text color for all the pages*/
-  opacity: 0.9;
 }
 
 .Logo{

@@ -3,7 +3,7 @@
     height: auto;
     margin: auto;
     width: 90%;
-    margin-top: 10px;
+    margin-top: 3px;
     padding: 10px;
 }
 
@@ -74,10 +74,10 @@
 }
 
 .b_g_Info{
-    
     background-color: var(--Everything-Background-Color);
     color: var(--default-text-color);
     padding-bottom: 20px;
+    
 }
 
 .Benefit_bg{

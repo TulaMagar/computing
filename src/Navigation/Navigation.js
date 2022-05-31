@@ -64,7 +64,13 @@ function Navigation() {
               >
                 Questions
               </Nav.Link>
-
+              <Nav.Link
+                onClick={() => setExpanded(false)}
+                as={NavLink}
+                to="/book"
+              >
+                Books
+              </Nav.Link>
               <Nav.Link onClick={() => setExpanded(false)}>
                 <GoogleLogin
                   clientId="362106271336-lvllg1b0gt944t15dkdlkrs165s387v9.apps.googleusercontent.com"
