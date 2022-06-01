@@ -98,64 +98,86 @@ function About() {
       </div>
 
       <h1 className="HeadingTitle">Team</h1>
+
       <div className="Team">
-        <div className="CardContainer">
-          <div className="card">
-            <img
-              className="PersonImage"
-              src={WeTheOne}
-              alt="Avatar"
-              loading="lazy"
-            />
-            <div className="containert">
-              <h4>
-                <b>Tula Magar</b>
-              </h4>
-              <h5>Owner & Coder..</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis vitae, sapiente placeat facere molestiae omnis
-                tempore facilis dolor sint quo?
-              </p>
-            </div>
+        <div className="card">
+          <img
+            className="PersonImage"
+            src={WeTheOne}
+            alt="Avatar"
+            loading="lazy"
+          />
+          <div className="containert">
+            <h4>
+              <b>Tula Magar</b>
+            </h4>
+            <h5>Owner & Coder..</h5>
+            <p>
+              I am a computer science student and I am passionate about the
+              computer inside and outside. I love to learn new things and I am
+              always trying to learn more about the computer science,
+              programming, information technology, engineering fields and more.
+            </p>
           </div>
-          <div className="card">
-            <img
-              className="PersonImage"
-              src={WeTheOne}
-              alt="Avatar"
-              loading="lazy"
-            />
-            <div className="containert">
-              <h4>
-                <b>Tula Magar</b>
-              </h4>
-              <h5>Owner & Coder..</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis vitae, sapiente placeat facere molestiae omnis
-                tempore facilis dolor sint quo?
-              </p>
-            </div>
+        </div>
+        <div className="card">
+          <img
+            className="PersonImage"
+            src={WeTheOne}
+            alt="Avatar"
+            loading="lazy"
+          />
+          <div className="containert">
+            <h4>
+              <b>Tula Magar</b>
+            </h4>
+            <h5>Owner & Coder..</h5>
+            <p>
+              I am a computer science student and I am passionate about the
+              computer inside and outside. I love to learn new things and I am
+              always trying to learn more about the computer science,
+              programming, information technology, engineering fields and more.
+            </p>
           </div>
-          <div className="card">
-            <img
-              className="PersonImage"
-              src={WeTheOne}
-              alt="Avatar"
-              loading="lazy"
-            />
-            <div className="containert">
-              <h4>
-                <b>Tula Magar</b>
-              </h4>
-              <h5>Owner & Coder..</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis vitae, sapiente placeat facere molestiae omnis
-                tempore facilis dolor sint quo?
-              </p>
-            </div>
+        </div>
+        <div className="card">
+          <img
+            className="PersonImage"
+            src={WeTheOne}
+            alt="Avatar"
+            loading="lazy"
+          />
+          <div className="containert">
+            <h4>
+              <b>Tula Magar</b>
+            </h4>
+            <h5>Owner & Coder..</h5>
+            <p>
+              I am a computer science student and I am passionate about the
+              computer inside and outside. I love to learn new things and I am
+              always trying to learn more about the computer science,
+              programming, information technology, engineering fields and more.
+            </p>
+          </div>
+        </div>
+        <div className="card">
+          <img
+            className="PersonImage"
+            src={WeTheOne}
+            alt="Avatar"
+            loading="lazy"
+          />
+          <div className="containert">
+            <h4>
+              <b>Tula Magar</b>
+            </h4>
+            <h5>Owner & Coder..</h5>
+            <p>
+              I am a computer science student and I am passionate about the
+              computer inside and outside. I love to learn new things and I am
+              always trying to learn more about the computer science,
+              programming, information technology, engineering fields and more.
+            </p>
           </div>
         </div>
       </div>

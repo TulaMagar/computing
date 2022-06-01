@@ -84,11 +84,23 @@ const Home = () => {
             engineering fields and more. Soon, I will be adding more to this
             website. I hope you enjoy the website. Please, help us to make this
             website better. You can contact to this website by email via
-            <Link to="/contact"> contact </Link>. Thank you. Find out Questions
-            and answers about the computer science, programming, information
-            technology, engineering fields and more from{" "}
-            <Link to="/question"> Questions </Link>. Find out about the suitable
-            books for you from<Link to="/book"> Books </Link>.
+            <Link className="Link_Color" to="/contact">
+              {" "}
+              contact{" "}
+            </Link>
+            . Thank you. Find out Questions and answers about the computer
+            science, programming, information technology, engineering fields and
+            more from{" "}
+            <Link className="Link_Color" to="/question">
+              {" "}
+              Questions{" "}
+            </Link>
+            . Find out about the suitable books for you from
+            <Link className="Link_Color" to="/book">
+              {" "}
+              Books{" "}
+            </Link>
+            .
           </p>
         </div>
       </div>
@@ -116,34 +128,67 @@ const Home = () => {
         <div className="whatWeDo" ref={Ref}>
           <h1 className="WhatWeDoInfoHeader">Benefits</h1>
           <p className="WhatWeDoInfo">
-            We have created a fictional band website. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+            The benefit of this website is that you can learn about the computer
+            science, programming, information technology, engineering fields and
+            more. You can find out about the suitable books for you from{" "}
+            <Link className="Link_Color" to="/book">
+              {" "}
+              Books{" "}
+            </Link>{" "}
+            and related problems and solutions from{" "}
+            <Link className="Link_Color" to="/question">
+              {" "}
+              Questions{" "}
+            </Link>
+            . You will gain the knowledge of the computer science, programming,
+            information technology, engineering fields and more and make a
+            better use of the programming language, technology and more. The
+            learning curve and projects that your working will be easy for you
+            in the coming days. Note that the website is still under
+            construction and resources are limited at the moment. All the
+            questions solutions and books are free to use. lease, help us to
+            make this website better. You can contact to this website by email
+            via
+            <Link className="Link_Color" to="/contact">
+              {" "}
+              contact{" "}
+            </Link>
+            .
           </p>
         </div>
       </div>
-
-      <h1 className="HeadingTitle" ref={Ref2}>
-        Team
-      </h1>
-      {/* <p>
-        We are a team of software engineers, data scientists, and UX designers
-        who are dedicated to building the best products and services for our
-        customers. We are a team of people who are passionate about building the
-        best products and services for our customers. We are a team of people
-        who are passionate about building the best products and services for our
-        customers.
-      </p> */}
-      <div className="Team">
-        <div className="CardContainer">
+      <div className="Team_bg">
+        <div className="Team_Info">
+          <h1 className="HeadingTitle" ref={Ref2}>
+            Team
+          </h1>
+          <div>
+            <p>
+              We are a team of people who are passionate about computer inside
+              and outside. We collaborate to create a better learning curve for
+              you and help you to learn more about the computer science,
+              programming, information technology, engineering fields and more.
+              This team is made up of 1 person but I would love to get a team
+              who are more passionate about the same things. You can contact to
+              this website by email via{" "}
+              <Link className="Link_Color" to="/contact">
+                {" "}
+                contact{" "}
+              </Link>
+              . We the team are: <br />
+            </p>
+            <ul>
+              <li> Do research about topic </li>
+              <li>
+                {" "}
+                Plan, planning, analysis, design, implementation/development,
+                testing/integration, and maintenance.
+              </li>
+              <li>Split code into small and post in the questions and books</li>
+            </ul>
+          </div>
+        </div>
+        <div className="Team">
           <div
             className="card"
             ref={myref}
@@ -151,7 +196,7 @@ const Home = () => {
           >
             <img
               className="PersonImage"
-              src={WeTheOne}
+              src={Globe}
               alt="Avatar"
               loading="lazy"
             />
@@ -161,9 +206,11 @@ const Home = () => {
               </h4>
               <h5>Owner & Coder..</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis vitae, sapiente placeat facere molestiae omnis
-                tempore facilis dolor sint quo?
+                I am a computer science student and I am passionate about the
+                computer inside and outside. I love to learn new things and I am
+                always trying to learn more about the computer science,
+                programming, information technology, engineering fields and
+                more.
               </p>
             </div>
           </div>
@@ -185,16 +232,18 @@ const Home = () => {
               </h4>
               <h5>Owner & Coder..</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis vitae, sapiente placeat facere molestiae omnis
-                tempore facilis dolor sint quo?
+                I am a computer science student and I am passionate about the
+                computer inside and outside. I love to learn new things and I am
+                always trying to learn more about the computer science,
+                programming, information technology, engineering fields and
+                more.
               </p>
             </div>
           </div>
           <div
             className="card"
             ref={myref}
-            id={`${visible ? "ComeFromRight" : ""}`}
+            id={`${visible ? "SmallToBig" : ""}`}
           >
             <img
               className="PersonImage"
@@ -209,9 +258,37 @@ const Home = () => {
               </h4>
               <h5>Owner & Coder..</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis vitae, sapiente placeat facere molestiae omnis
-                tempore facilis dolor sint quo?
+                I am a computer science student and I am passionate about the
+                computer inside and outside. I love to learn new things and I am
+                always trying to learn more about the computer science,
+                programming, information technology, engineering fields and
+                more.
+              </p>
+            </div>
+          </div>
+          <div
+            className="card"
+            ref={myref}
+            id={`${visible ? "ComeFromRight" : ""}`}
+          >
+            <img
+              className="PersonImage"
+              src={WeTheOne}
+              alt="Avatar"
+              loading="lazy"
+              // style={{ width: "100%" }}
+            />
+            <div className="containert">
+              <h4>
+                <b>Tula Magar</b>
+              </h4>
+              <h5>Owner & Coder..</h5>
+              <p>
+                I am a computer science student and I am passionate about the
+                computer inside and outside. I love to learn new things and I am
+                always trying to learn more about the computer science,
+                programming, information technology, engineering fields and
+                more.
               </p>
             </div>
           </div>

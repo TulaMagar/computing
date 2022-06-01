@@ -96,6 +96,33 @@
     color: var(--default-text-color);
     padding-bottom: 70px;
 }
+/* .Team_bg{
+    background-color: var(--default-text-color);
+    color: black;
+} */
+.Team_Info {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    margin-bottom: calc(150px);
+    padding: 22px;
+    font-size: 22px;
+}
+
+.HeadingTitle {
+    margin: 30px;
+}
+
+.Link_Color{
+    color: var(--Links--Color);
+    text-decoration: none;
+}
+
+.Link_Color:hover{
+    color: rgb(138, 180, 248);
+    text-decoration: underline;
+}
+
 @media (max-width: 762px) {
 
     .container-L-image {
