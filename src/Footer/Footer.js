@@ -78,7 +78,7 @@ function Footer() {
                 </Link>
               </li>
             </div>
-            <div className="RightFooter">
+            <div className="Right_Footer">
               <h3 className="Footer_Column_Header">Social</h3>
               <li>
                 {" "}

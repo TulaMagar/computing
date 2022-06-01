@@ -6,13 +6,15 @@
     margin: auto;
     width: 90%;
     padding: 10px;
+    text-align: left;
 }
 .FooterContainer {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     padding: 25px;
+    
 }
 .Footer_Column_Header{
     padding-bottom: 10px;

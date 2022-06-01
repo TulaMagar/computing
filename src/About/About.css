@@ -148,7 +148,7 @@
   margin: auto;
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(400px,100%), 1fr));
   /* grid-column-gap: 20px;
   grid-row-gap: 140px; */
   grid-gap: 150px 20px;
@@ -160,6 +160,7 @@
     
   } */
  .card {
+   display: flex;
    background: #e0e0e0;
    box-shadow: inset 20px 20px 60px #a1c9c9,
      inset -20px -20px 60px #7ba3a3;

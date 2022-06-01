@@ -181,8 +181,8 @@ const Home = () => {
               <li> Do research about topic </li>
               <li>
                 {" "}
-                Plan, planning, analysis, design, implementation/development,
-                testing/integration, and maintenance.
+                Plan, planning, analysis, design, implementation and development,
+                testing and integration, and maintenance.
               </li>
               <li>Split code into small and post in the questions and books</li>
             </ul>
