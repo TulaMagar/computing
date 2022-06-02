@@ -24,10 +24,21 @@
     --text-left: left;
 
 
-    /* Fonts */
+      /* Font Size */
+   
+   
+    /* Desktop */
 
-    --default-font-size: 1.37rem !important;
+    --default-font-size: 20px !important;
     --Header-font-size: 1.7rem !important;
+
+    /* Mobile */
+
+    --default-font-size-mobile: 15px !important;
+
+     /* tablet */
+
+    --default-font-size-tablet: 17px !important;
 
 
     /* Flexs */

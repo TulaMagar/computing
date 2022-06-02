@@ -13,8 +13,20 @@
     "Segoe UI",
     "Liberation Sans",
     sans-serif;
+  font-size: var(--default-font-size);
 }
 
+@media (max-width: 640px){
+  .App{
+    font-size: var(--default-font-size-mobile);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 970px){
+  .App{
+    font-size: var(--default-font-size-tablet);
+  }
+}
 .Logo{
   text-align: var(--text-center);
   padding: 30px;

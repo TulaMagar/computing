@@ -106,7 +106,7 @@
     height: auto;
     margin-bottom: calc(150px);
     padding: 22px;
-    font-size: var(--default-font-size);
+   
 }
 
 .HeadingTitle {
@@ -181,7 +181,7 @@
         min-width: 100%;
         text-indent: 40px;
         padding:  60px;
-        font-size: var(--default-font-size);
+       
         margin-bottom: 500px;
     }
 
