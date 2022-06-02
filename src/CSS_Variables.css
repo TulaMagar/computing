@@ -26,7 +26,8 @@
 
     /* Fonts */
 
-
+    --default-font-size: 1.37rem !important;
+    --Header-font-size: 1.7rem !important;
 
 
     /* Flexs */

@@ -95,7 +95,7 @@
 .whatWeDo{
   margin: auto;
   width: 90%;
-  padding: 30px;  
+  padding: 30px;   
   resize: both;
   overflow: auto;
   position: relative;
@@ -108,9 +108,78 @@
   padding: 20px;
 }
 .WhatWeDoInfo{
-  font-size: 22px !important;
+  font-size: var(--default-font-size);
   text-align: left;
 }
+
+
+.B_g_WhoWeAre{
+  background-color: rgb(6, 6, 6);
+}
+
+
+.Container_WhoWeAre{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  gap: 2rem;
+  padding-top: 20px;
+  padding: 22px;
+}
+.Whoweare{
+  width: 55%;
+}
+.System-gif{
+  width: 35%;
+}
+.WhoweareInfoHeader{
+  padding-bottom: 22px;
+}
+.WhoweareInfo{
+  font-size: var(--default-font-size);
+  padding-top: 20px;
+}
+.System{
+  width: 100%;
+  height: 490px;
+  opacity: 0.2;
+}
+.WhoweareHighlight{
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #6de6e6;
+  text-align: center;
+}
+
+
+@media (max-width: 640px){
+  .Container_WhoWeAre{
+    flex-direction:column;
+  }
+  .Whoweare {
+    width: 100%;
+  }
+
+  .System-gif {
+    width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 970px){
+  .Container_WhoWeAre{
+    flex-direction:column;
+  }
+  .Whoweare {
+    width: 100%;
+  }
+
+  .System-gif {
+    width: 100%;
+  }
+}
+
+
 
 
  @keyframes spin {
@@ -139,9 +208,15 @@
   line-height: normal;
   word-wrap: break-word;
   text-align: left;
-  font-size: 22px;
+  font-size: var(--default-font-size);;
   padding: 10px;
 
+}
+.HeadingTeam{
+  margin-bottom: 180px;
+  padding: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 
  .Team {
@@ -149,16 +224,11 @@
   width: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(400px,100%), 1fr));
-  /* grid-column-gap: 20px;
-  grid-row-gap: 140px; */
   grid-gap: 150px 20px;
   padding-bottom: 80px;
 
  }
 
- /* .CardContainer{
-    
-  } */
  .card {
    display: flex;
    background: #e0e0e0;

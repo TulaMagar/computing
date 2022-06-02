@@ -4,7 +4,11 @@ import WeTheOne from "../img/pexels-lisa-fotios-3972467.jpg";
 import "bootstrap/dist/css/bootstrap.css";
 import UseTitle from "../Title.js";
 import { Link } from "react-router-dom";
+import Globe_Network from "../img/Globe-Network.jpg";
 // import { useSpring, animated } from "react-spring";
+
+//<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/U4FkC2VqpeNRHjTDQ5" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/technology-earth-communications-U4FkC2VqpeNRHjTDQ5">via GIPHY</a></p>
+
 function About() {
   const myref = useRef();
   const [visible, setVisible] = useState();
@@ -71,32 +75,61 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="B_g_WhatWeDo">
-        <div className="whatWeDo">
-          <h1 className="WhatWeDoInfoHeader">Who we are</h1>
-          <p className="WhatWeDoInfo">
-             Founded in 2022, this website is a project that I undertook to learn more about the computer science, 
-             programming, information technology, engineering fields and more. I hope you enjoy the website. Please, help us to make this website better. You can contact to this website by email via
-             <Link className="Link_Color" to="/contact">
-              {" "}
-              contact{" "}
-            </Link>
-            , thank you. We empower people to learn and share their knowledge with the world through this website.
-          </p>
-          <p className="WhatWeDoInfo">
-            Joining the teams of this website is a great way to contribute to the developers and technologies and to the world of people. 
-            Because of you, people will get more knowledge and experience which will help them to be more successful in the future. Thank You.
-          </p>
 
-          <p className="WhatWeDoInfo">
-            Everything in this website is free. You can use it for free. You can even find the source code of this website on 
-            <a className="Link_Color" href="https://github.com/TulaMagar/computing.git"> GitHub </a>.
-          </p>
+      <div className="B_g_WhoWeAre">
+        <div className="Container_WhoWeAre">
+          <div className="Whoweare">
+            <h1 className="WhoweareInfoHeader">Who we are</h1>
+            <p className="WhoweareInfo">
+              Founded in 2022, this website is a project that I undertook to
+              learn more about the computer science, programming, information
+              technology, engineering fields and more. I hope you enjoy the
+              website. Please, help us to make this website better. You can
+              contact to this website by email via
+              <Link className="Link_Color" to="/contact">
+                {" "}
+                contact{" "}
+              </Link>
+              , thank you.
+            </p>
 
-          <p className="WhatWeDoInfo">
-            The books that I have written are free. You can use them for free. If you have wrote a book, you can find post them here for free.
-            If you have blog posts, you can iframe or link them here for free.
-          </p>
+            <p className="WhoweareInfo">
+              Everything in this website is free. You can use it for free. You
+              can even find the source code of this website on
+              <a
+                className="Link_Color"
+                href="https://github.com/TulaMagar/computing.git"
+              >
+                {" "}
+                GitHub{" "}
+              </a>
+              .
+            </p>
+            <p className="WhoweareInfo">
+              Joining the teams of this website is a great way to contribute to
+              the developers and technologies and to the world of people.
+              Because of you, people will get more knowledge and experience
+              which will help them to be more successful in the future. Thank
+              You.
+            </p>
+            <p className="WhoweareInfo">
+              The books that I have written are free. You can use them for free.
+              If you have wrote a book, you can find post them here for free. If
+              you have blog posts, you can iframe or link them here for free.
+            </p>
+          </div>
+          <div className="System-gif">
+            <img
+              className="System"
+              src={Globe_Network}
+              alt="System Not Found"
+              loading="lazy"
+            />
+            <p className="WhoweareHighlight">
+              We empower people to learn and share their knowledge with the
+              world through this website.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -140,7 +173,7 @@ function About() {
         </div>
       </div>
 
-      <h1 className="HeadingTitle">Team</h1>
+      <h1 className="HeadingTeam">Team</h1>
 
       <div className="Team">
         <div className="card">
