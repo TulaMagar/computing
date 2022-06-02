@@ -57,7 +57,7 @@ function blog() {
           <br />
           <hr />
           <div>
-            <div className="container pt-5 p-5 text-white">
+            <div className="container pt-5 p-5">
               <h2 className="">Still Confusion</h2>
 
               <p className="pt-3 p-3 my-3">
@@ -73,7 +73,7 @@ function blog() {
             <div className="container pt-5 p-5 bg-info bg-gradient text-black">
               <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                 <h3>&emsp;&emsp;Microsoft Outlook Version</h3>
-                <p className="text-white">
+                <p>
                   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;As I know this new
                   navigation display style only affect to later 2020 version. I
                   am using 2022 version{" "}
@@ -110,7 +110,7 @@ function blog() {
 
             <div className="container pt-5 p-5 bg-info bg-gradient my-5 border text-black">
               <h3>&emsp;&emsp;Microsoft Outlook View</h3>
-              <p className="text-white">
+              <p className="">
                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;As I know this new
                 navigation display style only affect to later 2020 version. I am
                 using 2022 version{" "}

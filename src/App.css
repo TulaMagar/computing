@@ -6,7 +6,7 @@
 
 .App{
   background-color: var(--background-color);
-  color: var(--default-text-color); /* default text color for all the pages*/
+  color: black; /* default text color for all the pages*/
   font-family: -apple-system,
     BlinkMacSystemFont,
     "Segoe UI Adjusted",
@@ -14,6 +14,7 @@
     "Liberation Sans",
     sans-serif;
   font-size: var(--default-font-size);
+
 }
 
 @media (max-width: 640px){
@@ -27,6 +28,7 @@
     font-size: var(--default-font-size-tablet);
   }
 }
+
 .Logo{
   text-align: var(--text-center);
   padding: 30px;
@@ -88,7 +90,7 @@
   color: rgb(135, 216, 243);
 }
 .pl-c1{
-  color: rgb(118, 247, 128);
+  color: rgb(51, 185, 62);
 }
 .pl-s{
   color: var(--question-link-color);

@@ -19,7 +19,6 @@ function Navigation() {
           sticky="top"
           expand="lg"
           // bg="dark"
-          variant="dark"
           className="bg"
           expanded={expanded}
         >

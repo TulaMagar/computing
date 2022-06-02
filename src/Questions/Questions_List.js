@@ -57,9 +57,9 @@ function Questions_List() {
                   {" "}
                   <Link
                     to={f.url}
-                    style={{ textDecoration: "none", color: "yellow" }}
+                    style={{ textDecoration: "none"}}
                   >
-                    {" "}
+                    {" "} 
                     &nbsp; {f.title}
                   </Link>
                   <div id="curve1"> </div>

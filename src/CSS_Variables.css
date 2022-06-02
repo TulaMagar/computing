@@ -2,14 +2,14 @@
 
     /* Colors */
     /* --background-color: rgb(53, 52, 52); */
-    --background-color: #425664;
+    --background-color: #D3D3D3;
 
     /* Text Colors */
     --default-text-color: rgb(255, 255, 255);
     --Mini-info-bg-color: rgb(33, 186, 197);
     --Black-text-color: black;
-    --question-link-color: rgb(197, 188, 55);
-    --SampleCode-background: #000000;
+    --question-link-color: #00539CFF;
+    --SampleCode-background: rgb(155, 84, 149);
     --Footer-Background-Color: #00539CFF !important;
     --Paragraph-Background-Color: #6A8A82 !important;
     --Everything-Background-Color: #061550b7 !important;

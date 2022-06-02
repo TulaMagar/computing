@@ -433,7 +433,7 @@ function PyScriptIntro() {
             <span className="pl-kos">&lt;</span>
             <span className="pl-ent">py-script</span>
             <span className="pl-kos">&gt;</span>
-            {`
+            <div className="white">{`
       import datetime as dt
       pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))
 
@@ -445,7 +445,7 @@ function PyScriptIntro() {
 
       pi = compute_pi(100000)
       pyscript.write('pi', f'π is approximately {pi:.3f}')
-    `}
+    `}</div>
             {"\n    "}
             <span className="pl-kos">&lt;/</span>
             <span className="pl-ent">py-script</span>
