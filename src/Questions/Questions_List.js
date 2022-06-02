@@ -38,8 +38,9 @@ function Questions_List() {
               className="input"
               name="filter"
               type="text"
+              spellCheck="true"
               value={filter}
-              placeholder="type to search for similar question and answer"
+              placeholder="type here to search for similar question and answer"
               onChange={(event) => setFilter(event.target.value)}
             />
           </p>
