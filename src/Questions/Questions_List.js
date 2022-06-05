@@ -55,11 +55,8 @@ function Questions_List() {
               <div key={index}>
                 <div id="curves" className="line">
                   {" "}
-                  <Link
-                    to={f.url}
-                    style={{ textDecoration: "none"}}
-                  >
-                    {" "} 
+                  <Link to={f.url} style={{ textDecoration: "none" }}>
+                    {" "}
                     &nbsp; {f.title}
                   </Link>
                   <div id="curve1"> </div>
