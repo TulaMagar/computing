@@ -265,7 +265,7 @@ function PyScriptIntro() {
             <span className="pl-kos">&lt;</span>
             <span className="pl-ent">html</span>
             <span className="pl-kos">&gt;</span>
-            {"\n  "}Name
+            {"\n  "}
             <span className="pl-kos">&lt;</span>
             <span className="pl-ent">head</span>
             <span className="pl-kos">&gt;</span> {"\n    "}
@@ -278,7 +278,7 @@ function PyScriptIntro() {
             <span className="pl-s">
               https://pyscript.net/alpha/pyscript.css
             </span>
-            " /&gt; {"\n Name   "}
+            " /&gt; {"\n    "}
             <span className="pl-kos">&lt;</span>
             <span className="pl-ent">script</span>{" "}
             <span className="pl-c1">defer</span>{" "}

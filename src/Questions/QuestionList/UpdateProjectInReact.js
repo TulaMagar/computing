@@ -31,10 +31,27 @@ function UpdateProjectInReact() {
             In this article, we will learn how to upgrade your React app, dependencys, and more.
             We will also cover how to install dependencys and how to use them.
           </p>
+
+          <h1> Upgrade Existing React App    </h1>
           <p>
             Sometimes you need to upgrade your React app to a new version. You can do this by running the following command:
-            
           </p>
+          <pre className="CodeSampleBackground">
+            <li className="OneLine">  npm install --save react@latest </li>
+          </pre>
+          <p> 
+            <code>--save </code>
+            will install the package and it's version in the package.json file. Sometimes upgrading to new react version
+            using above command line might give you a conflict so you can use following command line: </p>
+          <pre className="CodeSampleBackground">  
+            <li className="OneLine"> npm install --save react@latest --force</li> 
+          </pre>
+          <p> <code>--force </code> will fetch resource and install everything  </p>
+
+          <pre className="CodeSampleBackground">  
+            <li className="OneLine"> npm install --save react@latest --legacy-peer-deps</li> 
+          </pre>
+          <p> <code>--legacy-peer-deps </code>will not install any older version dependencies </p>
         </div>
 
         <div id="right">

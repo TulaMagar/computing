@@ -79,23 +79,27 @@
 .CodeSampleBackground{
   background-color: var(--SampleCode-background);
   padding: 20px;
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 .testcolor{
   color: var(--question-link-color);
 }
 .pl-kos{
-  color: var(--default-text-color);
+  color: var(--Bracket-Color);
 }
 .pl-ent{
-  color: rgb(135, 216, 243);
+  color: var(--HTML-tag-Color);
 }
 .pl-c1{
-  color: rgb(51, 185, 62);
+  color: var(--HTMl-attribute-Color);
 }
 .pl-s{
-  color: var(--question-link-color);
+  color: var(--HTMl-attribute-Name-Color);
 }
 .copy{
   float: right;
+}
+.OneLine{
+  color: var(--One--line-color);
+  list-style: none;
 }

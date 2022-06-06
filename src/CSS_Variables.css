@@ -9,7 +9,7 @@
     --Mini-info-bg-color: rgb(33, 186, 197);
     --Black-text-color: black;
     --question-link-color: #00539CFF;
-    --SampleCode-background: rgb(0, 0, 0);
+    --SampleCode-background: rgb(174, 177, 179);
     --Footer-Background-Color: #00539CFF !important;
     --Paragraph-Background-Color: #6A8A82 !important;
     --Everything-Background-Color: #061550b7 !important;
@@ -17,7 +17,11 @@
     --Learn-Background-Color: #174747 !important;
     --Mission-Background-Color: #132237!important;
     --Links--Color: rgb(138, 180, 248) !important;
-
+    --One--line-color: #000 !important;
+    --Bracket-Color: #000 !important;
+    --HTML-tag-Color: rgb(183, 83, 1) !important;
+    --HTMl-attribute-Color: rgb(1, 84, 147) !important;
+    --HTMl-attribute-Name-Color: rgb(86, 122, 13) !important;
     /* Position */
 
     --text-center: center;
