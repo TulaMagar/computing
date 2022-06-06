@@ -27,6 +27,14 @@ function UpdateProjectInReact() {
 
         <div id="middle">
           <h1>How to Upgrade React?</h1>
+          <p>
+            In this article, we will learn how to upgrade your React app, dependencys, and more.
+            We will also cover how to install dependencys and how to use them.
+          </p>
+          <p>
+            Sometimes you need to upgrade your React app to a new version. You can do this by running the following command:
+            
+          </p>
         </div>
 
         <div id="right">

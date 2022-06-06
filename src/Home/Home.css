@@ -1,5 +1,4 @@
 .container-large {
-    /* background-color: rgb(42, 34, 63); */
     height: auto;
     margin: auto;
     width: 90%;
@@ -9,7 +8,7 @@
 
 .container-L-image {
     height: auto;
-    width: 100%;
+    width: 100%; 
     padding: 10px;
     margin-top: 70px;
 }
@@ -51,7 +50,7 @@
 .image{
 
     width: 25%;
-    color:whitesmoke;
+    color:var(--default-text-color);
     
 }
 
@@ -176,8 +175,7 @@
         margin: auto;
         min-width: 100%;
         text-indent: 40px;
-        padding:  60px;
-       
+        padding:  60px;      
         margin-bottom: 500px;
     }
 
