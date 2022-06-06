@@ -55,7 +55,6 @@
 
 
 @keyframes spinner {
-
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
@@ -102,4 +101,7 @@
 .OneLine{
   color: var(--One--line-color);
   list-style: none;
+}
+.Note{
+  font-weight: bold;
 }
