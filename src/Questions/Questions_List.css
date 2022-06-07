@@ -5,7 +5,12 @@
     border-radius: 20px;
     padding: 15px;
 }
-
+.question_links{
+    text-decoration: none;
+}
+.question_links:hover{
+    text-decoration: underline;
+}
 @media (max-height: 732px ){
 
     #left {
