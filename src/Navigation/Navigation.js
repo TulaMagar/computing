@@ -25,7 +25,6 @@ function Navigation() {
           expanded={expanded}
         >
           <Navbar.Brand
-            className="margin-left"
             onClick={() => setExpanded(false)}
             as={NavLink}
             to="/"

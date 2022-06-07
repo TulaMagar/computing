@@ -63,7 +63,7 @@ const Home = () => {
           <button className="flex-child" onClick={MoveToTeam}>
             Move To Team
           </button>
-          <button className="flex-child" onClick={MoveToMission}>
+          <button className="flex-child" onClick={MoveToMission}> 
             Move To Mission
           </button>
           <button className="flex-child" onClick={Move}>
