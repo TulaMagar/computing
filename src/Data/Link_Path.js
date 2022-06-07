@@ -12,13 +12,13 @@ export const BlogPath = [
   },
   {
     url: "UpdateProjectInReact",
-    title: "How to Upgrade React?",
+    title: "How to Upgrade, Install and Uninstall In React?",
     description:
       "You might working in outdated React version and want to upgrade the outdated to dated react version",
   },
   {
     url: "HideAndShowInReact",
-    title: "How to Hide and Show things in React?",
+    title: "Onclick How to Hide and Show things in React?",
     description: "You might want to hide and show content on button click",
   },
   {

@@ -105,3 +105,15 @@
 .Note{
   font-weight: bold;
 }
+.react_keyword{
+  color: var(--React-Keyword-Color);
+}
+.React_Funtion{
+  color: var(--React-Function-Color);
+}
+.html_tag{
+  color: var(--html-tag-color);
+}
+.react_imports{
+  color: var(--react-import-color);
+}

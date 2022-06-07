@@ -45,5 +45,12 @@
     --default-font-size-tablet: 18px !important;
 
 
-    /* Flexs */
+    /* React */
+    --React-Keyword-Color: rgb(1, 84, 147);
+    --React-Function-Color: rgb(97, 6, 97);
+    --react-import-color: rgb(0, 119, 170);
+    
+
+    /* HTML */
+    --html-tag-color: rgb(110, 52, 4);
 }

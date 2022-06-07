@@ -8,6 +8,7 @@ function TitleInReact() {
   UseTitle("How to Create Title in React?");
 
   const [ShowIframe, SetShowIframe] = useState(false);
+
   return (
     <>
       <div id="container">
@@ -65,7 +66,7 @@ function TitleInReact() {
             ></iframe>
           ) : null}
           <button onClick={() => SetShowIframe(!ShowIframe)}>
-            {!ShowIframe ? `CloseLiveEditor` : `LiveCodeEditor`}
+            {!ShowIframe ? "CloseLiveEditor" : "LiveCodeEditor"}
           </button>
         </div>
 
