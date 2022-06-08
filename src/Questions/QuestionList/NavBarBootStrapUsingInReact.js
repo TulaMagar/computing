@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Questions_List.css";
 import "bootstrap/dist/css/bootstrap.css";
 import UseTitle from "../../Title.js";
@@ -94,39 +94,38 @@ function NavBarBootStrapUsingInReact() {
         <div id="middle">
           <h1> How to Create a Navbar using Bootstrap in React? </h1>
           <p>
-            With the help of Bootstrap, we can create a navbar in react. We don't need to worry about the 
-            responsive design of the navbar. Bootstrap is already responsive. Sometimes you need might to twist around using pure css 
-            to make the navbar little different. Let's begin but first we need to import the bootstrap library in the react project.
+            With the help of Bootstrap, we can create a navbar in react. We
+            don't need to worry about the responsive design of the navbar.
+            Bootstrap is already responsive. Sometimes you need might to twist
+            around using pure css to make the navbar little different. Let's
+            begin but first we need to import the bootstrap library in the react
+            project.
           </p>
           <h4>Install Packages</h4>
           <pre className="CodeSampleBackground">
-            <li className="OneLine">
-              npm install bootstrap --save 
-            </li>
-            <li className="OneLine">
-              npm install react-bootstrap --save
-            </li>
+            <li className="OneLine">npm install bootstrap --save</li>
+            <li className="OneLine">npm install react-bootstrap --save</li>
           </pre>
           <p>
-              Those are the libraries that we are going to use to create the navbar. <code>--save</code> will add the packages name in the package.json file and 
-              that will help us to track the dependencies and their versions.
+            Those are the libraries that we are going to use to create the
+            navbar. <code>--save</code> will add the packages name in the
+            package.json file and that will help us to track the dependencies
+            and their versions.
           </p>
 
-
           <Highlight {...defaultProps} code={exampleCode} language="jsx">
-    {({ className, style, tokens, getLineProps, getTokenProps }) => (
-      <pre className={className} style={style}>
-        {tokens.map((line, i) => (
-          <div {...getLineProps({ line, key: i })}>
-            {line.map((token, key) => (
-              <span {...getTokenProps({ token, key })} />
-            ))}
-          </div>
-        ))}
-      </pre>
-    )}
-  </Highlight>
-
+            {({ className, style, tokens, getLineProps, getTokenProps }) => (
+              <pre className={className} style={style}>
+                {tokens.map((line, i) => (
+                  <div {...getLineProps({ line, key: i })}>
+                    {line.map((token, key) => (
+                      <span {...getTokenProps({ token, key })} />
+                    ))}
+                  </div>
+                ))}
+              </pre>
+            )}
+          </Highlight>
         </div>
 
         <div id="right">
