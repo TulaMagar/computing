@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/366.2db3a7f5.chunk.js","mappings":"6KAEe,SAASA,IACtB,OACE","sources":["Questions/QuestionList/OneDriveSync_OnOFF.js"],"sourcesContent":["import React from 'react'\n\nexport default function OneDriveSync_OnOFF() {\n  return (\n    <div>OneDriveSync_OnOFF</div>\n  )\n}\n"],"names":["OneDriveSync_OnOFF"],"sourceRoot":""}
