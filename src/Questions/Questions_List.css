@@ -19,6 +19,9 @@
 .question_links:hover{
     text-decoration: underline;
 }
+.space{
+    padding: 20px;
+}
 @media (max-height: 732px ){
 
     #left {

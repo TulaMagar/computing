@@ -8,7 +8,15 @@ import Highlight, { defaultProps } from "prism-react-renderer";
 //https://github.com/FormidableLabs/prism-react-renderer
 
 function NavBarBootStrapUsingInReact() {
-  UseTitle("How to Create Title in React?");
+  UseTitle("How to Create a Navbar using Bootstrap in React?");
+
+    const imports = `   
+  import React from "react"
+  import { Navbar, Nav } from "react-bootstrap";
+  import "bootstrap/dist/js/bootstrap.bundle";
+  import { NavLink } from "react-router-dom";
+  `
+  ;
 
   const exampleCode = `
   <Navbar
@@ -16,10 +24,8 @@ function NavBarBootStrapUsingInReact() {
     sticky="top"
     expand="lg"
     bg="dark"
-    expanded={expanded}
   >
   <Navbar.Brand
-    onClick={() => setExpanded(false)}
     as={NavLink}
     to="/"
   >
@@ -27,17 +33,15 @@ function NavBarBootStrapUsingInReact() {
   </Navbar.Brand>
   <Navbar.Toggle
     aria-controls="responsive-navbar-nav"
-    onClick={() => setExpanded(expanded ? false : "expanded")}
   />
-  <Navbar.Collapse className="fl" id="responsive-navbar-nav">
-    <Nav className="me-auto justify-content-end margin-left">
-      {/* <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/">
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+      <Nav.Link as={NavLink} to="/">
       Home
-    </Nav.Link> */}
+    </Nav.Link> }
     </Nav>
     <Nav>
-      <Nav.Link
-        onClick={() => setExpanded(false)}
+      <Nav.Link      
         as={NavLink}
         to="/about"
         className="change-color"
@@ -45,21 +49,18 @@ function NavBarBootStrapUsingInReact() {
         About
       </Nav.Link>
       <Nav.Link
-        onClick={() => setExpanded(false)}
         as={NavLink}
         to="/careers"
       >
         Career
       </Nav.Link>
-      <Nav.Link
-        onClick={() => setExpanded(false)}
+      <Nav.Link      
         as={NavLink}
         to="/question"
       >
         Questions
       </Nav.Link>
-      <Nav.Link
-        onClick={() => setExpanded(false)}
+      <Nav.Link  
         as={NavLink}
         to="/book"
       >
@@ -67,7 +68,8 @@ function NavBarBootStrapUsingInReact() {
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
-  </Navbar>`;
+  </Navbar>
+  `;
 
   return (
     <>
@@ -112,6 +114,21 @@ function NavBarBootStrapUsingInReact() {
             package.json file and that will help us to track the dependencies
             and their versions.
           </p>
+
+          <h4>Import Installed Packages</h4>
+          <Highlight {...defaultProps} code={imports} language="jsx">
+            {({ className, style, tokens, getLineProps, getTokenProps }) => (
+              <pre className={className} style={style}>
+                {tokens.map((line, i) => (
+                  <div {...getLineProps({ line, key: i })}>
+                    {line.map((token, key) => (
+                      <span {...getTokenProps({ token, key })} />
+                    ))}
+                  </div>
+                ))}
+              </pre>
+            )}
+          </Highlight>
 
           <Highlight {...defaultProps} code={exampleCode} language="jsx">
             {({ className, style, tokens, getLineProps, getTokenProps }) => (

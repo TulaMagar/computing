@@ -53,9 +53,9 @@ export const BlogPath = [
       "Sometimes we want to create a footer in react and add links of website resource to the bottom of the page",
   },
   {
-    url: "blog2",
-    title: "blog2 title",
-    description: "Coming Soon Microsoft Outlook Navigation Panel",
+    url: "OneDriveSync_OnOFF",
+    title: "How to turn on and off OneDrive Sync in PC?",
+    description: "We can turn on and off OneDrive Sync in PC, stop sync to specific folder",
   },
   {
     url: "blog",
