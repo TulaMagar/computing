@@ -15,9 +15,11 @@
 }
 .question_links{
     text-decoration: none;
+    transition: text-decoration-color .5s ease-in-out;
 }
 .question_links:hover{
     text-decoration: underline;
+    text-decoration-color: rgb(8, 180, 172);
 }
 .space{
     padding: 20px;
