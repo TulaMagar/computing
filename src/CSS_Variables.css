@@ -53,4 +53,15 @@
 
     /* HTML */
     --html-tag-color: rgb(110, 52, 4);
+
+
+    /* Programming Language Background */
+    --bg-programming: rgb(40, 42, 53);
+    --background-color-1: rgb(255, 185, 255);
+    --background-color-2: rgb(255, 192, 199);
+    --background-color-3: rgb(243, 216, 157);
+    --background-color-4: rgb(169, 226, 226);
+    --background-color-5: rgb(201, 229, 155);
+    --background-color-6: rgb(243, 160, 243);
+    --background-color-7: rgb(143, 148, 219);
 }
