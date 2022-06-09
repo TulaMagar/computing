@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import UseTitle from "../Title.js";
 import { Link } from "react-router-dom";
 import Globe_Network from "../img/Globe-Network.jpg";
+import Globe from "../img/giphy.gif";
 // import { useSpring, animated } from "react-spring";
 //<a href="https://iconscout.com/icons/winking-face" target="_blank">Smiling Face With Heart Eyes Emoji Icon</a> by <a href="https://iconscout.com/contributors/iconscout">Iconscout Store</a> on <a href="https://iconscout.com">IconScout</a>
 //<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/U4FkC2VqpeNRHjTDQ5" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/technology-earth-communications-U4FkC2VqpeNRHjTDQ5">via GIPHY</a></p>
@@ -19,7 +20,8 @@ function About() {
       setVisible(entry.isIntersecting);
     });
     observer.observe(myref.current);
-  }, []);
+  }, [myref]);
+
   UseTitle("About Computing");
 
   return (
@@ -980,87 +982,140 @@ function About() {
         </div>
       </div>
 
-      <h1 className="HeadingTeam">Team</h1>
-
-      <div className="Team">
-        <div className="card">
-          <img
-            className="PersonImage"
-            src={WeTheOne}
-            alt="Avatar"
-            loading="lazy"
-          />
-          <div className="containert">
-            <h4>
-              <b>Tula Magar</b>
-            </h4>
-            <h5>Owner & Coder..</h5>
+      <div className="Team_bg">
+        <div className="Team_Info">
+          <h1 className="HeadingTitle">
+            Team
+          </h1>
+          <div>
             <p>
-              I am a computer science student and I am passionate about the
-              computer inside and outside. I love to learn new things and I am
-              always trying to learn more about the computer science,
+              We are a team of people who are passionate about computer inside
+              and outside. We collaborate to create a better learning curve for
+              you and help you to learn more about the computer science,
               programming, information technology, engineering fields and more.
+              This team is made up of 1 person but I would love to get a team
+              who are more passionate about the same things. You can contact to
+              this website by email via{" "}
+              <Link className="Link_Color" to="/contact">
+                {" "}
+                contact{" "}
+              </Link>
+              . We the team are: <br />
             </p>
+            <ul>
+              <li> Do research about topic </li>
+              <li>
+                {" "}
+                Plan, planning, analysis, design, implementation and development,
+                testing and integration, and maintenance.
+              </li>
+              <li>Split code into small and post in the questions and books</li>
+            </ul>
           </div>
         </div>
-        <div className="card">
-          <img
-            className="PersonImage"
-            src={WeTheOne}
-            alt="Avatar"
-            loading="lazy"
-          />
-          <div className="containert">
-            <h4>
-              <b>Tula Magar</b>
-            </h4>
-            <h5>Owner & Coder..</h5>
-            <p>
-              I am a computer science student and I am passionate about the
-              computer inside and outside. I love to learn new things and I am
-              always trying to learn more about the computer science,
-              programming, information technology, engineering fields and more.
-            </p>
+        <div className="Team">
+          <div
+            className="card"
+            ref={myref}
+            id={`${visible ? "ComeFromLeft" : ""}`}
+          >
+            <img
+              className="PersonImage"
+              src={Globe}
+              alt="Avatar"
+              loading="lazy"
+            />
+            <div className="containert">
+              <h4>
+                <b>Tula Magar</b>
+              </h4>
+              <h5>Owner & Coder..</h5>
+              <p>
+                I am a computer science student and I am passionate about the
+                computer inside and outside. I love to learn new things and I am
+                always trying to learn more about the computer science,
+                programming, information technology, engineering fields and
+                more.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="card">
-          <img
-            className="PersonImage"
-            src={WeTheOne}
-            alt="Avatar"
-            loading="lazy"
-          />
-          <div className="containert">
-            <h4>
-              <b>Tula Magar</b>
-            </h4>
-            <h5>Owner & Coder..</h5>
-            <p>
-              I am a computer science student and I am passionate about the
-              computer inside and outside. I love to learn new things and I am
-              always trying to learn more about the computer science,
-              programming, information technology, engineering fields and more.
-            </p>
+          <div
+            className="card"
+            ref={myref}
+            id={`${visible ? "SmallToBig" : ""}`}
+          >
+            <img
+              className="PersonImage"
+              src={WeTheOne}
+              alt="Avatar"
+              loading="lazy"
+              // style={{ width: "100%" }}
+            />
+            <div className="containert">
+              <h4>
+                <b>Tula Magar</b>
+              </h4>
+              <h5>Owner & Coder..</h5>
+              <p>
+                I am a computer science student and I am passionate about the
+                computer inside and outside. I love to learn new things and I am
+                always trying to learn more about the computer science,
+                programming, information technology, engineering fields and
+                more.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="card">
-          <img
-            className="PersonImage"
-            src={WeTheOne}
-            alt="Avatar"
-            loading="lazy"
-          />
-          <div className="containert">
-            <h4>
-              <b>Tula Magar</b>
-            </h4>
-            <h5>Owner & Coder..</h5>
-            <p>
-              I am a computer science student and I am passionate about the
-              computer inside and outside. I love to learn new things and I am
-              always trying to learn more about the computer science,
-              programming, information technology, engineering fields and more.
-            </p>
+          <div
+            className="card"
+            ref={myref}
+            id={`${visible ? "SmallToBig" : ""}`}
+          >
+            <img
+              className="PersonImage"
+              src={Globe}
+              alt="Avatar"
+              loading="lazy"
+              // style={{ width: "100%" }}
+            />
+            <div className="containert">
+              <h4>
+                <b>Tula Magar</b>
+              </h4>
+              <h5>Owner & Coder..</h5>
+              <p>
+                I am a computer science student and I am passionate about the
+                computer inside and outside. I love to learn new things and I am
+                always trying to learn more about the computer science,
+                programming, information technology, engineering fields and
+                more.
+              </p>
+            </div>
+          </div>
+          <div
+            className="card"
+            ref={myref}
+            id={`${visible ? "ComeFromRight" : ""}`}
+          >
+            <img
+              className="PersonImage"
+              src={WeTheOne}
+              alt="Avatar"
+              loading="lazy"
+              // style={{ width: "100%" }}
+            />
+            <div className="containert">
+              <h4>
+                <b>Tula Magar</b>
+              </h4>
+              <h5>Owner & Coder..</h5>
+              <p>
+                I am a computer science student and I am passionate about the
+                computer inside and outside. I love to learn new things and I am
+                always trying to learn more about the computer science,
+                programming, information technology, engineering fields and
+                more.
+              </p>
+            </div>
           </div>
         </div>
       </div>
