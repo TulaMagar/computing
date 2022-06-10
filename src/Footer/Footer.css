@@ -34,3 +34,18 @@
 .FooterContainer > div > li{
     list-style: none;
 }
+.Logo {
+    text-align: var(--text-center);
+    padding: 30px;
+    padding-bottom: 50px;
+    
+}
+
+.Logo>a {
+    color: var(--default-text-color);
+    text-decoration: none;
+}
+
+.Logo>a:hover {
+    text-decoration: underline;
+}

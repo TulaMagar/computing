@@ -984,9 +984,7 @@ function About() {
 
       <div className="Team_bg">
         <div className="Team_Info">
-          <h1 className="HeadingTitle">
-            Team
-          </h1>
+          <h1 className="HeadingTitle">Team</h1>
           <div>
             <p>
               We are a team of people who are passionate about computer inside
@@ -995,19 +993,15 @@ function About() {
               programming, information technology, engineering fields and more.
               This team is made up of 1 person but I would love to get a team
               who are more passionate about the same things. You can contact to
-              this website by email via{" "}
-              <Link className="Link_Color" to="/contact">
-                {" "}
-                contact{" "}
-              </Link>
+              this website by email via <Link to="/contact"> contact </Link>
               . We the team are: <br />
             </p>
             <ul>
               <li> Do research about topic </li>
               <li>
                 {" "}
-                Plan, planning, analysis, design, implementation and development,
-                testing and integration, and maintenance.
+                Plan, planning, analysis, design, implementation and
+                development, testing and integration, and maintenance.
               </li>
               <li>Split code into small and post in the questions and books</li>
             </ul>

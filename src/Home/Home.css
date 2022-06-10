@@ -114,6 +114,7 @@
 .Link_Color {
     color: var(--Links--Color);
     text-decoration: none;
+    font-weight: bold;
 }
 
 .Link_Color:hover {
@@ -171,6 +172,7 @@
     border-top: 4px solid var(--bg-programming);
     border-left: 4px solid var(--bg-programming);
     border-right: 4px solid var(--bg-programming);
+    font-weight: bold;
 
 }
 
