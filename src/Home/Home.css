@@ -6,13 +6,6 @@
     padding: 10px;
 }
 
-.container-L-image {
-    height: auto;
-    width: 100%;
-    padding: 10px;
-    margin-top: 70px;
-}
-
 
 .flex-container {
     display: flex;
@@ -39,32 +32,36 @@
     border: none;
 }
 
-.Static-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+.container-L-image{
+   background-color: var(--Paragraph-Background-Color);
+}
+.non-related{
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+    color: var(--default-text-color);
+    font-weight: bold;
+}
+.Static-container{
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin: auto;
     width: 90%;
+    display: grid;
+    grid-template-rows: minmax(30px, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
+    gap: 50px;
 }
-
-.image {
-
-    width: 25%;
-    color: var(--default-text-color);
-
-}
-
 .image>img {
 
     height: 400px;
     width: 100%;
-    padding: 0px;
     border-radius: 30% 70% 50% 30% / 30% 30% 70% 50%;
     object-fit: cover;
 
 }
-
 .context {
     margin: auto;
     width: 50%;
@@ -80,7 +77,6 @@
 }
 
 .Benefit_bg {
-    margin-top: 70px;
     background-color: var(--Bg-Benefit-Color);
     color: var(--default-text-color);
     padding-bottom: 20px;
@@ -271,7 +267,12 @@
     border-radius: 5px;
 }
 
-@media (max-width: 955px) {
+@media (max-width: 1545px) {
+    .Static-container{
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
+@media (min-width: 762px) and (max-width: 955px) {
     .programming_name {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
@@ -279,62 +280,10 @@
 
 @media (max-width: 762px) {
 
-    .container-L-image {
-        height: auto;
-        width: 100%;
-        padding: 10px;
-        margin-top: 800px;
-        margin-bottom: 800px;
-    }
-
-
-
-    .flex-container {
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .Static-container {
-        margin-top: 30px;
-        height: 267px;
-        display: flex;
-        flex-direction: column;
-    }
+            grid-template-columns: 1fr;
+        }
 
-
-
-    .flex-child {
-        min-width: 100%;
-        padding: 13px;
-        margin: 10px;
-    }
-
-
-    .image {
-        word-wrap: break-word;
-        min-width: 100%;
-        text-align: center;
-        padding: 1px;
-        margin: 2px;
-    }
-
-
-
-    .flex-child:hover {
-        background-color: blue;
-        border: none;
-    }
-
-    .contex {
-
-        margin: auto;
-        min-width: 100%;
-        text-indent: 40px;
-        padding: 60px;
-        margin-bottom: 500px;
-    }
 
     .programming_name {
         grid-template-columns: 1fr;

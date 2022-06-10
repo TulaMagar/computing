@@ -17,13 +17,13 @@ const Home = () => {
 
   const MoveToLanguages = () =>
     window.scrollTo({
-      top: Ref3.current.offsetTop - 84,
+      top: Ref3.current.offsetTop - 82,
       behavior: "smooth",
     });
 
   const MoveToNonRelated = () =>
     window.scrollTo({
-      top: Ref2.current.offsetTop - 115,
+      top: Ref2.current.offsetTop - 82,
       behavior: "smooth",
     });
 
@@ -244,6 +244,7 @@ const Home = () => {
       </div>
 
       <div className="container-L-image" ref={Ref2}>
+        <h1 className="non-related">Non Related Pictures</h1>
         <div className="Static-container">
           <div className="image">
             <img loading="lazy" src={Sea} alt="Clean not found" />
