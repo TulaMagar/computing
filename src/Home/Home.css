@@ -281,10 +281,18 @@
 }
 
 @media (max-width: 762px) {
+    .flex-container {
+        display: block;
+        padding-left: 0;
+    }
+
+    .flex-child {
+        width: 100%;
+    }
 
     .Static-container {
-            grid-template-columns: 1fr;
-        }
+        grid-template-columns: 1fr;
+    }
 
 
     .programming_name {
