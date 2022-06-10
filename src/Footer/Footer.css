@@ -1,5 +1,5 @@
 .FooterBackgroundColor{
-    background-color: var(--Footer-Background-Color)
+    background-color: var(--Footer-Background-Color);
 }
 .FooterWidth{
     height: auto;
@@ -7,6 +7,7 @@
     width: 90%;
     padding: 10px;
     text-align: left;
+
 }
 .FooterContainer {
     display: flex;
@@ -14,6 +15,7 @@
     justify-content: space-between;
     gap: 20px;
     padding: 25px;
+    
     
 }
 .Footer_Column_Header{
