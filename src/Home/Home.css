@@ -132,6 +132,7 @@
 .programming_name {
     padding: 20px;
     padding-top: 50px;
+    padding-bottom: 50px;
     margin: auto;
     width: 90%;
     display: grid;
@@ -146,16 +147,19 @@
     border: 1px solid var(--bg-programming);
     text-align: center;
     position: relative;
+    
 
 }
 
 .programming_name>div>h1 {
     padding: 10px;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 .programming_name>div>p {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
@@ -338,6 +342,6 @@
 
     .programming_name>div>h1 {
         padding: 10px;
-        padding-top: 45px;
+        padding-top: 15px;
     }
 }
