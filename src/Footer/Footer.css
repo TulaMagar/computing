@@ -5,7 +5,6 @@
     height: auto;
     margin: auto;
     width: 90%;
-    padding: 10px;
     text-align: left;
 
 }
@@ -33,11 +32,12 @@
 .FooterLinkColors:hover,
 .FooterLinkColors:active {
     text-decoration: underline;
-    color: var(--Black-text-color);
+    color: var(--background-color-1);
 }
 
 .FooterContainer > div > li{
     list-style: none;
+    padding: 2px;
 }
 .Logo {
     text-align: center;
@@ -57,4 +57,27 @@
 
 .Logo>a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 762px){
+    .FooterContainer{
+        flex-direction: column;
+    }
+    
+    .FooterContainer>div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 2px;
+    }
+    .FooterContainer>div>h3 {
+        width: 100%;
+        margin-bottom: -20px;
+    }
+    .FooterContainer>div>li{
+        list-style: none;
+        padding: 2px;
+        margin-bottom: 15px;
+        
+    }
 }

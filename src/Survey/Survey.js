@@ -20,6 +20,20 @@ function Survey() {
     "react",
     "node",
     "python",
+    "java",
+    "c++",
+    "c#",
+    "ruby",
+    "php",
+    "git",
+    "sql",
+    "mongodb",
+    "react",
+    "redux",
+    "bootstrap",
+    "jquery",
+    "ajax",
+    "express",
   ];
   const handleChange = (event) => {
     setDevice(event.target.value);
