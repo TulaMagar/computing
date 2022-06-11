@@ -95,7 +95,7 @@ const Home = () => {
               HTML stands for Hypertext Markup Language. It is the language used
               to create web pages ....
             </p>
-            <Link className="different_site" to="/contact">
+            <Link className="different_site" to="/html_home">
               Learn More &#x2192;
             </Link>
           </div>
@@ -105,7 +105,7 @@ const Home = () => {
               CSS stands for Cascading Style Sheets. It is a style sheet
               language used to make the web pages look nice ....
             </p>
-            <Link className="different_site" to="/contact">
+            <Link className="different_site" to="/css_intro">
               Learn More &#x2192;
             </Link>
           </div>
@@ -115,7 +115,7 @@ const Home = () => {
               JavaScript is a interpreted programming language. Used for web,
               mobile and desktop applications ....
             </p>
-            <Link className="different_site" to="/contact">
+            <Link className="different_site" to="/javascript_intro">
               Learn More &#x2192;
             </Link>
           </div>
@@ -125,7 +125,7 @@ const Home = () => {
               Python is a interpreted programming language. Used for developing
               web applications and software ....
             </p>
-            <Link className="different_site" to="/contact">
+            <Link className="different_site" to="/python_intro">
               Learn More &#x2192;
             </Link>
           </div>
@@ -135,7 +135,7 @@ const Home = () => {
               React js is a JavaScript library for building user interfaces for
               web ....
             </p>
-            <Link className="different_site" to="/contact">
+            <Link className="different_site" to="/reactjs_intro">
               Learn More &#x2192;
             </Link>
           </div>

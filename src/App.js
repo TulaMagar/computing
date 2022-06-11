@@ -23,6 +23,12 @@ import {
 } from "react-router-dom";
 import Footer from "./Footer/Footer.js";
 
+import html_routes from "./Seperate_route/html_r/html_routes.js";
+import CSS_routes from "./Seperate_route/css_r/css_routes.js";
+import JavaScript_routes from "./Seperate_route/javascript_r/javascript_routes.js";
+import Python_routes from "./Seperate_route/python_r/python_routes.js";
+import reactjs_routes from "./Seperate_route/Reactjs_r/Reactjs_routes.js";
+
 const useScrollToTop = () => {
   const location = useLocation();
   useEffect(() => {
@@ -98,6 +104,13 @@ function App() {
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/tour" element={<Tour />} />
           <Route exact path="/survey" element={<Survey />} />
+
+          {/* programing_languages/html_l/allfiles.js: */}
+          {html_routes}
+          {CSS_routes}
+          {JavaScript_routes}
+          {Python_routes}
+          {reactjs_routes}
 
           {/* Redirect to home page if page not found*/}
           <Route path="*" element={<Navigate to="/" replace />} />

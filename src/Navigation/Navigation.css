@@ -9,7 +9,7 @@
     -webkit-backdrop-filter: blur(0px); */
     background-color: var(--background-color)
 }
-.bg{
+.bg{ 
     opacity: 0.9;
     font-weight: bold;
     min-height: 10vh;
