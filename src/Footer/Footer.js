@@ -101,7 +101,8 @@ function Footer() {
           <a href="https://iconscout.com/icons/tmall" rel="noopener">
             Tmall Logo Icon
           </a>{" "}
-          on <a href="https://iconscout.com">Iconscout</a>
+          <span className="logo-on"> on </span>{" "}
+          <a href="https://iconscout.com">Iconscout</a>
         </div>
       </div>
     </>

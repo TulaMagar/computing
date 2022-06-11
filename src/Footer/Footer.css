@@ -20,27 +20,34 @@
 }
 .Footer_Column_Header{
     padding-bottom: 10px;
+    color:var(--background-color-1);
+    font-weight: bold;
 }
 
 .FooterLinkColors{
     text-decoration: none;
     color: var(--default-text-color)
+    
 }
 
 .FooterLinkColors:hover,
 .FooterLinkColors:active {
     text-decoration: underline;
-    color: var(--question-link-color)
+    color: var(--Black-text-color);
 }
 
 .FooterContainer > div > li{
     list-style: none;
 }
 .Logo {
-    text-align: var(--text-center);
+    text-align: center;
     padding: 30px;
     padding-bottom: 50px;
     
+}
+.logo-on{
+    color: var(--default-text-color);
+    padding: 1px;
 }
 
 .Logo>a {
