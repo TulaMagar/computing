@@ -34,7 +34,6 @@
     "react-slideshow-image": "^3.7.5",
     "react-syntax-highlighter": "^15.5.0",
     "styled-components": "^5.3.5",
-    "survey-react": "^1.9.34",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

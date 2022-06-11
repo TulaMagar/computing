@@ -4,7 +4,11 @@
     text-align: center;
     padding: 25px;
 }
+/* 1160 */
 .servey-request{
+    margin:auto;
+    width: 90%;
+    padding: 14px;
     text-align: center;
 }
 .survey-form{
@@ -15,19 +19,66 @@
     position: relative;
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-template-rows: minmax(30px, auto);
+    /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: minmax(30px, auto); */
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    grid-gap: 10px;
+    grid-gap: 40px;
+    /* line-height: 33px;
+    letter-spacing: 0.131em;
+    font-size: 20px; */
+    padding-bottom: 25px;
 
 }
 
-.survey-form > div{
-    margin-top: 20px;
-    text-align: left;
-    padding: 25px;
-}
 
+.survey-form-device-group{
+    grid-column: span 1;
+    background-color: var(--background-color-4);
+    padding: 20px;
+    border-radius: 5px;
+}
+.survey-form-browser-group{
+    grid-column: 3;
+    background-color: var(--background-color-4);
+    padding: 20px;
+    border-radius: 5px;
+}
+.survey-form-interest-group{
+    background-color: var(--background-color-7);
+    padding: 20px;
+    border-radius: 5px;
+}
+.survey-form-rating-group{
+    grid-column: 2;
+    grid-row: 1/ span 2;
+    background-color: var(--background-color-6);
+  
+    padding: 20px;
+   line-height: 40px;
+    border-radius: 5px;
+}
+.survey-form-submit-button{
+    background-color: var(--background-color-7);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid green;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    
+}
+.submit-survey{
+    
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    background-color: var(--bg-programming);
+    color: var(--default-text-color);
+}
 .survey-interest-selection{
     width: 40%;
     text-align: center;
@@ -37,27 +88,89 @@
     padding: 30px;
     text-align: center;
 }
-.survey-form-submit-button{
-    text-align: center;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 5px;
-}
-@media (min-width: 852px) and (max-width: 1545px) {
+
+@media (min-width: 874px) and (max-width: 1545px) {
     .survey-form{
-        grid-template-columns: repeat(2, minmax(400px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (max-width: 852px) {
+@media (max-width: 873px) {
     .survey-form{
-       grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap : 20px;
     }
+    .survey-form-device-group {
+        background-color: var(--background-color-4);
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .survey-form-browser-group {
+
+        background-color: var(--background-color-7);
+        padding: 20px;
+        border-radius: 5px;
+        grid-column: 1;
+    }
+
+    .survey-form-interest-group {
+        background-color: var(--background-color-7);
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .survey-form-rating-group {
+        background-color: var(--background-color-6);
+        grid-column: 2;
+        padding: 20px;
+        line-height: 40px;
+        border-radius: 5px;
+    }
+
 }
 
 @media (max-width: 762px){
     .survey-form{
-        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-areas: 
+        "survey-form-device-group "
+        "survey-form-rating-group"
+        "survey-form-browser-group"
+        "survey-form-interest-group "
+        "survey-form-submit-button "
+        ;
     }
+  
+    .survey-form-device-group {
+       grid-area: survey-form-device-group;
+
+
+    }
+
+    .survey-form-browser-group {
+
+        grid-area: survey-form-browser-group;
+
+    }
+
+    .survey-form-interest-group {
+        grid-area: survey-form-interest-group;
+
+
+    }
+
+    .survey-form-rating-group {
+       grid-area: survey-form-rating-group;
+   
+      grid-row: 2 ;
+
+    }
+    .survey-form-submit-button{
+        grid-area: survey-form-submit-button;
+        grid-column: 2/ span -1;
+ 
+    }
+
 }
