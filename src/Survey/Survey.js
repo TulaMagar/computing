@@ -56,7 +56,7 @@ function Survey() {
               checked={device === "desktop"}
               onChange={handleChange}
             />{" "}
-            desktop/Laptop
+            PC
           </div>
           <div>
             <input
