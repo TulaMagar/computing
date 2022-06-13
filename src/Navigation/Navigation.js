@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Navigation.css";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/js/bootstrap.bundle";
 import { NavLink } from "react-router-dom";
+import Custom_leftSide_vertically_navbar from "./Custom_leftSide_vertically_navbar.js";
 // eslint-disable-next-line
 import { GoogleLogin, GoogleLogout } from "react-google-login";
 
@@ -16,20 +17,16 @@ function Navigation() {
   return (
     <>
       <div className="size">
+        <Custom_leftSide_vertically_navbar />
         <Navbar
           collapseOnSelect
-          sticky="top"
           expand="lg"
           // bg="dark"
-          className="bg"
+          id="bg"
           expanded={expanded}
         >
-          <Navbar.Brand
-            onClick={() => setExpanded(false)}
-            as={NavLink}
-            to="/"
-          >
-            Computing
+          <Navbar.Brand onClick={() => setExpanded(false)} as={NavLink} to="/">
+            Logo
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
@@ -37,9 +34,9 @@ function Navigation() {
           />
           <Navbar.Collapse className="fl" id="responsive-navbar-nav">
             <Nav className="me-auto justify-content-end margin-left">
-              {/* <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/">
-              Home
-            </Nav.Link> */}
+              <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/">
+                Home
+              </Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link

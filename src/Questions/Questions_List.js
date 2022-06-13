@@ -4,6 +4,10 @@ import { BlogPath } from "../Data/Link_Path.js";
 import { Link } from "react-router-dom";
 import UseTitle from "../Title.js";
 import ReactPaginate from "react-paginate";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import "bootstrap/dist/js/bootstrap.bundle";
+import { NavLink } from "react-router-dom";
+import Custom_leftSide_vertically_navbar from "../Navigation/Custom_leftSide_vertically_navbar.js";
 //https://www.toptal.com/designers/htmlarrows/arrows/
 
 function PaginatedItems() {
@@ -106,20 +110,27 @@ function Questions_List() {
       <div className="fixwidth">
         <div id="container">
           <div id="left">
-            <br />
-            <h1>RIGHTTT SIDE1</h1>
-            <br />
-            <h1>RIGHT SIDE2</h1>
-            <br />
-            <h1>RIGHT SIDE3</h1>
-            <br />
-            <h1>RIGHT SIDE4</h1>
-            <br />
-            <h1>RIGHT SIDE5</h1>
-            <br />
-            <h1>RIGHT SIDE6</h1>
-            <br />
-            <h1>RIGHTTT SIDE7</h1>
+            <Navbar>
+              <Navbar.Toggle />
+              <Navbar.Collapse>
+                <Nav className="me-auto">
+                  <li className="list">
+                    <Link className="list" to="/">
+                      {" "}
+                      Home
+                    </Link>
+                    <Link className="list" to="/">
+                      {" "}
+                      Home
+                    </Link>
+                    <Link className="list" to="/">
+                      {" "}
+                      Home
+                    </Link>
+                  </li>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
           </div>
 
           <div id="middle">

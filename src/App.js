@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Navigation,
+  Navigation_testing,
   Home,
   About,
   QuestionsList,
@@ -85,12 +86,38 @@ const Blog = (test) => {
   );
 };
 
-function App() {
+const Paths = () => {
+  const Pathname = useLocation();
+  return (
+    <>
+      {Pathname.pathname === "/question" ? (
+        <Navigation />
+      ) : (
+        <Navigation_testing />
+      )}
+    </>
+  );
+};
+function App(props) {
+  const [showNav, setShowNav] = useState(false);
+  // const Location = useLocation();
+  const path = window.location.pathname;
+  useEffect(() => {
+    console.log(path);
+  }, [path]);
+  const setShowNavs = (props) => {
+    if (props === "true") {
+      setShowNav(true);
+    } else if (props === "") {
+      setShowNav(false);
+    }
+  };
+  console.log("showNav: " + showNav);
   return (
     <HashRouter>
       <ScrollToTop />
       <div lazy="loading" className="App">
-        <Navigation />
+        <Paths />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
