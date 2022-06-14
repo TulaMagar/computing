@@ -110,27 +110,20 @@ function Questions_List() {
       <div className="fixwidth">
         <div id="container">
           <div id="left">
-            <Navbar>
-              <Navbar.Toggle />
-              <Navbar.Collapse>
-                <Nav className="me-auto">
-                  <li className="list">
-                    <Link className="list" to="/">
-                      {" "}
-                      Home
-                    </Link>
-                    <Link className="list" to="/">
-                      {" "}
-                      Home
-                    </Link>
-                    <Link className="list" to="/">
-                      {" "}
-                      Home
-                    </Link>
-                  </li>
-                </Nav>
-              </Navbar.Collapse>
-            </Navbar>
+            <li className="list">
+              <Link className="list" to="/">
+                {" "}
+                Home
+              </Link>
+              <Link className="list" to="/">
+                {" "}
+                Home
+              </Link>
+              <Link className="list" to="/">
+                {" "}
+                Home
+              </Link>
+            </li>
           </div>
 
           <div id="middle">

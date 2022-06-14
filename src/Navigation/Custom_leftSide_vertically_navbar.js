@@ -22,7 +22,7 @@ export default function Custom_leftSide_vertically_navbar() {
         <Navbar.Collapse className="fl" id="responsive-navbar-nav">
           <Nav className="me-auto justify-content-end margin-left">
             <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/">
-              Home
+              Homes
             </Nav.Link>
           </Nav>
           <Nav>
@@ -32,28 +32,28 @@ export default function Custom_leftSide_vertically_navbar() {
               to="/about"
               className="change-color"
             >
-              About
+              Abouts
             </Nav.Link>
             <Nav.Link
               onClick={() => setExpanded(false)}
               as={NavLink}
               to="/careers"
             >
-              Career
+              Careers
             </Nav.Link>
             <Nav.Link
               onClick={() => setExpanded(false)}
               as={NavLink}
               to="/question"
             >
-              Questions
+              Questionss
             </Nav.Link>
             <Nav.Link
               onClick={() => setExpanded(false)}
               as={NavLink}
               to="/book"
             >
-              Books
+              Bookss
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

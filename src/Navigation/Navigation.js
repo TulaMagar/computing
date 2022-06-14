@@ -25,7 +25,12 @@ function Navigation() {
           id="bg"
           expanded={expanded}
         >
-          <Navbar.Brand onClick={() => setExpanded(false)} as={NavLink} to="/">
+          <Navbar.Brand
+            id="HideInVerySmall"
+            onClick={() => setExpanded(false)}
+            as={NavLink}
+            to="/"
+          >
             Logo
           </Navbar.Brand>
           <Navbar.Toggle
@@ -34,7 +39,12 @@ function Navigation() {
           />
           <Navbar.Collapse className="fl" id="responsive-navbar-nav">
             <Nav className="me-auto justify-content-end margin-left">
-              <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/">
+              <Nav.Link
+                id="ShowInVerySmall"
+                onClick={() => setExpanded(false)}
+                as={NavLink}
+                to="/"
+              >
                 Home
               </Nav.Link>
             </Nav>
