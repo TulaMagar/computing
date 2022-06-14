@@ -108,11 +108,24 @@ const Paths = () => {
     </>
   );
 };
-function App(props) {
+function App() {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    // 👇️ toggle
+    setIsActive(current => !current);
+
+    // 👇️ or set to true
+    // setIsActive(true);
+  };
   return (
     <HashRouter>
       <ScrollToTop />
-      <div lazy="loading" className="App">
+      <div lazy="loading" style={{
+          backgroundColor: isActive ? 'black' : '',
+          color: isActive ? 'whitesmoke' : '',
+        }}
+        onClick={handleClick}>
         <Paths />
         <Routes>
           <Route exact path="/" element={<Home />} />

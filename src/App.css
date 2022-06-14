@@ -16,6 +16,10 @@
   font-size: var(--default-font-size);
 }
 
+.change-theme{
+  background-color: #36383f;
+  color: whitesmoke;
+}
 @media (max-width: 640px){
   .App{
     font-size: var(--default-font-size-mobile);
