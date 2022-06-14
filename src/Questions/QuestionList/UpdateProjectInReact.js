@@ -1,6 +1,6 @@
 import React from "react";
 import UseTitle from "../../Title.js";
-
+import { Link } from "react-router-dom";
 //https://www.toptal.com/designers/htmlarrows/arrows/
 
 function UpdateProjectInReact() {
@@ -9,22 +9,21 @@ function UpdateProjectInReact() {
     <>
       <div id="container">
         <div id="left">
-          <br />
-          <h1>RIGHTTT SIDE1</h1>
-          <br />
-          <h1>RIGHT SIDE2</h1>
-          <br />
-          <h1>RIGHT SIDE3</h1>
-          <br />
-          <h1>RIGHT SIDE4</h1>
-          <br />
-          <h1>RIGHT SIDE5</h1>
-          <br />
-          <h1>RIGHT SIDE6</h1>
-          <br />
-          <h1>RIGHTTT SIDE7</h1>
+          <li className="list">
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+          </li>
         </div>
-
         <div id="middle">
           <h1>How to Upgrade, Install and Uninstall In React?</h1>
           <p>

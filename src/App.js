@@ -88,31 +88,27 @@ const Blog = (test) => {
 
 const Paths = () => {
   const Pathname = useLocation();
+  const [Path] = useState([
+    "/",
+    "/about",
+    "/careers",
+    "/book",
+    "/login",
+    "/contact",
+    "/tour",
+    "/survey",
+  ]);
   return (
     <>
-      {Pathname.pathname === "/question" ? (
-        <Navigation />
-      ) : (
+      {Path.includes(Pathname.pathname) ? (
         <Navigation_testing />
+      ) : (
+        <Navigation />
       )}
     </>
   );
 };
 function App(props) {
-  const [showNav, setShowNav] = useState(false);
-  // const Location = useLocation();
-  const path = window.location.pathname;
-  useEffect(() => {
-    console.log(path);
-  }, [path]);
-  const setShowNavs = (props) => {
-    if (props === "true") {
-      setShowNav(true);
-    } else if (props === "") {
-      setShowNav(false);
-    }
-  };
-  console.log("showNav: " + showNav);
   return (
     <HashRouter>
       <ScrollToTop />

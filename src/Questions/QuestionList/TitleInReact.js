@@ -3,7 +3,7 @@ import "../Questions_List.css";
 import "bootstrap/dist/css/bootstrap.css";
 import UseTitle from "../../Title.js";
 import "../QuestionList/TitleInReact.css";
-
+import { Link } from "react-router-dom";
 
 function TitleInReact() {
   UseTitle("How to Create Title in React?");
@@ -14,22 +14,20 @@ function TitleInReact() {
     <>
       <div id="container">
         <div id="left">
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
+          <li className="list">
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+          </li>
         </div>
 
         <div id="middle">

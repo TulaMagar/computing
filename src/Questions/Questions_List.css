@@ -99,7 +99,7 @@
         /* width: 40%; */
         position: -webkit-fixed;
         position: fixed;
-        top: 15vh;
+        top: 16vh;
         align-self: start;
         padding-right: 20px;
         padding-bottom: 20px;
@@ -162,7 +162,7 @@
         flex-basis: 30%;
         position: -webkit-sticky;
         position: sticky;
-        top: 13vh;
+        top: 15vh;
         align-self: flex-start;
         padding-right: 20px;
         padding-bottom: 20px;
@@ -173,10 +173,7 @@
         flex-basis: 100%;
         margin: 0 auto;
         border-left: 1px solid whitesmoke;
-        padding-top: 26px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
+        padding: 30px;
     }
 
     #right {
@@ -184,7 +181,13 @@
         height: auto;
         text-align: right;
         padding: 20px;
-        padding-top: 0%;
+    }
+    .Right_t {
+        flex-basis: 34%;
+        height: auto;
+        text-align: right;
+        padding: 20px;
+        margin-top: 0%;
     }
 
 
@@ -192,6 +195,7 @@
         padding: 30px;
         padding-top: 0;
         text-align: center;
+     
     }
 
     .question-list {

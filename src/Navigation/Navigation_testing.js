@@ -21,7 +21,7 @@ function Navigation_testing() {
           collapseOnSelect
           expand="lg"
           // bg="dark"
-          id="bg"
+          id="bgg"
           expanded={expanded}
         >
           <Navbar.Brand onClick={() => setExpanded(false)} as={NavLink} to="/">

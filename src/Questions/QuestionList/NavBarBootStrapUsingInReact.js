@@ -4,20 +4,18 @@ import "bootstrap/dist/css/bootstrap.css";
 import UseTitle from "../../Title.js";
 import "../QuestionList/TitleInReact.css";
 import Highlight, { defaultProps } from "prism-react-renderer";
-
+import { Link } from "react-router-dom";
 //https://github.com/FormidableLabs/prism-react-renderer
 
 function NavBarBootStrapUsingInReact() {
   UseTitle("How to Create a Navbar using Bootstrap in React?");
 
-    const imports = `   
+  const imports = `   
   import React from "react"
   import { Navbar, Nav } from "react-bootstrap";
   import "bootstrap/dist/js/bootstrap.bundle";
   import { NavLink } from "react-router-dom";
-  `
-  ;
-
+  `;
   const exampleCode = `
   <Navbar
     collapseOnSelect
@@ -75,22 +73,20 @@ function NavBarBootStrapUsingInReact() {
     <>
       <div id="container">
         <div id="left">
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
+          <li className="list">
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+          </li>
         </div>
 
         <div id="middle">

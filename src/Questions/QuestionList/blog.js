@@ -9,29 +9,27 @@ import { BrowserView, MobileView } from "react-device-detect";
 import LazyLoad from "react-lazyload";
 import UseTitle from "../../Title.js";
 import ScrollAnimation from "react-animate-on-scroll";
-
+import { Link } from "react-router-dom";
 function blog() {
   UseTitle("My outlook navigation panel isn't in the right place");
   return (
     <>
       <div id="container">
         <div id="left">
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
-          <h1>RIGHT SIDE</h1>
-          <br />
-          <h1>RIGHT SIDE</h1>
+          <li className="list">
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+          </li>
         </div>
 
         <div id="middle">

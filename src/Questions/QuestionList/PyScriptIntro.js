@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import UseTitle from "../../Title.js";
 import "../QuestionList/TitleInReact.css";
 import { AiOutlineCopy } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function PyScriptIntro() {
   UseTitle("Getting started with PyScript?");
@@ -124,20 +125,20 @@ function PyScriptIntro() {
     <>
       <div id="container">
         <div id="left">
-          <br />
-          <h1>RIGHTTT SIDE1</h1>
-          <br />
-          <h1>RIGHT SIDE2</h1>
-          <br />
-          <h1>RIGHT SIDE3</h1>
-          <br />
-          <h1>RIGHT SIDE4</h1>
-          <br />
-          <h1>RIGHT SIDE5</h1>
-          <br />
-          <h1>RIGHT SIDE6</h1>
-          <br />
-          <h1>RIGHTTT SIDE7</h1>
+          <li className="list">
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+          </li>
         </div>
 
         <div id="middle">
