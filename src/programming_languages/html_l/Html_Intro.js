@@ -1,7 +1,10 @@
-import React, { useRef } from "react";
+import React  from "react";
+import "./html_style.css";
 import UseTitle from "../../Title.js";
 import RelatedLinks from "./html_links/related_links";
 import Highlight, { defaultProps } from "prism-react-renderer";
+import Element from "../../img/html_images/html_tag.PNG";
+import { Link } from "react-router-dom";
 export default function html_intro() {
   UseTitle("Html Intro");
 
@@ -23,23 +26,22 @@ export default function html_intro() {
   return (
     <>
       <div id="container">
-        <div id="left">
-          <br />
-          <h1>RIGHTTT SIDE1</h1>
-          <br />
-          <h1>RIGHT SIDE2</h1>
-          <br />
-          <h1>RIGHT SIDE3</h1>
-          <br />
-          <h1>RIGHT SIDE4</h1>
-          <br />
-          <h1>RIGHT SIDE5</h1>
-          <br />
-          <h1>RIGHT SIDE6</h1>
-          <br />
-          <h1>RIGHTTT SIDE7</h1>
-        </div>
-
+      <div id="left">
+            <li className="list">
+              <Link className="list" to="/">
+                {" "}
+                Home
+              </Link>
+              <Link className="list" to="/">
+                {" "}
+                Home
+              </Link>
+              <Link className="list" to="/">
+                {" "}
+                Home
+              </Link>
+            </li>
+          </div>
         <div id="middle">
           <h1>What is HTML?</h1>
 
@@ -91,10 +93,10 @@ export default function html_intro() {
             the HTML page. It is the first tag in the page. It is a required.
             tag.
           </p>
-          <h1>HTML Element</h1>
+          <h1>HTML Element?</h1>
           <p>
             HTML element is the root of the HTML document. It is the parent of
-            As you can see that there are many HTML tags such as
+            as you can see that there are many HTML tags such as
             <code>
               {" "}
               {`<head></head>,
@@ -104,15 +106,15 @@ export default function html_intro() {
             `}{" "}
             </code>
             in the above code. All of the HTML tags should be inside the{" "}
-            <code>{"<html>"}</code> HTML tag with the contents
-            <code>{"</html>"}</code> .
+            <code>{"<html>"}</code> and 
+            <code>{" </html>"} tag</code> .
           </p>
           <h1>HTML Head Element</h1>
           <p>
             The head element is a container for metadata (data about data) and
             is placed between the <code> {"<html>"}</code> tag and the{" "}
             <code> {"<body>"}</code> tag. Metadata is data about the HTML
-            document. Metadata is not displayed. Metadata typically define the
+            document. Metadata doesn't display on the web. Metadata typically define the
             document title, character set, styles, scripts, and other meta
             information.
           </p>
@@ -124,10 +126,11 @@ export default function html_intro() {
           </p>
           <h1>HTML Elements</h1>
           <p>
-            HTML elements are everthing that is inside the tag start with a{" "}
+            HTML elements are everything that is inside the tag start with a{" "}
             <code>{"<tag_name>"}</code> and end with{" "}
             <code>{"</tag_name>"}</code>. For example,
           </p>
+          <img className="html_learning" src={Element} alt="html_tag"/>
         </div>
 
         <div id="right">

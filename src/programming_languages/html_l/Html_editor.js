@@ -27,7 +27,7 @@ export default function Html_editor() {
           <h1>HTML Editor?</h1>
           <p>
             There are many ways to edit HTML. You can use a text editor, a web
-            browser, or the application software. There is a pro and cons of
+            browser, or the application software. There is a pro and con of
             text editor, a web browser, or the application software.
           </p>
           <h1>Text Editor</h1>
@@ -45,10 +45,10 @@ export default function Html_editor() {
             can be online anywhere and work with the projects that you have. If
             you work on a project that used packages like react, redux, etc, I
             won't suggest you to use the web browser. When you install the
-            dependencies, web browser will not be able to find the packages.
+            dependencies, sometimes web browser will not be able to find the packages but that doesn't have a lot.
           </p>
           <p>
-            You can download the application software from the following
+            You can reach to them from the following
             <a className="Link_Color" href="https://stackblitz.com/">
               {" "}
               Stackblitz,

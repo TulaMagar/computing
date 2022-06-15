@@ -4,10 +4,11 @@
     /* --background-color: rgb(53, 52, 52); */
     --background-color: #D3D3D3;
 
+
     /* Text Colors */
     --default-text-color: rgb(255, 255, 255);
     --Mini-info-bg-color: rgb(33, 186, 197);
-    --Black-text-color: black;
+    --Black-text-color: rgb(0, 0, 0);
     --question-link-color: #00539CFF;
     --SampleCode-background: rgb(174, 177, 179);
     --Footer-Background-Color: #00539CFF !important;

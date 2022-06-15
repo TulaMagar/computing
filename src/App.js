@@ -126,7 +126,7 @@ function App() {
           color: isActive ? 'whitesmoke' : '',
         }}
         onClick={handleClick}> */}
-      <div lazy="loading" className="App">
+      <div lazy="loading" className="App" translate="yes">
         <Paths />
         <Routes>
           <Route exact path="/" element={<Home />} />
