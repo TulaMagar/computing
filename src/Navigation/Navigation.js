@@ -78,7 +78,7 @@ function Navigation() {
               >
                 Books
               </Nav.Link>
-              <Nav.Link onClick={() => setExpanded(false)}>
+              {/* <Nav.Link onClick={() => setExpanded(false)}>
                 <GoogleLogin
                   clientId="362106271336-lvllg1b0gt944t15dkdlkrs165s387v9.apps.googleusercontent.com"
                   render={(renderProps) => (
@@ -104,7 +104,7 @@ function Navigation() {
                     });
                   }}
                 />
-              </Nav.Link>
+              </Nav.Link> */}
               {/* <GoogleLogout
                 clientId="362106271336-lvllg1b0gt944t15dkdlkrs165s387v9.apps.googleusercontent.com"
                 buttonText="Logout"

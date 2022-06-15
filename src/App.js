@@ -113,7 +113,7 @@ function App() {
 
   const handleClick = () => {
     // 👇️ toggle
-    setIsActive(current => !current);
+    setIsActive((current) => !current);
 
     // 👇️ or set to true
     // setIsActive(true);
@@ -121,11 +121,12 @@ function App() {
   return (
     <HashRouter>
       <ScrollToTop />
-      <div lazy="loading" style={{
+      {/* <div lazy="loading" style={{
           backgroundColor: isActive ? 'black' : '',
           color: isActive ? 'whitesmoke' : '',
         }}
-        onClick={handleClick}>
+        onClick={handleClick}> */}
+      <div lazy="loading" className="App">
         <Paths />
         <Routes>
           <Route exact path="/" element={<Home />} />
