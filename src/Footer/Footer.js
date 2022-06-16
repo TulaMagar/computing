@@ -13,66 +13,75 @@ function Footer() {
           <div className="FooterContainer">
             <div className="LeftFooter">
               <h3 className="Footer_Column_Header">Company</h3>
+              <ul>
               <li>
-                {" "}
+                
                 <Link className="FooterLinkColors" to="/contact">
-                  {" "}
-                  contact{" "}
+                  
+                  contact
                 </Link>
               </li>
               <li>
-                {" "}
+                
                 <Link className="FooterLinkColors" to="/about">
-                  {" "}
-                  about{" "}
+                  
+                  about
                 </Link>
               </li>
               <li>
-                {" "}
+                
                 <Link className="FooterLinkColors" to="/careers">
-                  {" "}
-                  Career{" "}
+                  
+                  Career
                 </Link>
               </li>
+              </ul>
             </div>
 
             <div className="MiddleFooter">
+            
               <h3 className="Footer_Column_Header">Product</h3>
+              <ul>
               <li>
-                {" "}
+                
                 <Link className="FooterLinkColors" to="/question">
-                  {" "}
+                  
                   Questions
                 </Link>
               </li>
 
               <li>
-                {" "}
+                
                 <Link className="FooterLinkColors" to="/book">
                   Books
                 </Link>
               </li>
+              </ul>
             </div>
             <div className="Right_Footer">
+              
               <h3 className="Footer_Column_Header">Improve</h3>
+              <ul>
               <li>
-                {" "}
+                
                 <Link className="FooterLinkColors" to="/survey">
-                  {" "}
-                  Survey{" "}
+                  
+                  Survey
                 </Link>
               </li>
               <li>
-                {" "}
+                
                 <Link className="FooterLinkColors" to="/tour">
-                  {" "}
-                  Tour{" "}
+                  
+                  Tour
                 </Link>
               </li>
+              </ul>
             </div>
 
             <div className="Right_Footer">
               <h3 className="Footer_Column_Header">Social</h3>
+              <ul>
               <li>
                 <SocialIcon
                   url="https://www.youtube.com/channel/UC3y-6eW4qn4cToD26hMv2xg"
@@ -101,6 +110,7 @@ function Footer() {
                   rel="noopener noreferrer"
                 />
               </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -111,8 +121,8 @@ function Footer() {
             rel="noopener noreferrer"
           >
             Tmall Logo Icon
-          </a>{" "}
-          <span className="logo-on"> on </span>{" "}
+          </a>
+          <span className="logo-on"> on </span>
           <a href="https://iconscout.com">Iconscout</a>
         </div>
       </div>

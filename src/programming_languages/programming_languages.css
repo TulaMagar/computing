@@ -1,6 +1,7 @@
 .related_links {
     display: block;
     text-decoration: none;
+    color: inherit;
 }
 
 @media (max-width: 640px){

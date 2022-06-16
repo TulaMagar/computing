@@ -6,9 +6,6 @@ import UseTitle from "../Title.js";
 import { Link } from "react-router-dom";
 import Globe_Network from "../img/Globe-Network.jpg";
 import Globe from "../img/giphy.gif";
-// import { useSpring, animated } from "react-spring";
-//<a href="https://iconscout.com/icons/winking-face" target="_blank">Smiling Face With Heart Eyes Emoji Icon</a> by <a href="https://iconscout.com/contributors/iconscout">Iconscout Store</a> on <a href="https://iconscout.com">IconScout</a>
-//<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/U4FkC2VqpeNRHjTDQ5" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/technology-earth-communications-U4FkC2VqpeNRHjTDQ5">via GIPHY</a></p>
 
 function About() {
   const myref = useRef();
@@ -38,10 +35,10 @@ function About() {
 
       <div className="contin">
         <div className="weTheOne">
-          <img src={WeTheOne} alt="we the one not found" loading="lazy" />{" "}
+          <img src={WeTheOne} alt="we the one not found" />
         </div>
         <div className="Connecting">
-          <img src={WeTheOne} alt="we the one not found" loading="lazy" />{" "}
+          <img src={WeTheOne} alt="we the one not found" />
         </div>
       </div>
 
@@ -58,20 +55,20 @@ function About() {
             website. I hope you enjoy the website. Please, help us to make this
             website better. You can contact to this website by email via
             <Link className="Link_Color" to="/contact">
-              {" "}
-              contact{" "}
+              
+              contact
             </Link>
             . Thank you. Find out Questions and answers about the computer
             science, programming, information technology, engineering fields and
-            more from{" "}
+            more from
             <Link className="Link_Color" to="/question">
-              {" "}
-              Questions{" "}
+              
+              Questions
             </Link>
             . Find out about the suitable books for you from
             <Link className="Link_Color" to="/book">
-              {" "}
-              Books{" "}
+              
+              Books
             </Link>
             .
           </p>
@@ -89,8 +86,8 @@ function About() {
               website. Please, help us to make this website better. You can
               contact to this website by email via
               <Link className="Link_Color" to="/contact">
-                {" "}
-                contact{" "}
+                
+                contact
               </Link>
               , thank you.
             </p>
@@ -102,8 +99,8 @@ function About() {
                 className="Link_Color"
                 href="https://github.com/TulaMagar/computing.git"
               >
-                {" "}
-                GitHub{" "}
+                
+                GitHub
               </a>
               .
             </p>
@@ -136,8 +133,8 @@ function About() {
       </div>
 
       <h1 style={{ textAlign: "center", paddingTop: 30 }}>
-        {" "}
-        What We Cannot Do{" "}
+        
+        What We Cannot Do
       </h1>
       <div className="ToWhom">
         <div
@@ -999,7 +996,7 @@ function About() {
             <ul>
               <li> Do research about topic </li>
               <li>
-                {" "}
+                
                 Plan, planning, analysis, design, implementation and
                 development, testing and integration, and maintenance.
               </li>

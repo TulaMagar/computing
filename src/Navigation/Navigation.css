@@ -1,4 +1,6 @@
+
 @media (max-width: 301px) {
+    /* 1144 second media query */
     .size {
         position: -webkit-sticky;
         position: sticky;

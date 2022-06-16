@@ -22,3 +22,7 @@
 
 
 https://codesandbox.io/s/suspicious-breeze-hf41m?from-embed=&file=/src/components/Editor.jsx
+
+
+# Reduce all the images for better performace
+https://www.resizepixel.com/download
