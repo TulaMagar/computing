@@ -11,38 +11,43 @@ export default function html_intro() {
   return (
     <>
       <div id="container">
-      <div id="left">
-            <li className="list">
-              <Link className="list" to="/">
-                {" "}
-                Home
-              </Link>
-              <Link className="list" to="/">
-                {" "}
-                Home
-              </Link>
-              <Link className="list" to="/">
-                {" "}
-                Home
-              </Link>
-            </li>
-          </div>
+        <div id="left">
+          <li className="list">
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+          </li>
+        </div>
         <div id="middle">
-          <h1>What is HTML Attributes?</h1>   
+          <h1>What is HTML Attributes?</h1>
           <p>
-            The below image shows the HTML tag and its attributes. If you understand what the image trying to tell you then you can easily
-             understand the HTML attributes, where to put them, and what they do.
+            The below image shows the HTML tag and its attributes. If you
+            understand what the image trying to tell you then you can easily
+            understand the HTML attributes, where to put them, and what they do.
           </p>
-          <img className="html_learning" src={Html_attributes} alt="html_attributes"/>
+          <img
+            className="html_learning"
+            src={Html_attributes}
+            alt="html_attributes"
+          />
           <p>
-            HTML attributes are properties that are added to HTML elements and inside opening tags. 
-            Attributes are used to add extra information to HTML elements.
+            HTML attributes are properties that are added to HTML elements and
+            inside opening tags. Attributes are used to add extra information to
+            HTML elements.
           </p>
-          <h1>
-            Extra Information About HTML Elements?
-          </h1>
+          <h1>Extra Information About HTML Elements?</h1>
           <section>
-            They are many HTML attributes that are used to add extra information to HTML elements.
+            They are many HTML attributes that are used to add extra information
+            to HTML elements.
             <table className="html_attributes_table">
               <thead>
                 <tr>
@@ -60,7 +65,11 @@ export default function html_intro() {
                     <code>any html elements</code>
                   </td>
                   <td>
-                    This is used to add a class to an HTML element.
+                    HTMl class attributes are used that defines the specific
+                    class name of the one to many elements. Class attribute is
+                    used to select the elements that have the same class name.
+                    Css and JavaScript can access the class name of the elements
+                    to do specific tasks.
                   </td>
                 </tr>
                 <tr>
@@ -71,7 +80,12 @@ export default function html_intro() {
                     <code>any html elements</code>
                   </td>
                   <td>
-                    This is used to add an id to an HTML element.
+                    ID attribute is used to select the element that has the same
+                    ID. Or ID and class attribute is used to select the element
+                    that has the same ID and class name. But the different is ID
+                    can't have multiple same attribute name. ID most be unique
+                    everything you gave a ID attribute. ID is like database row
+                    ID such as excel, sql, etc. They don't allow duplicate ID.
                   </td>
                 </tr>
                 <tr>
@@ -79,12 +93,11 @@ export default function html_intro() {
                     <code>style</code>
                   </td>
                   <td>
-                    <code> 
-                      inline css style for any html elements
-                    </code>
+                    <code>inline css style for any html elements</code>
                   </td>
                   <td>
-                    This is used to add a style to an HTML element.
+                    Style attribute is used to add css style to the elements.
+                    You can add inline css style to the elements.
                   </td>
                 </tr>
                 <tr>
@@ -93,10 +106,10 @@ export default function html_intro() {
                   </td>
                   <td>
                     <code>img</code>
-
                   </td>
                   <td>
-                    This is used to add a source to an HTML element.
+                    Src attribute is used to add the image source to the image.
+                    You src local or online images.
                   </td>
                 </tr>
                 <tr>
@@ -107,7 +120,9 @@ export default function html_intro() {
                     <code>img</code>
                   </td>
                   <td>
-                    This is used to add an alt to an HTML element.
+                    Alt attribute is used to add the image description to the
+                    image. If the image is not found then the description will
+                    be shown.
                   </td>
                 </tr>
                 <tr>
@@ -118,27 +133,33 @@ export default function html_intro() {
                     <code>a tag</code>
                   </td>
                   <td>
-                    This is used to add a href to an HTML element.
+                    Href attribute is used to add the link to the link. You can
+                    add the local or online link.
                   </td>
                 </tr>
                 <tr>
-                 <td><code> accept-charset</code></td>
-                  <td><code>form</code></td>
-
+                  <td>
+                    <code> accept-charset</code>
+                  </td>
+                  <td>
+                    <code>form</code>
+                  </td>
 
                   <td>
-                    This is used to add a accept-charset to an HTML element.
+                    Accept-charset attribute is used to add the charset to the
+                    form and encodes the data to utf-8. You don't need to add
+                    the accept-charset if you are specific meta data as an utf-8
+                    in the head.
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <code>accesskey</code>
                   </td>
+                  <code>button, input, label, legend, textarea</code>
                   <td>
-                    button, input, label, legend, textarea 
-                  </td>
-                  <td>
-                    This is used to add an accesskey to an HTML element.
+                    The accesskey attribute specifies a shortcut key to
+                    activate/focus an element.
                   </td>
                 </tr>
                 <tr>
@@ -146,23 +167,23 @@ export default function html_intro() {
                     <code>action</code>
                   </td>
                   <td>
-                    form 
+                    <code>form</code>
                   </td>
                   <td>
-                    This is used to add an action to an HTML element.
+                    The action attribute specifies the action to be performed on
+                    a form and is used to send the form data to the server.
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <td>
                     <code>autocomplete</code>
-                    </td>
-                    <td>
-                    input
-                    </td>
                   </td>
                   <td>
-                    This is used to add an autocomplete to an HTML element.
+                    <code>input</code>
+                  </td>
+                  <td>
+                    The autocomplete attribute specifies whether the input field
+                    should be autocompleted by using on and off value.
                   </td>
                 </tr>
                 <tr>
@@ -170,10 +191,11 @@ export default function html_intro() {
                     <code>autofocus</code>
                   </td>
                   <td>
-                    input 
+                    <code>form, input</code>
                   </td>
                   <td>
-                    This is used to add an autofocus to an HTML element.
+                    The autofocus attribute specifies that the which input field
+                    should be focused when the page loads.
                   </td>
                 </tr>
                 <tr>
@@ -181,10 +203,11 @@ export default function html_intro() {
                     <code>autoplay</code>
                   </td>
                   <td>
-                    video
+                    <code>video</code>
                   </td>
                   <td>
-                    This is used to add an autoplay to an HTML element.
+                    The autoplay attribute specifies that the video should be
+                    autoplayed.
                   </td>
                 </tr>
                 <tr>
@@ -192,10 +215,11 @@ export default function html_intro() {
                     <code>checked</code>
                   </td>
                   <td>
-                    input
+                    <code>input, radio-button</code>
                   </td>
                   <td>
-                    This is used to add a checked to an HTML element.
+                    The checked attribute specifies that the check field should
+                    be checked.
                   </td>
                 </tr>
                 <tr>
@@ -203,11 +227,11 @@ export default function html_intro() {
                     <code>cols</code>
                   </td>
                   <td>
-                    textarea
+                    <code>textarea</code>
                   </td>
                   <td>
-
-                    This is used to add a cols to an HTML element.
+                    The cols attribute specifies the number of columns in a
+                    textarea.
                   </td>
                 </tr>
                 <tr>
@@ -215,10 +239,11 @@ export default function html_intro() {
                     <code>colspan</code>
                   </td>
                   <td>
-                    td, th
+                    <code>td, th</code>
                   </td>
                   <td>
-                    This is used to add a colspan to an HTML element.
+                    The colspan attribute specifies the number of columns a cell
+                    should span.
                   </td>
                 </tr>
                 <tr>
@@ -226,10 +251,10 @@ export default function html_intro() {
                     <code>content</code>
                   </td>
                   <td>
-                    meta
+                    <code>meta</code>
                   </td>
                   <td>
-                    This is used to add a content to an HTML element.
+                    The content attribute specifies the content of the meta tag.
                   </td>
                 </tr>
                 <tr>
@@ -237,10 +262,11 @@ export default function html_intro() {
                     <code>contenteditable</code>
                   </td>
                   <td>
-                    any html elements
+                    <code>any html elements</code>
                   </td>
                   <td>
-                    This is used to add a contenteditable to an HTML element.
+                    The contenteditable attribute specifies whether the content
+                    of the element is editable.
                   </td>
                 </tr>
                 <tr>
@@ -248,21 +274,20 @@ export default function html_intro() {
                     <code>contextmenu</code>
                   </td>
                   <td>
-                    any html elements
+                    <code>any html elements</code>
                   </td>
-                  <td>
-                    This is used to add a contextmenu to an HTML element.
-                  </td>
+                  <td>This is used to add a contextmenu to an HTML element.</td>
                 </tr>
                 <tr>
                   <td>
                     <code>controls</code>
                   </td>
                   <td>
-                    audio, video
+                    <code>audio, video</code>
                   </td>
                   <td>
-                    This is used to add a controls to an HTML element.
+                    The controls attribute specifies that the media element
+                    should be displayed with controls.
                   </td>
                 </tr>
                 <tr>
@@ -270,10 +295,10 @@ export default function html_intro() {
                     <code>coords</code>
                   </td>
                   <td>
-                    area
+                    <code>area</code>
                   </td>
                   <td>
-                    This is used to add a coords to an HTML element.
+                    The coords attribute specifies the coordinates of the shape.
                   </td>
                 </tr>
                 <tr>
@@ -281,11 +306,10 @@ export default function html_intro() {
                     <code>data</code>
                   </td>
                   <td>
-                    any html elements
+                    <code>any html elements</code>
                   </td>
                   <td>
-                    This is used to add a data to an HTML element.
-
+                    The data attribute specifies the value of the element.
                   </td>
                 </tr>
                 <tr>
@@ -293,21 +317,24 @@ export default function html_intro() {
                     <code>datetime</code>
                   </td>
                   <td>
-                    This is used to add a datetime to an HTML element.
+                    <code>input</code>
                   </td>
-                </tr>
-                <tr>
-                  <td> class </td>
                   <td>
-                    This is used to add a class to an HTML element.
+                    The datetime attribute specifies the date and time when the
+                    element was last modified.
                   </td>
                 </tr>
+
                 <tr>
                   <td>
                     <code>dir</code>
                   </td>
+                  <code> any html elements</code>
                   <td>
-                    This is used to add a dir to an HTML element.
+                    The dir attribute specifies the text direction of the
+                    element. You can use ltr or rtl to specify the text
+                    direction. ltr is for left to right and rtl is for right to
+                    left. The default value is ltr.
                   </td>
                 </tr>
                 <tr>
@@ -315,7 +342,11 @@ export default function html_intro() {
                     <code>disabled</code>
                   </td>
                   <td>
-                    This is used to add a disabled to an HTML element.
+                    <code>button, input, select, textarea</code>
+                  </td>
+                  <td>
+                    The disabled attribute specifies that the element should be
+                    disabled cannot be used.
                   </td>
                 </tr>
                 <tr>
@@ -323,16 +354,24 @@ export default function html_intro() {
                     <code>enctype</code>
                   </td>
                   <td>
-                    This is used to add a enctype to an HTML element.
+                    <code>form</code>
+                  </td>
+                  <td>
+                    The enctype attribute specifies how the form-data should be
+                    encoded.
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <code>for</code>
                   </td>
+                  <td>
+                    <code>label</code>
+                  </td>
 
                   <td>
-                    This is used to add a for to an HTML element.
+                    The for attribute specifies which form element a label is
+                    for.
                   </td>
                 </tr>
                 <tr>
@@ -340,7 +379,10 @@ export default function html_intro() {
                     <code>formaction</code>
                   </td>
                   <td>
-                    This is used to add a formaction to an HTML element.
+                    <code>input, button</code>
+                  </td>
+                  <td>
+                    The formaction attribute specifies the action of the form.
                   </td>
                 </tr>
                 <tr>
@@ -348,7 +390,11 @@ export default function html_intro() {
                     <code>formenctype</code>
                   </td>
                   <td>
-                    This is used to add a formenctype to an HTML element.
+                    <code>input, button</code>
+                  </td>
+                  <td>
+                    The formenctype attribute specifies how the form-data should
+                    be encoded.
                   </td>
                 </tr>
                 <tr>
@@ -356,7 +402,11 @@ export default function html_intro() {
                     <code>formmethod</code>
                   </td>
                   <td>
-                    This is used to add a formmethod to an HTML element.
+                    <code>input, button</code>
+                  </td>
+                  <td>
+                    The formmethod attribute specifies the HTTP method used to
+                    send the form-data.
                   </td>
                 </tr>
                 <tr>
@@ -364,30 +414,48 @@ export default function html_intro() {
                     <code>formtarget</code>
                   </td>
                   <td>
-                    This is used to add a formtarget to an HTML element.
+                    <code>input, button</code>
+                  </td>
+                  <td>
+                    The formtarget attribute specifies where to display the form
+                    - in a new window or in the same window.
                   </td>
                 </tr>
                 <tr>
                   <td>
-                     scripts
+                    <code>script</code>
                   </td>
                   <td>
-                    This is used to add a scripts to an HTML element.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    crossorigin
+                    <code> script {"( Code )"}</code>
                   </td>
                   <td>
-                    This is used to add a crossorigin to an HTML element.
+                    The script attribute specifies a script to be run when the
+                    page is loaded.
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    decoding </td>
+                    <code>crossorigin</code>
+                  </td>
                   <td>
-                    This is used to add a decoding to an HTML element.
+                    <code>img, audio, video, script, and link</code>
+                  </td>
+                  <td>
+                    The crossorigin attribute specifies whether the content of
+                    the element can be loaded from a source, different or
+                    orginal origin.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>decoding </code>
+                  </td>
+                  <td>
+                    <code>img, audio, video, script, and link</code>
+                  </td>
+                  <td>
+                    The decoding attribute specifies how the element should be
+                    decoded.
                   </td>
                 </tr>
                 <tr>
@@ -395,7 +463,11 @@ export default function html_intro() {
                     <code>draggable</code>
                   </td>
                   <td>
-                    This is used to add a draggable to an HTML element.
+                    <code>img, audio, video, script, and link</code>
+                  </td>
+                  <td>
+                    The draggable attribute specifies whether the element can be
+                    dragged here and there on the page.
                   </td>
                 </tr>
                 <tr>
@@ -403,19 +475,28 @@ export default function html_intro() {
                     <code>dropzone</code>
                   </td>
                   <td>
-                    This is used to add a dropzone to an HTML element.
+                    <code>img, audio, video, script, and link</code>
+                  </td>
+                  <td>
+                    The dropzone attribute ttribute specifies whether the
+                    dragged data is copied, moved, or linked, when it is dropped
+                    on an element.
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    defer
+                    <code> defer </code>
                   </td>
                   <td>
-                    This is used to add a defer to an HTML element.
+                    <code> script </code>
+                  </td>
+                  <td>
+                    The defer attribute specifies that the script should be
+                    loaded after the page has been loaded.
                   </td>
                 </tr>
-                </tbody>
-                </table>
+              </tbody>
+            </table>
           </section>
         </div>
 
