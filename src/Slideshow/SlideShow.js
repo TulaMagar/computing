@@ -23,6 +23,7 @@ const Slideshow = () => {
               <img
                 className="test"
                 src={slideImage.url}
+                loading="lazy"
                 alt="slideshow images not found"
               />
 
