@@ -1,5 +1,10 @@
 export const BlogPath = [
   {
+    url: "EditorApp",
+    title: "Coming Soon Microsof",
+    description: "Coming n Panel",
+  },
+  {
     url: "blog",
     title: "Coming Soon Microsoft Outlook Navigation Panel",
     description: "Coming Soon Microsoft Outlook Navigation Panel",
