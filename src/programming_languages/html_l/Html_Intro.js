@@ -8,36 +8,30 @@ import HtmlCssJsEditor from "../../Editor/HtmlCssJsEditor.js";
 export default function Html_intro() {
   UseTitle("Html Intro");
 
-  const htmlIntroContent = `
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>My First HTML</title>
-    </head>
-    <body>
-
-      <h1>My First Heading</h1>
-      <p>My first paragraph.</p>
-
-    </body>
-  </html>
-  `;
+  const htmlIntroContent = `<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First HTML</title>
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
+</html>
+`;
 
   return (
     <>
       <div id="container">
         <div id="left">
-          <li className="list">
-            <Link className="list" to="/">
-              {" "}
+          <li className="LeftList">
+            <Link className="LeftList" to="/">
               Home
             </Link>
-            <Link className="list" to="/">
-              {" "}
+            <Link className="LeftList" to="/">
               Home
             </Link>
-            <Link className="list" to="/">
-              {" "}
+            <Link className="LeftList" to="/">
               Home
             </Link>
           </li>
@@ -66,7 +60,7 @@ export default function Html_intro() {
             HTML language and says bye bye HTML!
           </p>
           <h1>Let's Start HTML </h1>
-          <HtmlCssJsEditor prop={htmlIntroContent} />
+          <HtmlCssJsEditor props={htmlIntroContent} />
           <p>
             Above is the HTML code that we will use to create our first web
             page.
@@ -86,8 +80,7 @@ export default function Html_intro() {
             HTML element is the root of the HTML document. It is the parent of
             as you can see that there are many HTML tags such as
             <code>
-              {" "}
-              {`<head></head>,
+              {` <head></head>,
             <body></body>,
             <h1></h1> and,
             <p></p>

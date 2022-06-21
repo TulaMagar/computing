@@ -11,77 +11,56 @@ function Footer() {
       <div className="FooterBackgroundColor">
         <div className="FooterWidth">
           <div className="FooterContainer">
-            <div className="LeftFooter">
+            <ul className="LeftFooter">
               <h3 className="Footer_Column_Header">Company</h3>
-              <ul>
               <li>
-                
                 <Link className="FooterLinkColors" to="/contact">
-                  
                   contact
                 </Link>
               </li>
               <li>
-                
                 <Link className="FooterLinkColors" to="/about">
-                  
                   about
                 </Link>
               </li>
               <li>
-                
                 <Link className="FooterLinkColors" to="/careers">
-                  
                   Career
                 </Link>
               </li>
-              </ul>
-            </div>
+            </ul>
 
-            <div className="MiddleFooter">
-            
+            <ul className="MiddleFooter">
               <h3 className="Footer_Column_Header">Product</h3>
-              <ul>
               <li>
-                
                 <Link className="FooterLinkColors" to="/question">
-                  
                   Questions
                 </Link>
               </li>
 
               <li>
-                
                 <Link className="FooterLinkColors" to="/book">
                   Books
                 </Link>
               </li>
-              </ul>
-            </div>
-            <div className="Right_Footer">
-              
+            </ul>
+
+            <ul className="Right_Footer">
               <h3 className="Footer_Column_Header">Improve</h3>
-              <ul>
               <li>
-                
                 <Link className="FooterLinkColors" to="/survey">
-                  
                   Survey
                 </Link>
               </li>
               <li>
-                
                 <Link className="FooterLinkColors" to="/tour">
-                  
                   Tour
                 </Link>
               </li>
-              </ul>
-            </div>
+            </ul>
 
-            <div className="Right_Footer">
+            <ul className="Right_Footer">
               <h3 className="Footer_Column_Header">Social</h3>
-              <ul>
               <li>
                 <SocialIcon
                   url="https://www.youtube.com/channel/UC3y-6eW4qn4cToD26hMv2xg"
@@ -110,8 +89,7 @@ function Footer() {
                   rel="noopener noreferrer"
                 />
               </li>
-              </ul>
-            </div>
+            </ul>
           </div>
         </div>
         <div className="Logo">

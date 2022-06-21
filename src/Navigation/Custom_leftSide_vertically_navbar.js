@@ -19,8 +19,8 @@ export default function Custom_leftSide_vertically_navbar() {
           aria-controls="responsive-navbar-nav"
           onClick={() => setExpanded(expanded ? false : "expanded")}
         />
-        <Navbar.Collapse className="fl" id="responsive-navbar-nav">
-          <Nav className="me-auto justify-content-end margin-left">
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
             <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/">
               Homes
             </Nav.Link>

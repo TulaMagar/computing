@@ -5,20 +5,21 @@ import RelatedLinks from "./html_links/related_links";
 import Highlight, { defaultProps } from "prism-react-renderer";
 // import Element from "../../img/html_images/html_tag.PNG";
 import { Link } from "react-router-dom";
+import HtmlCssJsEditor from "../../Editor/HtmlCssJsEditor.js";
 
-export default function html_comment() {
+export default function Html_comment() {
   UseTitle("What is HTML Comment?");
   const html_comment = `
   <!-- This is a comment -->
   `;
-  const html_source_code_comment = `
+  const [code, setCode] = React.useState(`
   <!-- each person job status -->
 
   <p> John is front-end developer </p>
   <p> Alex is full-stack developer </p>
   <p> Nathan is front-end developer </p>
   <p> Mike is full-stack developer </p>
-  `;
+  `);
 
   const html_inline_comment = `
   <!-- hide content -->
@@ -72,41 +73,13 @@ export default function html_comment() {
           </p>
           <h1>HTML Comment Examples</h1>
 
-          <Highlight {...defaultProps} code={html_comment} language="jsx">
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_comment} />
           <p>
             Comment opening start with <code>&lt;!--</code> and closing is
             <code>--&gt;</code>
           </p>
           <h1>Source Code: Comment</h1>
-          <Highlight
-            {...defaultProps}
-            code={html_source_code_comment}
-            language="jsx"
-          >
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={code} />
           <p>
             When some one want to know the purpose of the code, they can read
             the comment.
@@ -114,65 +87,21 @@ export default function html_comment() {
             tells the reader the purpose of the code.
           </p>
           <h1>Inline Comment</h1>
-          <Highlight
-            {...defaultProps}
-            code={html_inline_comment}
-            language="jsx"
-          >
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_inline_comment} />
           <p>
             Inline comment is used to hide the code, content and more. As you
             can see in the code, the content of the code is hidden.
           </p>
 
           <h1>Hide Element</h1>
-          <Highlight {...defaultProps} code={html_hide_comment} language="jsx">
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_hide_comment} />
           <p>
             We can use the comment to hide the code, content and more. As you
             can see in the code, the <code>p</code> tag is hidden of Alex and
             Nathan.
           </p>
           <h1>Multiple Lines Comment</h1>
-          <Highlight
-            {...defaultProps}
-            code={html_multiple_lines_comment}
-            language="jsx"
-          >
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_multiple_lines_comment} />
           <p>
             Mutiple lines comment is very useful to descript the code more
             understandable. You can also use the comment to hide the multiple

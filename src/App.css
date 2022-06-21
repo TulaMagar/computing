@@ -4,38 +4,33 @@
   padding: 0;
 }
 
-.App{
+.App {
   background-color: var(--background-color);
   color: var(--Black-text-color); /* default text color for all the pages*/
-  font-family: -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI Adjusted",
-    "Segoe UI",
-    "Liberation Sans",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted",
+    "Segoe UI", "Liberation Sans", sans-serif;
   font-size: var(--default-font-size);
   line-height: 35px;
   letter-spacing: 0.02em;
 }
 
-.change-theme{
+.change-theme {
   background-color: #36383f;
   color: whitesmoke;
 }
-@media (max-width: 640px){
-  .App{
+@media (max-width: 640px) {
+  .App {
     font-size: var(--default-font-size-mobile);
   }
 }
 
-@media (min-width: 641px) and (max-width: 970px){
-  .App{
+@media (min-width: 641px) and (max-width: 970px) {
+  .App {
     font-size: var(--default-font-size-tablet);
   }
 }
 
-
-.loading{
+.loading {
   margin: auto;
   border: 20px solid var(--Black-text-color);
   border-radius: 50%;
@@ -45,10 +40,13 @@
   animation: spinner 1.5s linear infinite;
 }
 
-
 @keyframes spinner {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Team styling */
@@ -58,66 +56,64 @@
   text-align: center;
 }
 
-
-.NoUnderLine{
+.NoUnderLine {
   text-decoration: none;
   color: var(--question-link-color);
 }
 
-.pyScriptFullPath{
+.pyScriptFullPath {
   color: var(--question-link-color);
 }
-.CodeSampleBackground{
+.CodeSampleBackground {
   background-color: var(--SampleCode-background);
   padding: 20px;
   /* color: whitesmoke; */
 }
-.testcolor{
+.testcolor {
   color: var(--question-link-color);
 }
-.pl-kos{
+.pl-kos {
   color: var(--Bracket-Color);
 }
-.pl-ent{
+.pl-ent {
   color: var(--HTML-tag-Color);
 }
-.pl-c1{
+.pl-c1 {
   color: var(--HTMl-attribute-Color);
 }
-.pl-s{
+.pl-s {
   color: var(--HTMl-attribute-Name-Color);
 }
-.copy{
+.copy {
   float: right;
 }
-.OneLine{
+.OneLine {
   color: var(--One--line-color);
   list-style: none;
 }
-.Note{
+.Note {
   font-weight: bold;
 }
-.react_keyword{
+.react_keyword {
   color: var(--React-Keyword-Color);
 }
-.React_Funtion{
+.React_Funtion {
   color: var(--React-Function-Color);
 }
-.html_tag{
+.html_tag {
   color: var(--html-tag-color);
 }
-.react_imports{
+.react_imports {
   color: var(--react-import-color);
 }
-.onedrive_restore{
+.onedrive_restore {
   width: 100%;
   height: 500px;
   border: none;
 }
-.onedrive_icon{
+.onedrive_icon {
   width: 100%;
 }
-
 
 .btn {
   position: fixed;
@@ -159,18 +155,19 @@
   height: 90vh;
 }
 
-
-.pane{
+.pane {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
 }
-.EditorMode{
+.EditorMode {
   width: 100%;
-  background-color: aqua;
+  background-color: rgb(247, 252, 252);
+  word-wrap: break-word;
+  --color-canvas-subtle: #f6f8fa;
 }
-.EditorOutput{
+.EditorOutput {
   width: 100%;
   background-color: rgb(245, 245, 248);
 }

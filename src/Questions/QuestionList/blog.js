@@ -18,15 +18,12 @@ function blog() {
         <div id="left">
           <li className="list">
             <Link className="list" to="/">
-              {" "}
               Home
             </Link>
             <Link className="list" to="/">
-              {" "}
               Home
             </Link>
             <Link className="list" to="/">
-              {" "}
               Home
             </Link>
           </li>
@@ -36,7 +33,6 @@ function blog() {
           <div>
             <h1>Coming Soon Microsoft Outlook Navigation Panel</h1> <br />
             <p>
-              {" "}
               &emsp;&emsp; Recently, Microsoft has been updating software as
               usual. This time Microsoft plan to update the outlook navigation
               panel display style to vertical panel on the left side. Before
