@@ -8,30 +8,24 @@ import { Link } from "react-router-dom";
 export default function html_intro() {
   UseTitle("Html Intro");
 
-
-
   return (
     <>
       <div id="container">
-      <div id="left">
-            <li className="list">
-              <Link className="list" to="/">
-                {" "}
-                Home
-              </Link>
-              <Link className="list" to="/">
-                {" "}
-                Home
-              </Link>
-              <Link className="list" to="/">
-                {" "}
-                Home
-              </Link>
-            </li>
-          </div>
+        <div id="left">
+          <li className="list">
+            <Link className="list" to="/">
+              Home
+            </Link>
+            <Link className="list" to="/">
+              Home
+            </Link>
+            <Link className="list" to="/">
+              Home
+            </Link>
+          </li>
+        </div>
         <div id="middle">
           <h1>What is HTML Element?</h1>
-           
         </div>
 
         <div id="right">
