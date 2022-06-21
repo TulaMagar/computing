@@ -1,9 +1,9 @@
 export const BlogPath = [
-  {
-    url: "EditorApp",
-    title: "Coming Soon Microsof",
-    description: "Coming n Panel",
-  },
+  // {
+  //   url: "EditorApp",
+  //   title: "Coming Soon Microsof",
+  //   description: "Coming n Panel",
+  // },
   {
     url: "blog",
     title: "Coming Soon Microsoft Outlook Navigation Panel",
@@ -60,7 +60,8 @@ export const BlogPath = [
   {
     url: "OneDriveSync_OnOFF",
     title: "How to turn on and off OneDrive Sync in PC?",
-    description: "We can turn on and off OneDrive Sync in PC, stop sync to specific folder",
+    description:
+      "We can turn on and off OneDrive Sync in PC, stop sync to specific folder",
   },
   {
     url: "blog",

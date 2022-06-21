@@ -37,7 +37,7 @@
   text-decoration: underline;
   text-decoration-color: rgb(8, 180, 172);
 }
-.LeftList {
+.list {
   display: block;
   padding: 3px;
   text-decoration: none;

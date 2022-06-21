@@ -24,14 +24,14 @@ export default function Html_intro() {
     <>
       <div id="container">
         <div id="left">
-          <li className="LeftList">
-            <Link className="LeftList" to="/">
+          <li className="list">
+            <Link className="list" to="/">
               Home
             </Link>
-            <Link className="LeftList" to="/">
+            <Link className="list" to="/">
               Home
             </Link>
-            <Link className="LeftList" to="/">
+            <Link className="list" to="/">
               Home
             </Link>
           </li>

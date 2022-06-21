@@ -5,6 +5,7 @@ import RelatedLinks from "./html_links/related_links";
 import Highlight, { defaultProps } from "prism-react-renderer";
 // import Element from "../../img/html_images/html_tag.PNG";
 import { Link } from "react-router-dom";
+import HtmlCssJsEditor from "../../Editor/HtmlCssJsEditor.js";
 
 export default function Html_heading() {
   UseTitle("What is HTML Heading?");
@@ -106,52 +107,16 @@ export default function Html_heading() {
           </p>
           <h1>Preview HTML Example</h1>
 
-          <Highlight {...defaultProps} code={html_heading} language="jsx">
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_heading} />
 
           <h1>Title in Head</h1>
-          <Highlight {...defaultProps} code={html_heading_title} language="jsx">
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_heading_title} />
           <p>
             The title element is used to define the title of the document.
             <code> A Page Title</code> will be displayed in the browser tab.
           </p>
           <h1>Meta in Head</h1>
-          <Highlight {...defaultProps} code={html_heading_meta} language="jsx">
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_heading_meta} />
           <p>
             The meta element is used to define metadata about the HTML document.
             Meta data is not displayed on the page. Computer only understand 0
@@ -163,23 +128,7 @@ export default function Html_heading() {
             language.
           </p>
           <h1>Meta Viewport in Head</h1>
-          <Highlight
-            {...defaultProps}
-            code={html_heading_meta_viewport}
-            language="jsx"
-          >
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_heading_meta_viewport} />
           <p>
             The width of the desktop, tablet, and phone are different so the
             viewport meta tag is used to control the width of the viewport.{" "}
@@ -188,19 +137,7 @@ export default function Html_heading() {
             based the width of the device screen.
           </p>
           <h1>Link in Head</h1>
-          <Highlight {...defaultProps} code={html_heading_link} language="jsx">
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_heading_link} />
           <p>
             TThe <code>{"<link>"}</code> tag defines the relationship between
             the current document and an external resource. The{" "}
@@ -210,23 +147,7 @@ export default function Html_heading() {
             framework, js library and etc.
           </p>
           <h1>Script in Head</h1>
-          <Highlight
-            {...defaultProps}
-            code={html_heading_script}
-            language="jsx"
-          >
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_heading_script} />
           <p>
             The <code>{"<script>"}</code> tag is used to add client-side
             JavaScript to the HTML. React is a client-side JavaScript library
@@ -236,19 +157,7 @@ export default function Html_heading() {
             <code>{"</script>"}</code> tag.
           </p>
           <h1>Style in Head</h1>
-          <Highlight {...defaultProps} code={html_heading_style} language="jsx">
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_heading_style} />
           <p>
             The <code>{"<style>"}</code> tag is used to add CSS to the HTML. CSS
             isn't part of the HTML standard. CSS is a style sheet language that

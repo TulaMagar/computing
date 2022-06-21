@@ -2,31 +2,11 @@ import React from "react";
 import "./html_style.css";
 import UseTitle from "../../Title.js";
 import RelatedLinks from "./html_links/related_links";
-import Highlight, { defaultProps } from "prism-react-renderer";
 import { Link } from "react-router-dom";
+import HtmlCssJsEditor from "../../Editor/HtmlCssJsEditor.js";
 //https://github.com/ryanseddon/react-frame-component
 export default function Html_paragraph() {
   UseTitle("What is HTML Heading?");
-  const test = `
-  <!DOCTYPE html>
-  <html>
-  <title>W3.CSS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <body>
-  
-  <div class="w3-container">
-    <h2>Text Alignments</h2>
-  
-    <div class="w3-container w3-border w3-large">
-      <div class="w3-left-align"><p>Left aligned text.</p></div>
-      <div class="w3-right-align"><p>Right aligned text.</p></div>
-    </div>
-  </div>
-  
-  </body>
-  </html>
-  `;
 
   const html_single_paragraph = ` 
   <p>This is single paragraph</p>
@@ -92,23 +72,7 @@ export default function Html_paragraph() {
             single and multiple lines of text in <code>{"<p> </p>"}</code>.
           </p>
           <h1>Inline Paragraph</h1>
-          <Highlight
-            {...defaultProps}
-            code={html_single_paragraph}
-            language="jsx"
-          >
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_single_paragraph} />
           <h1>Spaces and New Lines in Paragraph are Ignored</h1>
           <p>
             By default
@@ -117,84 +81,19 @@ export default function Html_paragraph() {
             new line such as <code>{"<br/> and <pre>"}</code> and spaces
             entities such as <code>{"&nbsp; , &ensp; , &emsp; <pre>"}</code>.
           </p>
-          <Highlight
-            {...defaultProps}
-            code={html_spaceAndNewlines}
-            language="jsx"
-          >
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_spaceAndNewlines} />
           <h1>Above Code Result on Web</h1>
-          <Highlight
-            {...defaultProps}
-            code={html_spaceAndNewlines_result}
-            language="jsx"
-          >
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre id="own_width" className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_spaceAndNewlines_result} />
           <h1>Mutiple lines Paragraph</h1>
 
-          <Highlight
-            {...defaultProps}
-            code={html_break_multiple_paragraph}
-            language="jsx"
-          >
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_break_multiple_paragraph} />
           <p>
             The <code>{"<br/>"}</code> tag is used to create a line break or
             break a line and start a new line. You can apply this
             <code>{"<br/>"}</code> technique create a new starting line.
           </p>
           <h1>Pre Element </h1>
-          <Highlight
-            id="own_width"
-            {...defaultProps}
-            code={html_pre_paragraph}
-            language="jsx"
-          >
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre id="own_width" className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div id="own_width" {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span id="own_width" {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor props={html_pre_paragraph} />
           <p>
             The <code>{"<pre>"}</code> tag is used to create a preformatted
             text. With this tag, you can create a block of text that is not to

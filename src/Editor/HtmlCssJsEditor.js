@@ -23,7 +23,7 @@ function HtmlCssJsEditor({ props }) {
   return (
     <>
       <div className="pane">
-        <div className="EditorMode">
+        <div>
           {/* <CodeMirror
             value={html}
             spellCheck="false"
@@ -46,6 +46,7 @@ function HtmlCssJsEditor({ props }) {
               onChange={(evn) => setHtml(evn.target.value)}
               padding={15}
               className="EditorMode"
+              spellCheck={false}
               style={{
                 fontFamily:
                   "ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace",

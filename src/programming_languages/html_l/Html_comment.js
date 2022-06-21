@@ -12,14 +12,14 @@ export default function Html_comment() {
   const html_comment = `
   <!-- This is a comment -->
   `;
-  const [code, setCode] = React.useState(`
+  const html_source_code_comment = `
   <!-- each person job status -->
 
   <p> John is front-end developer </p>
   <p> Alex is full-stack developer </p>
   <p> Nathan is front-end developer </p>
   <p> Mike is full-stack developer </p>
-  `);
+  `;
 
   const html_inline_comment = `
   <!-- hide content -->
@@ -79,7 +79,7 @@ export default function Html_comment() {
             <code>--&gt;</code>
           </p>
           <h1>Source Code: Comment</h1>
-          <HtmlCssJsEditor props={code} />
+          <HtmlCssJsEditor props={html_source_code_comment} />
           <p>
             When some one want to know the purpose of the code, they can read
             the comment.
