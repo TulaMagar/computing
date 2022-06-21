@@ -1,14 +1,14 @@
-import React  from "react";
+import React from "react";
 import "./html_style.css";
 import UseTitle from "../../Title.js";
 import RelatedLinks from "./html_links/related_links";
-import Highlight, { defaultProps } from "prism-react-renderer";
 import Element from "../../img/html_images/html_tag.PNG";
 import { Link } from "react-router-dom";
-export default function html_intro() {
+import HtmlCssJsEditor from "../../Editor/HtmlCssJsEditor.js";
+export default function Html_intro() {
   UseTitle("Html Intro");
 
-  const HTML_INTRO_CONTENT = `
+  const htmlIntroContent = `
   <!DOCTYPE html>
   <html>
     <head>
@@ -26,22 +26,22 @@ export default function html_intro() {
   return (
     <>
       <div id="container">
-      <div id="left">
-            <li className="list">
-              <Link className="list" to="/">
-                {" "}
-                Home
-              </Link>
-              <Link className="list" to="/">
-                {" "}
-                Home
-              </Link>
-              <Link className="list" to="/">
-                {" "}
-                Home
-              </Link>
-            </li>
-          </div>
+        <div id="left">
+          <li className="list">
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+            <Link className="list" to="/">
+              {" "}
+              Home
+            </Link>
+          </li>
+        </div>
         <div id="middle">
           <h1>What is HTML?</h1>
 
@@ -66,19 +66,7 @@ export default function html_intro() {
             HTML language and says bye bye HTML!
           </p>
           <h1>Let's Start HTML </h1>
-          <Highlight {...defaultProps} code={HTML_INTRO_CONTENT} language="jsx">
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-              <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                  <div {...getLineProps({ line, key: i })}>
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                ))}
-              </pre>
-            )}
-          </Highlight>
+          <HtmlCssJsEditor prop={htmlIntroContent} />
           <p>
             Above is the HTML code that we will use to create our first web
             page.
@@ -106,7 +94,7 @@ export default function html_intro() {
             `}{" "}
             </code>
             in the above code. All of the HTML tags should be inside the{" "}
-            <code>{"<html>"}</code> and 
+            <code>{"<html>"}</code> and
             <code>{" </html>"} tag</code> .
           </p>
           <h1>HTML Head Element</h1>
@@ -114,9 +102,9 @@ export default function html_intro() {
             The head element is a container for metadata (data about data) and
             is placed between the <code> {"<html>"}</code> tag and the{" "}
             <code> {"<body>"}</code> tag. Metadata is data about the HTML
-            document. Metadata doesn't display on the web. Metadata typically define the
-            document title, character set, styles, scripts, and other meta
-            information.
+            document. Metadata doesn't display on the web. Metadata typically
+            define the document title, character set, styles, scripts, and other
+            meta information.
           </p>
           <h1>HTML Body Element</h1>
           <p>
@@ -130,7 +118,7 @@ export default function html_intro() {
             <code>{"<tag_name>"}</code> and end with{" "}
             <code>{"</tag_name>"}</code>. For example,
           </p>
-          <img className="html_learning" src={Element} alt="html_tag"/>
+          <img className="html_learning" src={Element} alt="html_tag" />
         </div>
 
         <div id="right">

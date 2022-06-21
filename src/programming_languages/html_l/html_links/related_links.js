@@ -29,6 +29,9 @@ export default function RelatedLinks() {
       <Link className="related_links" to="/html_head">
         HTML Head
       </Link>
+      <Link className="related_links" to="/html_paragraph">
+        HTML Paragraph
+      </Link>
     </div>
   );
 }

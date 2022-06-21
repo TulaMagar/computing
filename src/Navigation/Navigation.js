@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Navigation.css";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/js/bootstrap.bundle";
 import { NavLink } from "react-router-dom";
-import Custom_leftSide_vertically_navbar from "./Custom_leftSide_vertically_navbar.js";
+import CustomLeftSideVerticallyNavbar from "./Custom_leftSide_vertically_navbar.js";
 // eslint-disable-next-line
 import { GoogleLogin, GoogleLogout } from "react-google-login";
 
@@ -17,7 +17,7 @@ function Navigation() {
   return (
     <>
       <div className="size">
-        <Custom_leftSide_vertically_navbar />
+        <CustomLeftSideVerticallyNavbar />
         <Navbar
           collapseOnSelect
           expand="lg"

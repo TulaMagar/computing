@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import "./Navigation.css";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/js/bootstrap.bundle";
 import { NavLink } from "react-router-dom";
-import Custom_leftSide_vertically_navbar from "./Custom_leftSide_vertically_navbar.js";
 // eslint-disable-next-line
 import { GoogleLogin, GoogleLogout } from "react-google-login";
 
 //https://stackoverflow.com/questions/40491483/hide-collapse-navbar-after-link-click-react-redux-react-bootstrap
 
-function Navigation_testing() {
+function QuestionPageNavigation() {
   const [expanded, setExpanded] = useState(false);
   // eslint-disable-next-line
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -111,4 +110,4 @@ function Navigation_testing() {
   );
 }
 
-export default Navigation_testing;
+export default QuestionPageNavigation;

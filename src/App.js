@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {
   Navigation,
-  Navigation_testing,
+  QuestionPageNavigation,
   Home,
   About,
   QuestionsList,
@@ -101,7 +101,7 @@ const Paths = () => {
   return (
     <>
       {Path.includes(Pathname.pathname) ? (
-        <Navigation_testing />
+        <QuestionPageNavigation />
       ) : (
         <Navigation />
       )}
@@ -109,15 +109,15 @@ const Paths = () => {
   );
 };
 function App() {
-  const [isActive, setIsActive] = useState(false);
+  // const [isActive, setIsActive] = useState(false);
 
-  const handleClick = () => {
-    // 👇️ toggle
-    setIsActive((current) => !current);
+  // const handleClick = () => {
+  //   // 👇️ toggle
+  //   setIsActive((current) => !current);
 
-    // 👇️ or set to true
-    // setIsActive(true);
-  };
+  //   // 👇️ or set to true
+  //   // setIsActive(true);
+  // };
   return (
     <HashRouter>
       <ScrollToTop />

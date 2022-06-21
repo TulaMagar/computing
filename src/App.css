@@ -162,18 +162,15 @@
 
 .pane{
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: space-between;
-  margin: auto;
-  width: 90%;
+  gap: 20px;
 }
 .EditorMode{
-  width: 45vw;
-  height: 100vh;
+  width: 100%;
   background-color: aqua;
 }
 .EditorOutput{
-  width: 43vw;
-  height: 100vh;
+  width: 100%;
   background-color: rgb(245, 245, 248);
 }

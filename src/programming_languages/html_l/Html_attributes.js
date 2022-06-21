@@ -58,12 +58,8 @@ export default function html_intro() {
               </thead>
               <tbody>
                 <tr>
-                  <td>
-                    <code>class</code>
-                  </td>
-                  <td>
-                    <code>any html elements</code>
-                  </td>
+                  <td>class</td>
+                  <td>any html elements</td>
                   <td>
                     HTMl class attributes are used that defines the specific
                     class name of the one to many elements. Class attribute is
@@ -73,12 +69,8 @@ export default function html_intro() {
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>id</code>
-                  </td>
-                  <td>
-                    <code>any html elements</code>
-                  </td>
+                  <td>id</td>
+                  <td>any html elements</td>
                   <td>
                     ID attribute is used to select the element that has the same
                     ID. Or ID and class attribute is used to select the element
@@ -89,36 +81,24 @@ export default function html_intro() {
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>style</code>
-                  </td>
-                  <td>
-                    <code>inline css style for any html elements</code>
-                  </td>
+                  <td>style</td>
+                  <td>inline css style for any html elements</td>
                   <td>
                     Style attribute is used to add css style to the elements.
                     You can add inline css style to the elements.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>src</code>
-                  </td>
-                  <td>
-                    <code>img</code>
-                  </td>
+                  <td>src</td>
+                  <td>img</td>
                   <td>
                     Src attribute is used to add the image source to the image.
                     You src local or online images.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>alt</code>
-                  </td>
-                  <td>
-                    <code>img</code>
-                  </td>
+                  <td>alt</td>
+                  <td>img</td>
                   <td>
                     Alt attribute is used to add the image description to the
                     image. If the image is not found then the description will
@@ -126,24 +106,16 @@ export default function html_intro() {
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>href</code>
-                  </td>
-                  <td>
-                    <code>a tag</code>
-                  </td>
+                  <td>href</td>
+                  <td>a tag</td>
                   <td>
                     Href attribute is used to add the link to the link. You can
                     add the local or online link.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code> accept-charset</code>
-                  </td>
-                  <td>
-                    <code>form</code>
-                  </td>
+                  <td>accept-charset</td>
+                  <td>form</td>
 
                   <td>
                     Accept-charset attribute is used to add the charset to the
@@ -153,172 +125,114 @@ export default function html_intro() {
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>accesskey</code>
-                  </td>
-                  <code>button, input, label, legend, textarea</code>
+                  <td>accesskey</td>
+                  <td>button, input, label, legend, textarea</td>
                   <td>
                     The accesskey attribute specifies a shortcut key to
                     activate/focus an element.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>action</code>
-                  </td>
-                  <td>
-                    <code>form</code>
-                  </td>
+                  <td>action</td>
+                  <td>form</td>
                   <td>
                     The action attribute specifies the action to be performed on
                     a form and is used to send the form data to the server.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>autocomplete</code>
-                  </td>
-                  <td>
-                    <code>input</code>
-                  </td>
+                  <td>autocomplete</td>
+                  <td>input</td>
                   <td>
                     The autocomplete attribute specifies whether the input field
                     should be autocompleted by using on and off value.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>autofocus</code>
-                  </td>
-                  <td>
-                    <code>form, input</code>
-                  </td>
+                  <td>autofocus</td>
+                  <td>form, input</td>
                   <td>
                     The autofocus attribute specifies that the which input field
                     should be focused when the page loads.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>autoplay</code>
-                  </td>
-                  <td>
-                    <code>video</code>
-                  </td>
+                  <td>autoplay</td>
+                  <td>video</td>
                   <td>
                     The autoplay attribute specifies that the video should be
                     autoplayed.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>checked</code>
-                  </td>
-                  <td>
-                    <code>input, radio-button</code>
-                  </td>
+                  <td>checked</td>
+                  <td>input, radio-button</td>
                   <td>
                     The checked attribute specifies that the check field should
                     be checked.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>cols</code>
-                  </td>
-                  <td>
-                    <code>textarea</code>
-                  </td>
+                  <td>cols</td>
+                  <td>textarea</td>
                   <td>
                     The cols attribute specifies the number of columns in a
                     textarea.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>colspan</code>
-                  </td>
-                  <td>
-                    <code>td, th</code>
-                  </td>
+                  <td>colspan</td>
+                  <td>td, th</td>
                   <td>
                     The colspan attribute specifies the number of columns a cell
                     should span.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>content</code>
-                  </td>
-                  <td>
-                    <code>meta</code>
-                  </td>
+                  <td>content</td>
+                  <td>meta</td>
                   <td>
                     The content attribute specifies the content of the meta tag.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>contenteditable</code>
-                  </td>
-                  <td>
-                    <code>any html elements</code>
-                  </td>
+                  <td>contenteditable</td>
+                  <td>any html elements</td>
                   <td>
                     The contenteditable attribute specifies whether the content
                     of the element is editable.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>contextmenu</code>
-                  </td>
-                  <td>
-                    <code>any html elements</code>
-                  </td>
+                  <td>contextmenu</td>
+                  <td>any html elements</td>
                   <td>This is used to add a contextmenu to an HTML element.</td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>controls</code>
-                  </td>
-                  <td>
-                    <code>audio, video</code>
-                  </td>
+                  <td>controls</td>
+                  <td>audio, video</td>
                   <td>
                     The controls attribute specifies that the media element
                     should be displayed with controls.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>coords</code>
-                  </td>
-                  <td>
-                    <code>area</code>
-                  </td>
+                  <td>coords</td>
+                  <td>area</td>
                   <td>
                     The coords attribute specifies the coordinates of the shape.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>data</code>
-                  </td>
-                  <td>
-                    <code>any html elements</code>
-                  </td>
+                  <td>data</td>
+                  <td>any html elements</td>
                   <td>
                     The data attribute specifies the value of the element.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>datetime</code>
-                  </td>
-                  <td>
-                    <code>input</code>
-                  </td>
+                  <td>datetime</td>
+                  <td>input</td>
                   <td>
                     The datetime attribute specifies the date and time when the
                     element was last modified.
@@ -326,10 +240,8 @@ export default function html_intro() {
                 </tr>
 
                 <tr>
-                  <td>
-                    <code>dir</code>
-                  </td>
-                  <code> any html elements</code>
+                  <td>dir</td>
+                  <td>any html elements except input</td>
                   <td>
                     The dir attribute specifies the text direction of the
                     element. You can use ltr or rtl to specify the text
@@ -338,36 +250,24 @@ export default function html_intro() {
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>disabled</code>
-                  </td>
-                  <td>
-                    <code>button, input, select, textarea</code>
-                  </td>
+                  <td>disabled</td>
+                  <td>button, input, select, textarea</td>
                   <td>
                     The disabled attribute specifies that the element should be
                     disabled cannot be used.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>enctype</code>
-                  </td>
-                  <td>
-                    <code>form</code>
-                  </td>
+                  <td>enctype</td>
+                  <td>form</td>
                   <td>
                     The enctype attribute specifies how the form-data should be
                     encoded.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>for</code>
-                  </td>
-                  <td>
-                    <code>label</code>
-                  </td>
+                  <td>for</td>
+                  <td>label</td>
 
                   <td>
                     The for attribute specifies which form element a label is
@@ -375,71 +275,47 @@ export default function html_intro() {
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>formaction</code>
-                  </td>
-                  <td>
-                    <code>input, button</code>
-                  </td>
+                  <td>formaction</td>
+                  <td>input, button</td>
                   <td>
                     The formaction attribute specifies the action of the form.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>formenctype</code>
-                  </td>
-                  <td>
-                    <code>input, button</code>
-                  </td>
+                  <td>formenctype</td>
+                  <td>input, button</td>
                   <td>
                     The formenctype attribute specifies how the form-data should
                     be encoded.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>formmethod</code>
-                  </td>
-                  <td>
-                    <code>input, button</code>
-                  </td>
+                  <td>formmethod</td>
+                  <td>input, button</td>
                   <td>
                     The formmethod attribute specifies the HTTP method used to
                     send the form-data.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>formtarget</code>
-                  </td>
-                  <td>
-                    <code>input, button</code>
-                  </td>
+                  <td>formtarget</td>
+                  <td>input, button</td>
                   <td>
                     The formtarget attribute specifies where to display the form
                     - in a new window or in the same window.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>script</code>
-                  </td>
-                  <td>
-                    <code> script {"( Code )"}</code>
-                  </td>
+                  <td>script</td>
+                  <td>script {"( Code )"}</td>
                   <td>
                     The script attribute specifies a script to be run when the
                     page is loaded.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>crossorigin</code>
-                  </td>
-                  <td>
-                    <code>img, audio, video, script, and link</code>
-                  </td>
+                  <td>crossorigin</td>
+                  <td>img, audio, video, script, and link</td>
                   <td>
                     The crossorigin attribute specifies whether the content of
                     the element can be loaded from a source, different or
@@ -447,36 +323,24 @@ export default function html_intro() {
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>decoding </code>
-                  </td>
-                  <td>
-                    <code>img, audio, video, script, and link</code>
-                  </td>
+                  <td>decoding</td>
+                  <td>img, audio, video, script, and link</td>
                   <td>
                     The decoding attribute specifies how the element should be
                     decoded.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>draggable</code>
-                  </td>
-                  <td>
-                    <code>img, audio, video, script, and link</code>
-                  </td>
+                  <td>draggable</td>
+                  <td>img, audio, video, script, and link</td>
                   <td>
                     The draggable attribute specifies whether the element can be
                     dragged here and there on the page.
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code>dropzone</code>
-                  </td>
-                  <td>
-                    <code>img, audio, video, script, and link</code>
-                  </td>
+                  <td>dropzone</td>
+                  <td>img, audio, video, script, and link</td>
                   <td>
                     The dropzone attribute ttribute specifies whether the
                     dragged data is copied, moved, or linked, when it is dropped
@@ -484,12 +348,8 @@ export default function html_intro() {
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <code> defer </code>
-                  </td>
-                  <td>
-                    <code> script </code>
-                  </td>
+                  <td>defer</td>
+                  <td>script</td>
                   <td>
                     The defer attribute specifies that the script should be
                     loaded after the page has been loaded.

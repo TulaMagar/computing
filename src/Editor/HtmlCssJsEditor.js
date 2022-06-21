@@ -3,28 +3,21 @@ import CodeMirror from "@uiw/react-codemirror";
 import { markdown, markdownLanguage } from "@codemirror/lang-markdown";
 import { languages } from "@codemirror/language-data";
 
-function EditorApp() {
-  const [html, setHtml] = useState("");
-  const [css, setCss] = useState("");
-  const [js, setJs] = useState("");
+function HtmlCssJsEditor({ props }) {
+  const [html, setHtml] = useState(props);
   const [srcDoc, setSrcDoc] = useState("");
   const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
-    console.log(html); //gets called whenever get state changes
-  }, [html]);
+    setHtml(props);
+    console.log(props); //gets called whenever get state changes
+  }, [props]);
 
   useEffect(() => {
     startTransition(() => {
-      setSrcDoc(`
-        <html>
-          <body>${html}</body>
-          <style>${css}</style>
-          <script>${js}</script>
-        </html>
-      `);
+      setSrcDoc(html);
     });
-  }, [html, css, js]);
+  }, [html]);
 
   return (
     <>
@@ -59,4 +52,4 @@ function EditorApp() {
   );
 }
 
-export default EditorApp;
+export default HtmlCssJsEditor;
