@@ -5,6 +5,7 @@ import RelatedLinks from "./html_links/related_links";
 // import Highlight, { defaultProps } from "prism-react-renderer";
 import Element from "../../img/html_images/html_tag.PNG";
 import { Link } from "react-router-dom";
+//https://html.com/tags/
 export default function html_intro() {
   UseTitle("Html Intro");
 
@@ -69,77 +70,135 @@ export default function html_intro() {
             <tbody>
               <tr>
                 <td>&lt;a&gt;</td>
-                <td>hyperlink is used to create a link.</td>
+                <td>Hyperlink is used to create a link.</td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;abbr&gt;</td>
-                <td>abbreviation is used to create a abbreviation.</td>
+                <td>
+                  Abbreviation is used to create a abbreviation or acronym or
+                  short form of a word.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;acronym&gt;</td>
-                <td>acronym is used to create a acronym.</td>
+                <td>
+                  Acronym is used to create a abbreviation or acronym or short
+                  form of a word.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;address&gt;</td>
-                <td>address is used to create a address.</td>
+                <td>
+                  Address is used to create a address. It's like our living home
+                  address. You can use address to contain contact information
+                  for the person, author, the publisher, or the place of
+                  publication, company name, etc.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;applet&gt;</td>
-                <td>applet is used to create a applet.</td>
+                <td>
+                  Applet is used to create a applet. It's like a small program.
+                  Applet let you embed a program in your web page. However, it's
+                  not a good idea to use applet in your web page. Most of the
+                  broswers don't support applet. You can other way such as{" "}
+                  <code>{"<video> and <audio>"}</code> to embed a program in
+                  your web page.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;area&gt;</td>
-                <td>area is used to create a area.</td>
+                <td>
+                  Area is used to create a mathatical area figure of a image or
+                  map such as a rectangle, circle, triangle, etc.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;article&gt;</td>
-                <td>article is used to create a article.</td>
+                <td>
+                  Article element defines an article, i.e., a self-contained
+                  unit of a Web page. The article should be a single,
+                  stand-alone entity that is not part of another page or
+                  section.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;aside&gt;</td>
-                <td>aside is used to create a aside.</td>
+                <td>
+                  Aside element defines content that is quoted from another
+                  source, but appears on the same page. The aside element can be
+                  used to create a sidebar.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;audio&gt;</td>
-                <td>audio is used to create a audio.</td>
+                <td>
+                  Audio element can be used to embed a audio file in your web
+                  page. Browser audio built-in let you play audio files rather
+                  than using plugins.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;b&gt;</td>
-                <td>bold is used to create a bold.</td>
+                <td>
+                  Bold is used to create a bold text. Bold text look like this{" "}
+                  <b>Bold Text</b>
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;base&gt;</td>
-                <td>base is used to create a base.</td>
+                <td>
+                  Base is used to create a base url. Base url is a links. It's a
+                  link to the root of the web page.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;basefont&gt;</td>
-                <td>basefont is used to create a basefont.</td>
+                <td>
+                  Basefont is used to create a base font size of a text or html
+                  document. However, it has been removed from the HTML5
+                  specification.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;bdo&gt;</td>
-                <td>bdo is used to create a bdo.</td>
+                <td>
+                  bdo stand for bidirectional override. It's used to override
+                  the directionality of text from left to right or right to
+                  left. You need to use <code>{"dir=ltr or dir-rtl"}</code>{" "}
+                  attribute to set the directionality.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;bgsound&gt;</td>
-                <td>bgsound is used to create a bgsound.</td>
+                <td>
+                  Bgsound is used to create a background sound while loading the
+                  web page. However, most of the browsers don't support bgsound
+                  and it has deprecated.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;big&gt;</td>
-                <td>big is used to create a big.</td>
+                <td>
+                  Big is used to create a big text. Big text look like this{" "}
+                  <big>Big Text</big> in a line of text. Most of the browsers
+                  still supports the big tag. However, it has been removed from
+                  the HTML5 specification.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
@@ -149,58 +208,90 @@ export default function html_intro() {
               </tr>
               <tr>
                 <td>&lt;blockquote&gt;</td>
-                <td>blockquote is used to create a blockquote.</td>
+                <td>
+                  Blockquote is used to create a blockquote. Blockquote is a way
+                  to quote a passage from another source. It's like a quotation
+                  in a book.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;body&gt;</td>
-                <td>body is used to create a body.</td>
+                <td>
+                  Body is used to create a body. Body is a container for all the
+                  content of the web page such as text, images, and other HTML
+                  elements.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;br&gt;</td>
-                <td>br is used to create a br.</td>
+                <td>
+                  Br is used to create a line break. It's like break a line and
+                  create a new line in a text.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;button&gt;</td>
-                <td>button is used to create a button.</td>
+                <td>
+                  Button is used to create a button. Button is a clickable area
+                  in a web page.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;canvas&gt;</td>
-                <td>canvas is used to create a canvas.</td>
+                <td>
+                  Canvas is used to create a canvas. It's like a drawing board.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;caption&gt;</td>
-                <td>caption is used to create a caption.</td>
+                <td>Caption is a title of a table.</td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;center&gt;</td>
-                <td>center is used to create a center.</td>
+                <td>
+                  Center is used to create a center text. Center text look like
+                  this <center>Center Text</center>
+                </td>
 
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;cite&gt;</td>
-                <td>cite is used to create a cite.</td>
+                <td>
+                  Cite is used to create a citation. Cite is a way to quote a
+                  source of a passage.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;code&gt;</td>
-                <td>code is used to create a code.</td>
+                <td>
+                  Code is a way to display a programming code in a web page and
+                  it doesn't execute.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;col&gt;</td>
-                <td>col is used to create a col.</td>
+                <td>
+                  Col is a way to create a column in a table and children of col
+                  is td. colgroup is the parent of col.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;colgroup&gt;</td>
-                <td>colgroup is used to create a colgroup.</td>
+                <td>
+                  Colgroup is a way to create a column group in a table. Col is
+                  the child of colgroup.
+                </td>
+
                 <td>Block</td>
               </tr>
               <tr>
@@ -210,43 +301,78 @@ export default function html_intro() {
               </tr>
               <tr>
                 <td>&lt;datalist&gt;</td>
-                <td>datalist is used to create a datalist.</td>
+                <td>
+                  Datalist is used to create a datalist. Datalist is a select or
+                  dropdown list of pre-defined options with a value for a user
+                  to choose from.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;dd&gt;</td>
-                <td>dd is used to create a dd.</td>
+                <td>
+                  Dd is a way to define a definition. Dd is a child of dt or dt
+                  is a parent of dd. dt is used to define a term. dl is a parent
+                  of dd and dt.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;del&gt;</td>
-                <td>del is used to create a del.</td>
+                <td>
+                  The <code>{"<del>"}</code> tag is used to identify text that
+                  has been deleted from a document but retained to show the
+                  history of modifications made to the document. Pair a{" "}
+                  <code>{"<del>"}</code> element with an <code>{"<ins>"}</code>{" "}
+                  element to identify the inserted text that replaced the
+                  deleted text.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;details&gt;</td>
-                <td>details is used to create a details.</td>
+                <td>
+                  Details is a container for a set of related information. It's
+                  a way to show or hide a set of information using a{" "}
+                  <code>{"<summary>"}</code> tag. Details is a parent of{" "}
+                  <code>{"<summary>"}</code>.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;dfn&gt;</td>
-                <td>dfn is used to create a dfn.</td>
+                <td>
+                  The <code>{"<dfn>"}</code> element is used to identify the
+                  defining instance of a term in an HTML document. When a term
+                  is wrapped in <code>{"<dfn>"}</code> tags, browsers and web
+                  crawlers will understand that nearby text contains a
+                  definition of the term.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;dialog&gt;</td>
-                <td>dialog is used to create a dialog.</td>
+                <td>
+                  Dialog is a container for a dialog. Dialog is a pop up window
+                  or a modal window.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;dir&gt;</td>
-                <td>dir is used to create a dir.</td>
+                <td>
+                  Dir is a container for a directory. It has been removed from
+                  the HTML5 specification.
+                </td>
                 <td>Block</td>
               </tr>
 
               <tr>
                 <td>&lt;div&gt;</td>
-                <td>div is used to create a div.</td>
+                <td>
+                  Div is used to create a div. Div is a container for all the
+                  content of the web page.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
