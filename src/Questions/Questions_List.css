@@ -84,7 +84,7 @@
 @media (min-width: 767px) and (max-width: 970px) {
   #container {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     position: relative;
     margin: auto;
     width: 90%;
@@ -93,14 +93,14 @@
   }
 
   #left {
-    width: 40%;
+    width: 10%;
     position: -webkit-fixed;
     position: fixed;
     top: 16vh;
     align-self: start;
-    padding-right: 20px;
+    /* margin-left: -320px; */
     padding-bottom: 20px;
-    text-align: right;
+    text-align: left;
   }
   #leftt {
     display: show;
@@ -114,17 +114,22 @@
     padding-top: 20px;
     margin: 0 auto;
     width: 100%;
-    margin-left: 20%;
+    margin-left: 10%;
     border-left: 1px solid whitesmoke;
     padding-left: 20px;
   }
 
   #right {
-    width: 100%;
+    /* width: 100%;
     padding: 70px;
     padding-left: 20px;
     margin-left: 20%;
-    border-left: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke; */
+    display: block;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 70px;
+    margin-left: 10%;
   }
 
   .input-container {

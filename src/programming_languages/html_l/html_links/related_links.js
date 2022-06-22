@@ -4,34 +4,53 @@ import { Link } from "react-router-dom";
 
 export default function RelatedLinks() {
   return (
-    <div>
-      <Link className="related_links" to="/html_home">
-        HTML Home
-      </Link>
-      <Link className="related_links" to="/html_intro">
-        HTML Introduciton
-      </Link>
-      <Link className="related_links" to="/html_editor">
-        HTML Editor
-      </Link>
-      <Link className="related_links" to="/html_element">
-        HTML Element
-      </Link>
-      <Link className="related_links" to="/html_attributes">
-        HTML Attributes
-      </Link>
-      <Link className="related_links" to="/html_tags">
-        HTML Tags
-      </Link>
-      <Link className="related_links" to="/html_comment">
-        HTML Comments
-      </Link>
-      <Link className="related_links" to="/html_head">
-        HTML Head
-      </Link>
-      <Link className="related_links" to="/html_paragraph">
-        HTML Paragraph
-      </Link>
-    </div>
+    <ul className="html_links">
+      <h1 className="topic">Topic</h1>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_home">
+          HTML Home
+        </Link>
+      </li>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_intro">
+          HTML Introduciton
+        </Link>
+      </li>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_editor">
+          HTML Editor
+        </Link>
+      </li>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_element">
+          HTML Element
+        </Link>
+      </li>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_attributes">
+          HTML Attributes
+        </Link>
+      </li>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_tags">
+          HTML Tags
+        </Link>
+      </li>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_comment">
+          HTML Comments
+        </Link>
+      </li>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_head">
+          HTML Head
+        </Link>
+      </li>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_paragraph">
+          HTML Paragraph
+        </Link>
+      </li>
+    </ul>
   );
 }
