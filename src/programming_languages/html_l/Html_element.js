@@ -7,7 +7,7 @@ import Element from "../../img/html_images/html_tag.PNG";
 import { Link } from "react-router-dom";
 //https://html.com/tags/
 export default function html_intro() {
-  UseTitle("Html Intro");
+  UseTitle("Html Element");
 
   return (
     <>
@@ -203,7 +203,11 @@ export default function html_intro() {
               </tr>
               <tr>
                 <td>&lt;blink&gt;</td>
-                <td>blink is used to create a blink.</td>
+                <td>
+                  Blink is used to create a blink text. Most of the browsers
+                  still supports the blink tag. However, it has been deprecated
+                  from the HTML5 specification.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>

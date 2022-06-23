@@ -1,28 +1,4 @@
-# finish
-    Home Page 
-    About Page 
+# VM10:6772 crbug/1173575, non-JS module files deprecated.
+    solution
 
-# make code more readable 
-
-
-
-# create login and logout when you publish a website using my domain 
-    
-    Login with google : https://www.freakyjolly.com/google-signin-login-button-in-react-js-example-using-react-google_login-package/
-
-
-
-# build mobile app for this website using react native 
-    https://snack.expo.dev/
-
-
-
-# Embed code
-    https://stackblitz.com/
-
-
-https://codesandbox.io/s/suspicious-breeze-hf41m?from-embed=&file=/src/components/Editor.jsx
-
-
-# Reduce all the images for better performace
-https://www.resizepixel.com/download
+#https://stackoverflow.com/questions/45920143/how-to-handle-array-buffer-allocation-failed-in-nodejs?answertab=trending#tab-top

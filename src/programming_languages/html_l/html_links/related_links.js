@@ -51,6 +51,11 @@ export default function RelatedLinks() {
           HTML Paragraph
         </Link>
       </li>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_input_types">
+          HTML Input Types
+        </Link>
+      </li>
     </ul>
   );
 }
