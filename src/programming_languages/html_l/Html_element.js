@@ -370,12 +370,13 @@ export default function html_intro() {
               <tr>
                 <td>&lt;div&gt;</td>
                 <td>
-                  Div is used to create a div. Div is a container for all the
-                  content of the web page.
+                  Div defines a division or a section. Div is very useful as a
+                  container for other elements. You can set a style using css
+                  and javascript.
                 </td>
                 <td>Block</td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td>&lt;dl&gt;</td>
                 <td>dl is used to create a dl.</td>
                 <td>Block</td>
@@ -384,402 +385,574 @@ export default function html_intro() {
                 <td>&lt;dt&gt;</td>
                 <td>dt is used to create a dt.</td>
                 <td>Block</td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>&lt;em&gt;</td>
-                <td>em is used to create a em.</td>
+                <td>
+                  em element is used to indicate text that should receive
+                  greater emphasis than the surrounding text.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;embed&gt;</td>
-                <td>embed is used to create a embed.</td>
+                <td>
+                  embed element is used to embed a external content such as a
+                  source, application, video, audio, image, etc into a web page.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;fieldset&gt;</td>
-                <td>fieldset is used to create a fieldset.</td>
+                <td>
+                  fieldset is a container for a set in a form elements. It's say
+                  the fieldset has been deprecated from the HTML5 and
+                  recommended to use <code>{"<fieldset>"}</code>.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;figcaption&gt;</td>
-                <td>figcaption is used to create a figcaption.</td>
+                <td>
+                  figcaption element is used to define a caption for a figure
+                  such as a image.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;figure&gt;</td>
-                <td>figure is used to create a figure.</td>
+                <td>
+                  figure element is a container for a image or other content.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;footer&gt;</td>
 
-                <td>footer is used to create a footer.</td>
+                <td>
+                  footer element is used to define a footer for a document. It
+                  is always placed at the bottom of the page.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;form&gt;</td>
-                <td>form is used to create a form.</td>
+                <td>
+                  form element is used for section of a document that contains a
+                  set of form controls such as label, input and submit button to
+                  enable a user to interact with a Web resource.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
-                <td>&lt;h1&gt;</td>
-                <td>h1 is used to create a h1.</td>
+                <td>&lt;h1 to h6&gt;</td>
+                <td>
+                  h1 to h6 element is used to define a heading. h1 is the most
+                  important heading and h6 is the least important heading. Order
+                  of heading from bigger to smaller is h1 to h6 and smaller to
+                  bigger is h6 to h1.
+                </td>
                 <td>Block</td>
               </tr>
-              <tr>
-                <td>&lt;h2&gt;</td>
-                <td>h2 is used to create a h2.</td>
-                <td>Block</td>
-              </tr>
-              <tr>
-                <td>&lt;h3&gt;</td>
-                <td>h3 is used to create a h3.</td>
-                <td>Block</td>
-              </tr>
-              <tr>
-                <td>&lt;h4&gt;</td>
-                <td>h4 is used to create a h4.</td>
-                <td>Block</td>
-              </tr>
-              <tr>
-                <td>&lt;h5&gt;</td>
-                <td>h5 is used to create a h5.</td>
-                <td>Block</td>
-              </tr>
-              <tr>
-                <td>&lt;h6&gt;</td>
-                <td>h6 is used to create a h6.</td>
-                <td>Block</td>
-              </tr>
+
               <tr>
                 <td>&lt;head&gt;</td>
-                <td>head is used to create a head.</td>
+                <td>
+                  head element is used to define the head of a document. It is a
+                  parent of title, meta, link, style, script, noscript, and
+                  base.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;header&gt;</td>
-                <td>header is used to create a header.</td>
+                <td>
+                  header element is used to define a header for a document. It
+                  is a introductory section of a document.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;hgroup&gt;</td>
-                <td>hgroup is used to create a hgroup.</td>
+                <td>
+                  hgroup element is used to define a group of heading. It has
+                  been deprecated from the HTML5 specification.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;hr&gt;</td>
-                <td>hr is used to create a hr.</td>
+                <td>
+                  hr element is used to define a horizontal rule. It is used to
+                  separate content.
+                </td>
 
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;html&gt;</td>
-                <td>html is used to create a html.</td>
+                <td>
+                  html element is used to define the root of a document. It is a
+                  parent of head and body.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;input&gt;</td>
-                <td>input is used to create a input.</td>
+                <td>
+                  input element is used to define an input field. It's let you
+                  to type input data.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;ins&gt;</td>
-                <td>ins is used to create a ins.</td>
+                <td>
+                  It is used to indicate inserted text in a document and
+                  broswers will usually underline the inserted text.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;kbd&gt;</td>
-                <td>kbd is used to create a kbd.</td>
+                <td>kbd element is used to define a keyboard input field.</td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;keygen&gt;</td>
-                <td>keygen is used to create a keygen.</td>
+                <td>
+                  It has been deprecated from the HTML5 specification. keygen
+                  element used to generate a keypair.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;label&gt;</td>
-                <td>label is used to create a label.</td>
+                <td>
+                  label element is used to define a label or caption for an
+                  input field.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;legend&gt;</td>
 
-                <td>legend is used to create a legend.</td>
+                <td>
+                  legend element is used to define a caption for a fieldset.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;li&gt;</td>
-                <td>li is used to create a li.</td>
+                <td>
+                  li element is used to define a list item. It is used to create
+                  a order and un-order list.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;link&gt;</td>
-                <td>link is used to create a link.</td>
+                <td>
+                  link element is used to define a link to an external resource
+                  with a current document.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;main&gt;</td>
-                <td>main is used to create a main.</td>
+                <td>
+                  main element is a container for the main content of the
+                  document.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;map&gt;</td>
-                <td>map is used to create a map.</td>
+                <td>
+                  map element is used to define a client-side image map. It is a
+                  container for an image and a collection of areas.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;mark&gt;</td>
-                <td>mark is used to create a mark.</td>
+                <td>mark element is used to mark or highlight text.</td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;menu&gt;</td>
-                <td>menu is used to create a menu.</td>
+                <td>
+                  menu element is used to define a menu. It is a container for a
+                  list and isn't differentiated from a{" "}
+                  <code>{"ul and li"}</code>
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;menuitem&gt;</td>
-                <td>menuitem is used to create a menuitem.</td>
+                <td>
+                  menuitem element is used to define a menu item and command to
+                  contextual pop-up menu.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;meta&gt;</td>
-                <td>meta is used to create a meta.</td>
+                <td>
+                  meta element is used to define metadata about the document. It
+                  should be defined in the head of the document. meta element
+                  convert computer languages to human languages.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;meter&gt;</td>
-                <td>meter is used to create a meter.</td>
+                <td>
+                  meter element is used to define a scalar measurement within a
+                  given range.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;nav&gt;</td>
-                <td>nav is used to create a nav.</td>
+                <td>
+                  nav element is used to define a navigation section. It is a
+                  container for a list of links and navigation.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;noscript&gt;</td>
-                <td>noscript is used to create a noscript.</td>
+                <td>
+                  noscript element is used to define a section of the document
+                  that is not displayed if JavaScript is disabled.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;object&gt;</td>
-                <td>object is used to create a object.</td>
+                <td>
+                  object element is used to define an embedded object. It is a
+                  container for a data and a form of the object.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;ol&gt;</td>
-                <td>ol is used to create a ol.</td>
+                <td>
+                  ol element is used to define an ordered list. It is a
+                  container for a list of items.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;optgroup&gt;</td>
-                <td>optgroup is used to create a optgroup.</td>
+                <td>
+                  optgroup element is used to define a group of options in a
+                  select element.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;option&gt;</td>
-                <td>option is used to create a option.</td>
+                <td>
+                  option element is used to define an option in a select
+                  element.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;output&gt;</td>
-                <td>output is used to create a output.</td>
+                <td>
+                  output element is a container for the result of a calculation.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;p&gt;</td>
-                <td>p is used to create a p.</td>
+                <td>
+                  p element is used to define a paragraph. It is a container for
+                  a text.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;param&gt;</td>
-                <td>param is used to create a param.</td>
+                <td>
+                  param element is used to define a parameter for an object. It
+                  is a container for a name and value.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;picture&gt;</td>
-                <td>picture is used to create a picture.</td>
+                <td>
+                  picture element is a container for a set of image resources.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;pre&gt;</td>
-                <td>pre is used to create a pre.</td>
+                <td>
+                  pre element is used to define preformatted text. It is a block
+                  of text that is not subject to any processing in the browser.
+                </td>
 
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;progress&gt;</td>
-                <td>progress is used to create a progress.</td>
+                <td>
+                  progress element is used to define a progress bar. It looks
+                  like line graph with progress.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;q&gt;</td>
-                <td>q is used to create a q.</td>
+                <td>
+                  q element is used to define a short quotation. It is a block
+                  of text that is quoted from another source.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;rp&gt;</td>
-                <td>rp is used to create a rp.</td>
+                <td>
+                  rp element is used to define what to show in browsers that do
+                  not support ruby annotations.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;rt&gt;</td>
-                <td>rt is used to create a rt.</td>
+                <td>
+                  rt element is used to define what to show in browsers that do
+                  not support ruby annotations.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;ruby&gt;</td>
-                <td>ruby is used to create a ruby.</td>
+                <td>
+                  ruby element is used to define a ruby annotation. It is a
+                  container for a ruby text and a base text.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;s&gt;</td>
-                <td>s is used to create a s.</td>
+                <td>
+                  s element is used to define text that is no longer correct.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;samp&gt;</td>
-                <td>samp is used to create a samp.</td>
+                <td>
+                  samp element is used to define sample text. It is a block of
+                  text that represents a sample of a computer program or a
+                  computer output.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;script&gt;</td>
-                <td>script is used to create a script.</td>
+                <td>
+                  script element is used to define a client-side script. It is a
+                  container for a client-side program or script elements. Code
+                  in a script element is executed when the page has finished
+                  parsing the rest of the document.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;section&gt;</td>
-                <td>section is used to create a section.</td>
+                <td>
+                  section element is used to define a section of a document. It
+                  is a container for content and can be used to group blocks of
+                  content. It's a alternative to the div element.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;select&gt;</td>
-                <td>select is used to create a select.</td>
+                <td>
+                  select element is used to define a drop-down list. It is a
+                  container for a list of options.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;small&gt;</td>
-                <td>small is used to create a small.</td>
+                <td>
+                  small element is used to define smaller text. It is a block of
+                  text that is displayed in a smaller font. It looks like this:{" "}
+                  <small>This is small text</small>
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;source&gt;</td>
-                <td>source is used to create a source.</td>
+                <td>
+                  source element is used to define media resources for media
+                  elements and picture elements.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;span&gt;</td>
-                <td>span is used to create a span.</td>
+                <td>
+                  span element is an inline container used to mark up a part of
+                  a text, or a part of a document.
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;strong&gt;</td>
-                <td>strong is used to create a strong.</td>
+                <td>
+                  strong element is used to define strong text. It is a block of
+                  text that is displayed in bold. It looks like this:{" "}
+                  <strong>This is strong text</strong>
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;style&gt;</td>
-                <td>style is used to create a style.</td>
+                <td>
+                  style element is used to define style information for the
+                  page. It is a container for CSS. It is a block of text that is
+                  used to add style to the page.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;sub&gt;</td>
-                <td>sub is used to create a sub.</td>
+                <td>
+                  sub element is used to define subscript text. It is a block of
+                  text that is displayed in subscript. It looks like this:{" "}
+                  <sub>This is subscript text</sub>
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;summary&gt;</td>
-                <td>summary is used to create a summary.</td>
+                <td>
+                  summary element defines a summary, or caption, for a details
+                  element. It is a container for a text. Summary will be hide
+                  and show when user click on details element.
+                </td>
                 <td>Block</td>
               </tr>
 
               <tr>
                 <td>&lt;sup&gt;</td>
-                <td>sup is used to create a sup.</td>
+                <td>
+                  sup element is a block of text that is displayed in
+                  superscript. It looks like this:{" "}
+                  <sup>This is superscript text</sup>
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;table&gt;</td>
-                <td>table is used to create a table.</td>
+                <td>It is a container for a table of data.</td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;tbody&gt;</td>
-                <td>tbody is used to create a tbody.</td>
+                <td>tbody element is a container for the rows of a table.</td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;td&gt;</td>
-                <td>td is used to create a td.</td>
+                <td>td element is used to define a cell in a table.</td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;textarea&gt;</td>
-                <td>textarea is used to create a textarea.</td>
+                <td>
+                  textarea element is a block of text that is used to input
+                  multiple lines of text.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;tfoot&gt;</td>
-                <td>tfoot is used to create a tfoot.</td>
+                <td>tfoot element is a container for the footer of a table.</td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;th&gt;</td>
-                <td>th is used to create a th.</td>
+                <td>
+                  th element is used to define a cell in a table that contains a
+                  header.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;thead&gt;</td>
-                <td>thead is used to create a thead.</td>
+                <td>thead element is a container for the header of a table.</td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;time&gt;</td>
-                <td>time is used to create a time.</td>
+                <td>time element is used to display a date/time.</td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;title&gt;</td>
-                <td>title is used to create a title.</td>
+                <td>
+                  title element is used to define a title for the document or
+                  web page or a section of the page.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;tr&gt;</td>
-                <td>tr is used to create a tr.</td>
+                <td>tr element is used to define a row in a table.</td>
 
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;track&gt;</td>
-                <td>track is used to create a track.</td>
+                <td>
+                  track element is used to define text tracks for media
+                  elements.
+                </td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;u&gt;</td>
-                <td>u is used to create a u.</td>
+                <td>
+                  u element is a block of text that is displayed in underlined.
+                  It looks like this: <u>This is underlined text</u>
+                </td>
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;ul&gt;</td>
-                <td>ul is used to create a ul.</td>
+                <td>ul element is used to define an unordered list.</td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;var&gt;</td>
-                <td>var is used to create a var.</td>
+                <td>
+                  var element is used to define a variable. It is a block of
+                  text that is displayed in italic. It looks like this:{" "}
+                  <var>This is variable text</var>
+                </td>
 
                 <td>Inline</td>
               </tr>
               <tr>
                 <td>&lt;video&gt;</td>
-                <td>video is used to create a video.</td>
+                <td>video element is used to embed a video into the page.</td>
                 <td>Block</td>
               </tr>
               <tr>
                 <td>&lt;wbr&gt;</td>
-                <td>wbr is used to create a wbr.</td>
+                <td>wbr element is used to define a line break opportunity.</td>
                 <td>Inline</td>
               </tr>
             </tbody>
