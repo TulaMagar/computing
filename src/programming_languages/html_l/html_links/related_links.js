@@ -56,6 +56,11 @@ export default function RelatedLinks() {
           HTML Input Types
         </Link>
       </li>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_tables">
+          HTML Tables
+        </Link>
+      </li>
     </ul>
   );
 }

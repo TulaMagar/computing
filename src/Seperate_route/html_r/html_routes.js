@@ -16,6 +16,7 @@ import Html_comment from "../../programming_languages/html_l/Html_comment.js";
 import Html_head from "../../programming_languages/html_l/Html_heading.js";
 import Html_paragraph from "../../programming_languages/html_l/Html_paragraph.js";
 import Html_input_types from "../../programming_languages/html_l/html_input_types.js";
+import Html_tables from "../../programming_languages/html_l/Html_tables.js";
 
 const html_routes = [
   [<Route path="/html_home" element={<Html_home />} />],
@@ -29,6 +30,7 @@ const html_routes = [
   [<Route path="/html_head" element={<Html_head />} />],
   [<Route path="/html_paragraph" element={<Html_paragraph />} />],
   [<Route path="/html_input_types" element={<Html_input_types />} />],
+  [<Route path="/html_tables" element={<Html_tables />} />],
 ];
 
 export default html_routes;
