@@ -175,3 +175,9 @@
 .active {
   border-bottom: 3px solid red;
 }
+
+.code_highlight {
+  color: var(--React-Keyword-Color);
+  padding: 20px;
+  /* color: whitesmoke; */
+}

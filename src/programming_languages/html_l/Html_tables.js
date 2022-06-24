@@ -3,7 +3,7 @@ import "./html_style.css";
 import UseTitle from "../../Title.js";
 import RelatedLinks from "./html_links/related_links";
 import RowCloumn from "./html_images/rows-and-columns.png";
-import { Link } from "react-router-dom";
+import LeftSideLinks from "./html_links/left_side_links";
 import HtmlCssJsEditor from "../../Editor/HtmlCssJsEditor.js";
 export default function Html_tables() {
   UseTitle("What is HTML Table?");
@@ -64,17 +64,7 @@ export default function Html_tables() {
     <>
       <div id="container">
         <div id="left">
-          <li className="list">
-            <Link className="list" to="/">
-              Home
-            </Link>
-            <Link className="list" to="/">
-              Home
-            </Link>
-            <Link className="list" to="/">
-              Home
-            </Link>
-          </li>
+          <LeftSideLinks />
         </div>
         <div id="middle">
           <h1>What is Table in HTML?</h1>
@@ -91,26 +81,29 @@ export default function Html_tables() {
             and row (td) in table tag. then We wrapped column (th), and row (td)
             in the table row (tr).
           </p>
+          <h1>Table Children Tags:</h1>
           <ul>
-            <h1>Table Children Tags:</h1>
             <li>
-              <code>{"<tr>"}</code> creates a new row and <code>{"</tr>"}</code>{" "}
-              closes that row.
+              <code className="code_highlight">{"<tr>"}</code> creates a new row
+              and <code className="code_highlight">{"</tr>"}</code> closes that
+              row.<code className="code_highlight"></code>
             </li>
             <li>
-              <code>{"<th>"}</code> creates a new column cell and{" "}
-              <code>{"</th>"}</code> closes that column cell.{" "}
-              <strong>Firstname, Lastname, Age</strong> are the column header.
-              Each vertical data belongs to the column header.
+              <code className="code_highlight">{"<th>"}</code> creates a new
+              column cell and <code className="code_highlight">{"</th>"}</code>{" "}
+              closes that column cell. <strong>Firstname, Lastname, Age</strong>{" "}
+              are the column header. Each vertical data belongs to the column
+              header.
             </li>
             <li>
-              <code>{"<td>"}</code> creates a new row cell and{" "}
-              <code>{"</td>"}</code> closes that row cell.
+              <code className="code_highlight">{"<td>"}</code> creates a new row
+              cell and <code className="code_highlight">{"</td>"}</code> closes
+              that row cell.
             </li>
           </ul>
           <p>Here is the Microsoft excel table.</p>
           <img
-            className="html_learning"
+            className="table_image"
             src={RowCloumn}
             alt="Microsoft excel table for row and column"
           />
@@ -121,17 +114,18 @@ export default function Html_tables() {
           <HtmlCssJsEditor props={TableIntro2} />
           <ul>
             <li>
-              <code>{"<thead>"}</code> tag is used to group header content in an
-              HTML table.
+              <code className="code_highlight">{"<thead>"}</code> tag is used to
+              group header content in an HTML table.
             </li>
             <li>
-              <code>{"<tbody>"}</code> tag is used to group body content in an
-              HTML table. Group body content means to the data in the table.
+              <code className="code_highlight">{"<tbody>"}</code> tag is used to
+              group body content in an HTML table. Group body content means to
+              the data in the table.
             </li>
             <li>
-              <code>{"<tfoot>"}</code> tag is used to group footer content in an
-              HTML table. It is used to display totals and other information at
-              the end of the table.
+              <code className="code_highlight">{"<tfoot>"}</code> tag is used to
+              group footer content in an HTML table. It is used to display
+              totals and other information at the end of the table.
             </li>
           </ul>
         </div>

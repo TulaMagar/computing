@@ -53,6 +53,12 @@
   /* new */
   flex-grow: 1;
 }
+
+/* table styling */
+.table_image {
+  width: 540px;
+  height: 379px;
+}
 @media (max-width: 766px) {
   .related_links {
     margin-left: -9px;

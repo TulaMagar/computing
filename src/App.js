@@ -128,30 +128,32 @@ function App() {
         onClick={handleClick}> */}
       <div lazy="loading" className="App" translate="yes">
         <Paths />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/careers" element={<Careers />} />
-          <Route exact path="/question" element={<QuestionsList />} />
-          <Route exact path="/book" element={<Books />} />
-          <Route path="/question/:blogs" element={<Blog />} />
-          <Route exact path="/login" element={<Login />} />
+        <React.Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/careers" element={<Careers />} />
+            <Route exact path="/question" element={<QuestionsList />} />
+            <Route exact path="/book" element={<Books />} />
+            <Route path="/question/:blogs" element={<Blog />} />
+            <Route exact path="/login" element={<Login />} />
 
-          {/* Links for Footer */}
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/tour" element={<Tour />} />
-          <Route exact path="/survey" element={<Survey />} />
+            {/* Links for Footer */}
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/tour" element={<Tour />} />
+            <Route exact path="/survey" element={<Survey />} />
 
-          {/* programing_languages/html_l/allfiles.js: */}
-          {html_routes}
-          {CSS_routes}
-          {JavaScript_routes}
-          {Python_routes}
-          {reactjs_routes}
+            {/* programing_languages/html_l/allfiles.js: */}
+            {html_routes}
+            {CSS_routes}
+            {JavaScript_routes}
+            {Python_routes}
+            {reactjs_routes}
 
-          {/* Redirect to home page if page not found*/}
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+            {/* Redirect to home page if page not found*/}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </React.Suspense>
         <Footer />
       </div>
     </HashRouter>
