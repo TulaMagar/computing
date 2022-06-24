@@ -2,7 +2,7 @@ import React, { useState, useEffect, useTransition } from "react";
 // import CodeMirror from "@uiw/react-codemirror";
 // import { markdown, markdownLanguage } from "@codemirror/lang-markdown";
 // import { languages } from "@codemirror/language-data";
-import CodeEditor, { SelectionText } from "@uiw/react-textarea-code-editor";
+import CodeEditor from "@uiw/react-textarea-code-editor";
 
 function HtmlCssJsEditor({ props }) {
   const [html, setHtml] = useState(props);
@@ -62,7 +62,7 @@ function HtmlCssJsEditor({ props }) {
             sandbox="allow-scripts"
             frameBorder="0"
             width="100%"
-            height="100%"
+            height="auto"
             className="EditorOutput"
           />
         </div>

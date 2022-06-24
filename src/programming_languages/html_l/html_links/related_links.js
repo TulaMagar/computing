@@ -61,6 +61,11 @@ export default function RelatedLinks() {
           HTML Tables
         </Link>
       </li>
+      <li className="blockShadow">
+        <Link className="HtmlLinks" to="/html_list">
+          HTML List
+        </Link>
+      </li>
     </ul>
   );
 }
