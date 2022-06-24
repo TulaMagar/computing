@@ -1,70 +1,70 @@
 import React from "react";
 import "../../programming_languages.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 //https://html.com/
 export default function RelatedLinks() {
   return (
     <ul className="html_links">
       <h1 className="topic">Topic</h1>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_home">
+        <NavLink className="HtmlLinks" to="/html_home">
           HTML Home
-        </Link>
+        </NavLink>
       </li>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_intro">
+        <NavLink className="HtmlLinks" to="/html_intro">
           HTML Introduciton
-        </Link>
+        </NavLink>
       </li>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_editor">
+        <NavLink className="HtmlLinks" to="/html_editor">
           HTML Editor
-        </Link>
+        </NavLink>
       </li>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_element">
+        <NavLink className="HtmlLinks" to="/html_element">
           HTML Element
-        </Link>
+        </NavLink>
       </li>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_attributes">
+        <NavLink className="HtmlLinks" to="/html_attributes">
           HTML Attributes
-        </Link>
+        </NavLink>
       </li>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_tags">
+        <NavLink className="HtmlLinks" to="/html_tags">
           HTML Tags
-        </Link>
+        </NavLink>
       </li>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_comment">
+        <NavLink className="HtmlLinks" to="/html_comment">
           HTML Comments
-        </Link>
+        </NavLink>
       </li>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_head">
+        <NavLink className="HtmlLinks" to="/html_head">
           HTML Head
-        </Link>
+        </NavLink>
       </li>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_paragraph">
+        <NavLink className="HtmlLinks" to="/html_paragraph">
           HTML Paragraph
-        </Link>
+        </NavLink>
       </li>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_input_types">
+        <NavLink className="HtmlLinks" to="/html_input_types">
           HTML Input Types
-        </Link>
+        </NavLink>
       </li>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_tables">
+        <NavLink className="HtmlLinks" to="/html_tables">
           HTML Tables
-        </Link>
+        </NavLink>
       </li>
       <li className="blockShadow">
-        <Link className="HtmlLinks" to="/html_list">
+        <NavLink className="HtmlLinks" to="/html_list">
           HTML List
-        </Link>
+        </NavLink>
       </li>
     </ul>
   );
