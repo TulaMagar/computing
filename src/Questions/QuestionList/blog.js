@@ -8,7 +8,6 @@ import Image from "react-bootstrap/Image";
 import { BrowserView, MobileView } from "react-device-detect";
 import LazyLoad from "react-lazyload";
 import UseTitle from "../../Title.js";
-import ScrollAnimation from "react-animate-on-scroll";
 import { Link } from "react-router-dom";
 function blog() {
   UseTitle("My outlook navigation panel isn't in the right place");
@@ -20,6 +19,7 @@ function blog() {
             <Link className="list" to="/">
               Home
             </Link>
+            react-animate-on-scroll
             <Link className="list" to="/">
               Home
             </Link>
@@ -65,41 +65,37 @@ function blog() {
             <hr />
             <br />
             <div className="container pt-5 p-5 bg-info bg-gradient text-black">
-              <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                <h3>&emsp;&emsp;Microsoft Outlook Version</h3>
-                <p>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;As I know this new
-                  navigation display style only affect to later 2020 version. I
-                  am using 2022 version{" "}
-                </p>
+              <h3>&emsp;&emsp;Microsoft Outlook Version</h3>
+              <p>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;As I know this new
+                navigation display style only affect to later 2020 version. I am
+                using 2022 version{" "}
+              </p>
 
-                <img
-                  className="img-fluid mx-auto d-block"
-                  src={Version}
-                  alt="version img not found"
-                  width="100%"
-                  loading="lazy"
-                />
-              </ScrollAnimation>
+              <img
+                className="img-fluid mx-auto d-block"
+                src={Version}
+                alt="version img not found"
+                width="100%"
+                loading="lazy"
+              />
             </div>
 
             <div className="pt-5 p-3 my-3">
-              <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                <h3>&emsp;&emsp;Microsoft Outlook Version</h3>
-                <p>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;If you don't want to use
-                  the preview of upcoming microsoft update then you can simply
-                  click on Coming Soon to turn off{" "}
-                </p>
-                <LazyLoad>
-                  <Image
-                    className="img-fluid mx-auto d-block"
-                    src={ComingSoon}
-                    alt="version img not found"
-                    width="300vh"
-                  />
-                </LazyLoad>
-              </ScrollAnimation>
+              <h3>&emsp;&emsp;Microsoft Outlook Version</h3>
+              <p>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;If you don't want to use the
+                preview of upcoming microsoft update then you can simply click
+                on Coming Soon to turn off{" "}
+              </p>
+              <LazyLoad>
+                <Image
+                  className="img-fluid mx-auto d-block"
+                  src={ComingSoon}
+                  alt="version img not found"
+                  width="300vh"
+                />
+              </LazyLoad>
             </div>
 
             <div className="container pt-5 p-5 bg-info bg-gradient my-5 border text-black">
@@ -129,20 +125,6 @@ function blog() {
                   />
                 </MobileView>
               </LazyLoad>
-
-              <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                <h1>React Animate On Scroll</h1>
-                <h2>Using:</h2>
-              </ScrollAnimation>
-
-              <ScrollAnimation
-                animateIn="bounceInRight"
-                animateOut="bounceOutLeft"
-              >
-                <h2>
-                  <a href="https://techcomputinginfo.com/">website</a>
-                </h2>
-              </ScrollAnimation>
             </div>
           </div>
         </div>

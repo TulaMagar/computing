@@ -1,8 +1,8 @@
 import React from "react";
 import "./html_style.css";
 import UseTitle from "../../Title.js";
-import RelatedLinks from "./html_links/related_links";
 import LeftSideLinks from "./html_links/left_side_links";
+import RelatedLinks from "./html_links/related_links";
 
 export default function Html_Home() {
   UseTitle("Html Home");

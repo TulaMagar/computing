@@ -1,34 +1,23 @@
 import React from "react";
+import "./html_style.css";
 import UseTitle from "../../Title.js";
 import RelatedLinks from "./html_links/related_links";
+import LeftSideLinks from "./html_links/left_side_links";
 export default function Html_editor() {
   UseTitle("Html Editor");
   return (
     <>
       <div id="container">
         <div id="left">
-          <br />
-          <h1>RIGHTTT SIDE1</h1>
-          <br />
-          <h1>RIGHT SIDE2</h1>
-          <br />
-          <h1>RIGHT SIDE3</h1>
-          <br />
-          <h1>RIGHT SIDE4</h1>
-          <br />
-          <h1>RIGHT SIDE5</h1>
-          <br />
-          <h1>RIGHT SIDE6</h1>
-          <br />
-          <h1>RIGHTTT SIDE7</h1>
+          <LeftSideLinks />
         </div>
 
         <div id="middle">
           <h1>HTML Editor?</h1>
           <p>
             There are many ways to edit HTML. You can use a text editor, a web
-            browser, or the application software. There is a pro and con of
-            text editor, a web browser, or the application software.
+            browser, or the application software. There is a pro and con of text
+            editor, a web browser, or the application software.
           </p>
           <h1>Text Editor</h1>
           <p>
@@ -45,7 +34,8 @@ export default function Html_editor() {
             can be online anywhere and work with the projects that you have. If
             you work on a project that used packages like react, redux, etc, I
             won't suggest you to use the web browser. When you install the
-            dependencies, sometimes web browser will not be able to find the packages but that doesn't have a lot.
+            dependencies, sometimes web browser will not be able to find the
+            packages but that doesn't have a lot.
           </p>
           <p>
             You can reach to them from the following

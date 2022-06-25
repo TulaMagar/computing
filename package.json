@@ -5,42 +5,26 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "@codemirror/language-data": "^6.1.0",
-    "@fortawesome/react-fontawesome": "^0.1.18",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
     "@uiw/react-textarea-code-editor": "^2.0.2",
-    "animate.css": "^4.1.1",
     "bootstrap": "^5.1.3",
-    "browserslist": "^4.20.3",
     "codemirror": "^5.65.5",
-    "copy-to-clipboard": "^3.3.1",
-    "highlight.js": "^11.5.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
-    "prettier": "^2.6.0",
     "prism-react-renderer": "^1.3.3",
     "react": "^18.1.0",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-animation-on-scroll": "^5.0.0",
     "react-bootstrap": "^2.2.3",
-    "react-codemirror2": "^7.2.1",
     "react-device-detect": "^2.1.2",
     "react-dom": "^18.1.0",
-    "react-frame-component": "^5.2.3",
     "react-google-login": "^5.2.2",
     "react-icons": "^4.3.1",
-    "react-lazy-load-image-component": "^1.5.1",
     "react-lazyload": "^3.2.0",
     "react-paginate": "^8.1.3",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
-    "react-side-effect": "^2.1.1",
     "react-slideshow-image": "^3.7.5",
     "react-social-icons": "^5.13.0",
-    "react-syntax-highlighter": "^15.5.0",
-    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -71,12 +55,7 @@
     ]
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "gh-pages": "^3.2.3",
-    "typescript": "^4.7.2"
+    "gh-pages": "^3.2.3"
   },
   "husky": {
     "hooks": {
@@ -87,5 +66,10 @@
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
+  },
+  "env": {
+    "development": {
+      "compact": false
+    }
   }
 }

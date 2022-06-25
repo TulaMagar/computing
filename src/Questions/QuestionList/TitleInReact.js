@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "../Questions_List.css";
-import "bootstrap/dist/css/bootstrap.css";
 import UseTitle from "../../Title.js";
 import "../QuestionList/TitleInReact.css";
 import { Link } from "react-router-dom";
@@ -16,15 +14,12 @@ function TitleInReact() {
         <div id="left">
           <li className="list">
             <Link className="list" to="/">
-              {" "}
               Home
             </Link>
             <Link className="list" to="/">
-              {" "}
               Home
             </Link>
             <Link className="list" to="/">
-              {" "}
               Home
             </Link>
           </li>

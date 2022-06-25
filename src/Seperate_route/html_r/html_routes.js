@@ -72,7 +72,7 @@ const html_routes = [
   [<Route path="/html_paragraph" element={<Html_paragraph />} />],
   [<Route path="/html_input_types" element={<Html_input_types />} />],
   [<Route path="/html_tables" element={<Html_tables />} />],
-  [<Route path="/html_tables" element={<Html_list />} />],
+  [<Route path="/html_list" element={<Html_list />} />],
 ];
 
 export default html_routes;

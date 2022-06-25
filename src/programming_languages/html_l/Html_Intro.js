@@ -3,8 +3,12 @@ import "./html_style.css";
 import UseTitle from "../../Title.js";
 import RelatedLinks from "./html_links/related_links";
 import Element from "../../img/html_images/html_tag.PNG";
-import { Link } from "react-router-dom";
-import HtmlCssJsEditor from "../../Editor/HtmlCssJsEditor.js";
+import LeftSideLinks from "./html_links/left_side_links";
+// import HtmlCssJsEditor from "../../Editor/HtmlCssJsEditor.js";
+
+const HtmlCssJsEditor = React.lazy(() =>
+  import("../../Editor/HtmlCssJsEditor.js")
+);
 export default function Html_intro() {
   UseTitle("Html Intro");
 
@@ -24,17 +28,7 @@ export default function Html_intro() {
     <>
       <div id="container">
         <div id="left">
-          <li className="list">
-            <Link className="list" to="/">
-              Home
-            </Link>
-            <Link className="list" to="/">
-              Home
-            </Link>
-            <Link className="list" to="/">
-              Home
-            </Link>
-          </li>
+          <LeftSideLinks />
         </div>
         <div id="middle">
           <h1>What is HTML?</h1>
@@ -79,7 +73,7 @@ export default function Html_intro() {
           <p>
             HTML element is the root of the HTML document. It is the parent of
             as you can see that there are many HTML tags such as
-            <code>
+            <code className="code_highlight">
               {` <head></head>,
             <body></body>,
             <h1></h1> and,
@@ -87,29 +81,32 @@ export default function Html_intro() {
             `}{" "}
             </code>
             in the above code. All of the HTML tags should be inside the{" "}
-            <code>{"<html>"}</code> and
-            <code>{" </html>"} tag</code> .
+            <code className="code_highlight">{"<html>"}</code> and
+            <code className="code_highlight">{" </html>"} tag</code> .
           </p>
           <h1>HTML Head Element</h1>
           <p>
             The head element is a container for metadata (data about data) and
-            is placed between the <code> {"<html>"}</code> tag and the{" "}
-            <code> {"<body>"}</code> tag. Metadata is data about the HTML
-            document. Metadata doesn't display on the web. Metadata typically
-            define the document title, character set, styles, scripts, and other
-            meta information.
+            is placed between the{" "}
+            <code className="code_highlight"> {"<html>"}</code> tag and the{" "}
+            <code className="code_highlight"> {"<body>"}</code> tag. Metadata is
+            data about the HTML document. Metadata doesn't display on the web.
+            Metadata typically define the document title, character set, styles,
+            scripts, and other meta information.
           </p>
           <h1>HTML Body Element</h1>
           <p>
             The body element is a container for the content of the document. It
-            is placed between the <code> {"<html>"}</code> and the{" "}
-            <code> {"</html>"}</code> tag.
+            is placed between the{" "}
+            <code className="code_highlight"> {"<html>"}</code> and the{" "}
+            <code className="code_highlight"> {"</html>"}</code> tag.
           </p>
           <h1>HTML Elements</h1>
           <p>
             HTML elements are everything that is inside the tag start with a{" "}
-            <code>{"<tag_name>"}</code> and end with{" "}
-            <code>{"</tag_name>"}</code>. For example,
+            <code className="code_highlight">{"<tag_name>"}</code> and end with{" "}
+            <code className="code_highlight">{"</tag_name>"}</code>. For
+            example,
           </p>
           <img className="html_learning" src={Element} alt="html_tag" />
         </div>
