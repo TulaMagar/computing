@@ -14,8 +14,10 @@
 }
 .Footer_Column_Header {
   padding-bottom: 10px;
+  padding-left: 32px;
   color: var(--background-color-1);
   font-weight: bold;
+  font-size: 25px;
 }
 
 .FooterLinkColors {
@@ -29,7 +31,7 @@
   color: var(--background-color-1);
 }
 
-.FooterContainer > ul > li {
+.FooterContainer > div > ul > li {
   list-style: none;
   padding: 2px;
   text-align: left;
@@ -54,21 +56,25 @@
 }
 
 @media (max-width: 762px) {
+  .Footer_Column_Header {
+      padding-bottom: 10px;
+      padding-left: 0px;
+      color: var(--background-color-1);
+      font-weight: bold;
+      font-size: 25px;
+    }
   .FooterContainer {
     flex-direction: column;
   }
 
-  .FooterContainer > ul {
+  .FooterContainer > div > ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     gap: 20px;
     padding: 2px;
   }
-  .FooterContainer > ul > h3 {
-    width: 100%;
-    margin-bottom: -20px;
-  }
-  .FooterContainer > ul > li {
+
+  .FooterContainer > div > ul > li {
     list-style: none;
     padding: 2px;
   }

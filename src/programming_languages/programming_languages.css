@@ -12,11 +12,7 @@
 @media (min-width: 641px) and (max-width: 970px){
 
 }
-@media (min-width:971px) and (max-width: 1886px){
-    .related_links {
-        /* font-size: 1.339vw; */
-    }
-}
+
 @media (min-width:1887px){
     .related_links {
         font-size: var(--default-font-size);

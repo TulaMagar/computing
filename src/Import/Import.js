@@ -7,8 +7,6 @@ export { default as Home } from "../Home/Home.js";
 export { default as About } from "../About/About.js";
 export { default as QuestionsList } from "../Questions/Questions_List.js";
 export { default as Books } from "../Book/Books.js";
-export { default as Login } from "../Auth/Login.js";
-export { default as LogoutButton } from "../Auth/LogoutButton.js";
 export { default as Careers } from "../Careers/Careers.js";
 export { default as Contact } from "../Contact.js";
 export { default as Survey } from "../Survey/Survey.js";

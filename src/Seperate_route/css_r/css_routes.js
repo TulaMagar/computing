@@ -1,11 +1,15 @@
 /* eslint-disable*/
-import React from "react";
+import React, { lazy } from "react";
 import { Route } from "react-router-dom";
 
 // Files locations:
 
 // programing_languages/html_l/allfiles.js:
-import CSS_routes from "../../programming_languages/css_l/css_intro.js";
+// import CSS_routes from "../../programming_languages/css_l/css_intro.js";
+
+const CSS_routes = lazy(() =>
+  import("../../programming_languages/css_l/css_intro.js")
+);
 
 const css_routes = [[<Route path="/css_intro" element={<CSS_routes />} />]];
 

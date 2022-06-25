@@ -11,7 +11,6 @@ function HtmlCssJsEditor({ props }) {
 
   useEffect(() => {
     setHtml(props);
-    console.log(props); //gets called whenever get state changes
   }, [props]);
 
   useEffect(() => {
@@ -47,11 +46,11 @@ function HtmlCssJsEditor({ props }) {
               padding={15}
               className="EditorMode"
               spellCheck={false}
-              style={{
-                fontFamily:
-                  "ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace",
-                fontSize: 14,
-              }}
+              // style={{
+              //   fontFamily:
+              //     "ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace",
+              //   fontSize: 14,
+              // }}
             />
           </div>
         </div>

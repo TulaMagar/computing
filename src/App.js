@@ -1,19 +1,6 @@
-import React, { useState, useEffect } from "react";
-import {
-  Navigation,
-  QuestionPageNavigation,
-  Home,
-  About,
-  QuestionsList,
-  Books,
-  Login,
-  Careers,
-  Contact,
-  Tour,
-  Survey,
-  // LogoutButton,
-} from "./Import/Import.js";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useState, useEffect, lazy } from "react";
+import { Navigation } from "./Import/Import.js";
+
 import {
   HashRouter,
   Routes,
@@ -63,6 +50,7 @@ class ErrorHandler extends React.Component {
     return this.props.children;
   }
 }
+// const Navigation = lazy(() => import("./Navigation/Navigation.js"));
 const Blog = (test) => {
   const { blogs } = useParams();
 
@@ -85,6 +73,18 @@ const Blog = (test) => {
     </>
   );
 };
+
+const Home = lazy(() => import("./Home/Home.js"));
+const About = lazy(() => import("./About/About.js"));
+const QuestionPageNavigation = lazy(() =>
+  import("./Navigation/QuestionPageNavigation.js")
+);
+const Careers = lazy(() => import("./Careers/Careers.js"));
+const Books = lazy(() => import("./Book/Books.js"));
+const QuestionsList = lazy(() => import("./Questions/Questions_List.js"));
+const Survey = lazy(() => import("./Survey/Survey.js"));
+const Tour = lazy(() => import("./Tour.js"));
+const Contact = lazy(() => import("./Contact.js"));
 
 const Paths = () => {
   const Pathname = useLocation();
@@ -109,23 +109,9 @@ const Paths = () => {
   );
 };
 function App() {
-  // const [isActive, setIsActive] = useState(false);
-
-  // const handleClick = () => {
-  //   // 👇️ toggle
-  //   setIsActive((current) => !current);
-
-  //   // 👇️ or set to true
-  //   // setIsActive(true);
-  // };
   return (
     <HashRouter>
       <ScrollToTop />
-      {/* <div lazy="loading" style={{
-          backgroundColor: isActive ? 'black' : '',
-          color: isActive ? 'whitesmoke' : '',
-        }}
-        onClick={handleClick}> */}
       <div lazy="loading" className="App" translate="yes">
         <Paths />
         <React.Suspense fallback={<div>Loading...</div>}>
@@ -136,7 +122,6 @@ function App() {
             <Route exact path="/question" element={<QuestionsList />} />
             <Route exact path="/book" element={<Books />} />
             <Route path="/question/:blogs" element={<Blog />} />
-            <Route exact path="/login" element={<Login />} />
 
             {/* Links for Footer */}
             <Route exact path="/contact" element={<Contact />} />

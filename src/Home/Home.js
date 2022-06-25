@@ -3,7 +3,6 @@ import Slideshow from "../Slideshow/SlideShow.js";
 import "./Home.css";
 import Moon from "../Background/moon.webp";
 import Sea from "../Background/sea.jpg";
-import "animate.css/animate.min.css";
 import UseTitle from "../Title.js";
 import { Link } from "react-router-dom";
 const Home = () => {

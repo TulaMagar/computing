@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./About.css";
 import WeTheOne from "../img/pexels-lisa-fotios-3972467.jpg";
-import "bootstrap/dist/css/bootstrap.css";
 import UseTitle from "../Title.js";
 import { Link } from "react-router-dom";
 import Globe_Network from "../img/Globe-Network.jpg";
@@ -55,19 +54,16 @@ function About() {
             website. I hope you enjoy the website. Please, help us to make this
             website better. You can contact to this website by email via
             <Link className="Link_Color" to="/contact">
-              
               contact
             </Link>
             . Thank you. Find out Questions and answers about the computer
             science, programming, information technology, engineering fields and
             more from
             <Link className="Link_Color" to="/question">
-              
               Questions
             </Link>
             . Find out about the suitable books for you from
             <Link className="Link_Color" to="/book">
-              
               Books
             </Link>
             .
@@ -86,7 +82,6 @@ function About() {
               website. Please, help us to make this website better. You can
               contact to this website by email via
               <Link className="Link_Color" to="/contact">
-                
                 contact
               </Link>
               , thank you.
@@ -99,7 +94,6 @@ function About() {
                 className="Link_Color"
                 href="https://github.com/TulaMagar/computing.git"
               >
-                
                 GitHub
               </a>
               .
@@ -132,10 +126,7 @@ function About() {
         </div>
       </div>
 
-      <h1 style={{ textAlign: "center", paddingTop: 30 }}>
-        
-        What We Cannot Do
-      </h1>
+      <h1 style={{ textAlign: "center", paddingTop: 30 }}>What We Cannot Do</h1>
       <div className="ToWhom">
         <div
           className="weTheOne"
@@ -996,7 +987,6 @@ function About() {
             <ul>
               <li> Do research about topic </li>
               <li>
-                
                 Plan, planning, analysis, design, implementation and
                 development, testing and integration, and maintenance.
               </li>

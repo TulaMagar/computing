@@ -30,7 +30,7 @@ function QuestionPageNavigation() {
             aria-controls="responsive-navbar-nav"
             onClick={() => setExpanded(expanded ? false : "expanded")}
           />
-          <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Collapse id="responsive-navbar-na">
             <Nav className="me-auto justify-content-end margin-left">
               {/* <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/">
                 Home

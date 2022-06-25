@@ -5,6 +5,7 @@
 /*  html related links */
 .html_links {
   padding: 0%;
+  padding-right: 15px;
 }
 
 .topic {
@@ -21,6 +22,15 @@
 .HtmlLinks {
   text-decoration: none;
   color: inherit;
+}
+
+.ContentTitle{
+  padding: 30px;
+  padding-left: 0;
+}
+.ContentList{
+  padding: 5px;
+  padding-left: 0;
 }
 
 .html_attributes_table {
