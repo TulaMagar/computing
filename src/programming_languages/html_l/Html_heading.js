@@ -3,7 +3,6 @@ import "./html_style.css";
 import UseTitle from "../../Title.js";
 import RelatedLinks from "./html_links/related_links";
 import LeftSideLinks from "./html_links/left_side_links";
-import { Link } from "react-router-dom";
 import HtmlCssJsEditor from "../../Editor/HtmlCssJsEditor.js";
 
 export default function Html_heading() {

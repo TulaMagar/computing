@@ -1,5 +1,5 @@
 import React from "react";
-import "../../programming_languages.CSS";
+import "../../../programming_languages/programming_languages.css";
 import { NavLink } from "react-router-dom";
 //https://CSS.com/
 export default function RelatedCSSLinks() {

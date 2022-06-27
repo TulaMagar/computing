@@ -2,7 +2,6 @@ import React from "react";
 import "./html_style.css";
 import UseTitle from "../../Title.js";
 import RelatedLinks from "./html_links/related_links";
-import Highlight, { defaultProps } from "prism-react-renderer";
 // import Element from "../../img/html_images/html_tag.PNG";
 import { Link } from "react-router-dom";
 import HtmlCssJsEditor from "../../Editor/HtmlCssJsEditor.js";

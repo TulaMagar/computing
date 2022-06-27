@@ -41,16 +41,16 @@ const Javascript_expressions = lazy(() =>
   import("../../programming_languages/javascript_l/js_expressions")
 );
 const Javascript_functions = lazy(() =>
-  import("../../programming_languages/javascript_l/js_functions")
+  import("../../programming_languages/javascript_l/js_function")
 );
 const Javascript_arrays = lazy(() =>
-  import("../../programming_languages/javascript_l/js_arrays")
+  import("../../programming_languages/javascript_l/js_arrays.js")
 );
 const Javascript_array_methods = lazy(() =>
-  import("../../programming_languages/javascript_l/js_array_methods")
+  import("../../programming_languages/javascript_l/js_array_method.js")
 );
 const Javascript_loops = lazy(() =>
-  import("../../programming_languages/javascript_l/loops")
+  import("../../programming_languages/javascript_l/js_loops.js")
 );
 const Javascript_objects = lazy(() =>
   import("../../programming_languages/javascript_l/js_objects")
@@ -59,7 +59,7 @@ const Javascript_dates = lazy(() =>
   import("../../programming_languages/javascript_l/js_dates")
 );
 const Javascript_strings = lazy(() =>
-  import("../../programming_languages/javascript_l/js_strings")
+  import("../../programming_languages/javascript_l/js_string.js")
 );
 const Javascript_numbers = lazy(() =>
   import("../../programming_languages/javascript_l/js_numbers")
@@ -83,7 +83,7 @@ const Javascript_math = lazy(() =>
   import("../../programming_languages/javascript_l/js_math")
 );
 const Javascript_regexp = lazy(() =>
-  import("../../programming_languages/javascript_l/js_regexp")
+  import("../../programming_languages/javascript_l/js_regEx.js")
 );
 const Javascript_dom = lazy(() =>
   import("../../programming_languages/javascript_l/js_dom")

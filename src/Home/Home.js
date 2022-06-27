@@ -104,7 +104,7 @@ const Home = () => {
               CSS stands for Cascading Style Sheets. It is a style sheet
               language used to make the web pages look nice ....
             </p>
-            <Link className="different_site" to="/css_intro">
+            <Link className="different_site" to="/css_home">
               Learn More &#x2192;
             </Link>
           </div>

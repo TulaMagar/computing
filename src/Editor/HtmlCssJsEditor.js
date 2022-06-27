@@ -37,10 +37,10 @@ function HtmlCssJsEditor({ props }) {
             ]}
             onChange={(value) => setHtml(value)}
           /> */}
-          <div data-color-mode="dark">
+          <div data-color-mode="light">
             <CodeEditor
               value={html}
-              language={["html"]}
+              language="html"
               placeholder="Please enter html, css, js code."
               onChange={(evn) => setHtml(evn.target.value)}
               padding={15}
