@@ -1,5 +1,5 @@
 import React, { useState, useEffect, lazy } from "react";
-import { Navigation } from "./Import/Import.js";
+import { Home, Navigation } from "./Import/Import.js";
 
 import {
   HashRouter,
@@ -74,7 +74,6 @@ const Blog = (test) => {
   );
 };
 
-const Home = lazy(() => import("./Home/Home.js"));
 const About = lazy(() => import("./About/About.js"));
 const QuestionPageNavigation = lazy(() =>
   import("./Navigation/QuestionPageNavigation.js")
