@@ -34,7 +34,7 @@ export default function Css_intro() {
       </style>
       </head>
       <body>
-      <h1 style="text-align: center; color:blue;">Hello World</h1>
+      <h1>Hello World</h1>
       </body>
       </html>`;
 
@@ -76,7 +76,7 @@ export default function Css_intro() {
             <b>Note:</b> Inline CSS is not recommended for use in production. It
             is only recommended for use in development. Inline CSS is not a good
             practice to use in production. Please use Internal CSS or External
-            CSS instead and stop using Inline CSS right away.
+            CSS instead.
           </p>
           <HtmlCssJsEditor props={CssInline} />
 
