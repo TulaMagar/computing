@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./About.css";
+import "../Home/Home.css";
 import WeTheOne from "../img/pexels-lisa-fotios-3972467.jpg";
 import UseTitle from "../Title.js";
 import { Link } from "react-router-dom";
