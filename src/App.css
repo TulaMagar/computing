@@ -168,7 +168,12 @@
 .EditorOutput {
   width: 100%;
   background-color: rgb(245, 245, 248);
-  height: auto;
+  height: 100%;
+}
+.text-editor-output {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .active {
   border-bottom: 3px solid red;

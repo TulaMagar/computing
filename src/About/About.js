@@ -18,7 +18,7 @@ function About() {
     });
     observer.observe(myref.current);
   }, [myref]);
-
+  console.log(myref);
   UseTitle("About Computing");
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useTransition } from "react";
+import React, { useState, useEffect, useTransition, useRef } from "react";
 // import CodeMirror from "@uiw/react-codemirror";
 // import { markdown, markdownLanguage } from "@codemirror/lang-markdown";
 // import { languages } from "@codemirror/language-data";
@@ -8,16 +8,24 @@ function HtmlCssJsEditor({ props }) {
   const [html, setHtml] = useState(props);
   const [srcDoc, setSrcDoc] = useState("");
   const [, startTransition] = useTransition();
+  const [height, setHeight] = useState("0px");
+  const ref = useRef();
 
   useEffect(() => {
     setHtml(props);
   }, [props]);
 
   useEffect(() => {
+    const element = ref.current;
+    setHeight(element.contentWindow.document.body.scrollHeight + "px");
+    console.log(element.contentWindow.document.body.scrollHeight);
     startTransition(() => {
       setSrcDoc(html);
     });
-  }, [html]);
+  }, [html, height]);
+  // const onLoad = () => {
+  //   setHeight(ref.contentWindow.document.body.scrollHeight + "px");
+  // };
 
   return (
     <>
@@ -56,13 +64,13 @@ function HtmlCssJsEditor({ props }) {
         </div>
         <div className="EditorOutput">
           <iframe
+            ref={ref}
             srcDoc={srcDoc}
             title="output"
-            sandbox="allow-scripts"
+            // sandbox="allow-scripts"
             frameBorder="0"
-            width="100%"
-            height="auto"
-            className="EditorOutput"
+            height={height}
+            className="text-editor-output"
           />
         </div>
       </div>
