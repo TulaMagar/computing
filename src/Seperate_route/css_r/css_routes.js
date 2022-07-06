@@ -94,6 +94,9 @@ const CSS_responsive = lazy(() =>
 const CSS_selector = lazy(() =>
   import("../../programming_languages/css_l/css_selector.js")
 );
+const CSS_ID_Selector = lazy(() =>
+  import("../../programming_languages/css_l/css_selector/css_ID_Selector.js")
+);
 // const CSS_pseudo_class = lazy(() => import("../../programming_languages/css_l/css_pseudo_class.js"));
 const CSS_zIndex = lazy(() =>
   import("../../programming_languages/css_l/css_zIndex.js")
@@ -120,6 +123,7 @@ const css_routes = [
   [<Route path="/css_grid" element={<CSS_grid />} />],
   [<Route path="/css_responsive" element={<CSS_responsive />} />],
   [<Route path="/css_selector" element={<CSS_selector />} />],
+  [<Route path="/css_ID_Selector" element={<CSS_ID_Selector />} />],
   [<Route path="/css_zIndex" element={<CSS_zIndex />} />],
   [<Route path="/css_comment" element={<CSS_comment />} />],
 ];

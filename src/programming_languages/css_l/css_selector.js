@@ -2,12 +2,10 @@ import React, { lazy } from "react";
 import UseTitle from "../../Title.js";
 const LeftNav = lazy(() => import("../../LeftNav/leftNav.js"));
 const RelatedCssLinks = lazy(() => import("./css_links/related_css_links.js"));
-
 const HtmlCssJsEditor = lazy(() => import("../../Editor/HtmlCssJsEditor.js"));
 
 export default function CSS_selector() {
   UseTitle("What is CSS Selector?");
-  const SelectorID = `css_selector`;
 
   return (
     <>
@@ -31,7 +29,12 @@ export default function CSS_selector() {
               do repeat an ID, the browser will throw an error.
             </p>
             <b>b.</b> <i>Class Selector</i> <br />
+            <p>
+              The Class selector is used to select a single or group of elements
+              by its class.
+            </p>
             <b>c.</b> <i>Tag Selector</i> <br />
+            <p>The</p>
             <b>d.</b> <i>Attribute Selector</i> <br />
             <b>e.</b> <i>Pseudo-Class Selector</i> <br />
             <b>f.</b> <i>Pseudo-Element Selector</i> <br />

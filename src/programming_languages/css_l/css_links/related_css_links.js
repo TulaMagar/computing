@@ -23,9 +23,21 @@ export default function RelatedCSSLinks() {
           </NavLink>
         </li>
         <li className="blockShadow">
-          <NavLink className="HtmlLinks" to="/css_selector">
-            CSS Selector
-          </NavLink>
+          <details>
+            <summary>CSS Selectors</summary>
+            <ul>
+              <li className="blockShadow">
+                <NavLink className="HtmlLinks" to="/css_selector">
+                  CSS Selector
+                </NavLink>
+              </li>
+              <li className="blockShadow">
+                <NavLink className="HtmlLinks" to="/css_ID_Selector">
+                  CSS ID Selector
+                </NavLink>
+              </li>
+            </ul>
+          </details>
         </li>
         <li className="blockShadow">
           <NavLink className="HtmlLinks" to="/css_syntax">
