@@ -97,6 +97,12 @@ const CSS_selector = lazy(() =>
 const CSS_ID_Selector = lazy(() =>
   import("../../programming_languages/css_l/css_selector/css_ID_Selector.js")
 );
+const CSS_class_Selector = lazy(() =>
+  import("../../programming_languages/css_l/css_selector/css_Class_Selector.js")
+);
+const CSS_Tag_Selector = lazy(() =>
+  import("../../programming_languages/css_l/css_selector/css_Tag_Selector.js")
+);
 // const CSS_pseudo_class = lazy(() => import("../../programming_languages/css_l/css_pseudo_class.js"));
 const CSS_zIndex = lazy(() =>
   import("../../programming_languages/css_l/css_zIndex.js")
@@ -124,6 +130,8 @@ const css_routes = [
   [<Route path="/css_responsive" element={<CSS_responsive />} />],
   [<Route path="/css_selector" element={<CSS_selector />} />],
   [<Route path="/css_ID_Selector" element={<CSS_ID_Selector />} />],
+  [<Route path="/css_class_Selector" element={<CSS_class_Selector />} />],
+  [<Route path="/css_Tag_Selector" element={<CSS_Tag_Selector />} />],
   [<Route path="/css_zIndex" element={<CSS_zIndex />} />],
   [<Route path="/css_comment" element={<CSS_comment />} />],
 ];

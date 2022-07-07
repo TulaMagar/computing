@@ -37,6 +37,7 @@ export default function css_ID_Selector() {
       <title>Document</title>
       <style>
           #paragraph { color: red; }
+          #paragraph_2 { color: blue; }
           </style>
   </head>
   <body>
