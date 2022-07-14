@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Navigation.css";
 import { Navbar, Nav } from "react-bootstrap";
-import "bootstrap/dist/js/bootstrap.bundle";
 import { NavLink } from "react-router-dom";
 // eslint-disable-next-line
 import { GoogleLogin, GoogleLogout } from "react-google-login";
@@ -27,11 +26,10 @@ function QuestionPageNavigation() {
             Home
           </Navbar.Brand>
           <Navbar.Toggle
-            aria-controls="responsive-navbar-nav"
             onClick={() => setExpanded(expanded ? false : "expanded")}
           />
           <Navbar.Collapse id="responsive-navbar-na">
-            <Nav className="me-auto justify-content-end margin-left">
+            <Nav className="me-auto">
               {/* <Nav.Link onClick={() => setExpanded(false)} as={NavLink} to="/">
                 Home
               </Nav.Link> */}
@@ -41,7 +39,6 @@ function QuestionPageNavigation() {
                 onClick={() => setExpanded(false)}
                 as={NavLink}
                 to="/about"
-                className="change-color"
               >
                 About
               </Nav.Link>

@@ -4,11 +4,6 @@ import { BlogPath } from "../Data/Link_Path.js";
 import { Link } from "react-router-dom";
 import UseTitle from "../Title.js";
 import ReactPaginate from "react-paginate";
-// import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import "bootstrap/dist/js/bootstrap.bundle";
-// import { NavLink } from "react-router-dom";
-// import Custom_leftSide_vertically_navbar from "../Navigation/Custom_leftSide_vertically_navbar.js";
-//https://www.toptal.com/designers/htmlarrows/arrows/
 
 function PaginatedItems() {
   const [links] = useState(BlogPath);

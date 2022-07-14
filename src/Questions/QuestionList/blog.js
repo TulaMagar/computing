@@ -1,12 +1,11 @@
 import React from "react";
 import "../Questions_List.css";
-import ComingSoon from "../../img/ComingSoon.png";
-import NewUpdate from "../../img/NewUpdate.png";
-import Version from "../../img/Version.PNG";
-import "bootstrap/dist/css/bootstrap.css";
-import Image from "react-bootstrap/Image";
-import { BrowserView, MobileView } from "react-device-detect";
-import LazyLoad from "react-lazyload";
+// import ComingSoon from "../../img/ComingSoon.png";
+// import NewUpdate from "../../img/NewUpdate.png";
+// import Version from "../../img/Version.PNG";
+// import Image from "react-bootstrap/Image";
+// import { BrowserView, MobileView } from "react-device-detect";
+// import LazyLoad from "react-lazyload";
 import UseTitle from "../../Title.js";
 import { Link } from "react-router-dom";
 function blog() {
@@ -30,7 +29,7 @@ function blog() {
         </div>
 
         <div id="middle">
-          <div>
+          {/* <div>
             <h1>Coming Soon Microsoft Outlook Navigation Panel</h1> <br />
             <p>
               &emsp;&emsp; Recently, Microsoft has been updating software as
@@ -126,7 +125,8 @@ function blog() {
                 </MobileView>
               </LazyLoad>
             </div>
-          </div>
+          </div> */}
+          <h1>Test</h1>
         </div>
 
         <div id="right">

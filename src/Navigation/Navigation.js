@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Navigation.css";
 import { Navbar, Nav } from "react-bootstrap";
-import "bootstrap/dist/js/bootstrap.bundle";
 import { NavLink } from "react-router-dom";
 import CustomLeftSideVerticallyNavbar from "./Custom_leftSide_vertically_navbar.js";
 // eslint-disable-next-line
@@ -34,11 +33,10 @@ function Navigation() {
             Logo
           </Navbar.Brand>
           <Navbar.Toggle
-            aria-controls="responsive-navbar-nav"
             onClick={() => setExpanded(expanded ? false : "expanded")}
           />
           <Navbar.Collapse id="responsive-navbar-na">
-            <Nav className="me-auto justify-content-end margin-left">
+            <Nav className="me-auto">
               <Nav.Link
                 id="ShowInVerySmall"
                 onClick={() => setExpanded(false)}

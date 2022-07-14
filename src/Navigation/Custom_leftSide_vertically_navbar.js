@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-// import "./Navigation.css";
 import "../Questions/Questions_List.css";
 import { Navbar, Nav } from "react-bootstrap";
-import "bootstrap/dist/js/bootstrap.bundle";
 import { NavLink } from "react-router-dom";
 export default function Custom_leftSide_vertically_navbar() {
   const [expanded, setExpanded] = useState(false);
@@ -16,7 +14,6 @@ export default function Custom_leftSide_vertically_navbar() {
         expanded={expanded}
       >
         <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
           onClick={() => setExpanded(expanded ? false : "expanded")}
         />
         <Navbar.Collapse id="responsive-navbar-nav">

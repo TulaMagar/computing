@@ -1,6 +1,5 @@
 import React from "react";
 import "../Questions_List.css";
-import "bootstrap/dist/css/bootstrap.css";
 import UseTitle from "../../Title.js";
 import "../QuestionList/TitleInReact.css";
 import Highlight, { defaultProps } from "prism-react-renderer";

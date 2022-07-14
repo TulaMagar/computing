@@ -2,8 +2,7 @@ import React from "react";
 import "./html_style.css";
 import UseTitle from "../../Title.js";
 import LeftSideLinks from "./html_links/left_side_links";
-import RelatedLinks from "./html_links/related_links";
-
+import { HtmlRelatedCourses } from "../../Data/HTML_Blog_Path.js";
 export default function Html_Home() {
   UseTitle("Html Home");
   return (
@@ -67,7 +66,15 @@ export default function Html_Home() {
         </div>
 
         <div id="right">
-          <RelatedLinks />
+          {HtmlRelatedCourses.map(
+            (
+              course //map is used to iterate through the array
+            ) => (
+              <div className="right-side-links">
+                <a href={course.path}>{course.path}</a>
+              </div>
+            )
+          )}
         </div>
       </div>
     </>

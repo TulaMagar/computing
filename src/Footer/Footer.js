@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import "bootstrap/dist/js/bootstrap.bundle";
 import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 //https://stackoverflow.com/questions/40491483/hide-collapse-navbar-after-link-click-react-redux-react-bootstrap

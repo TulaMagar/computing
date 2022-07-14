@@ -16,7 +16,7 @@ export default function CssHome() {
         <div id="middle">
           <h1>CSS History </h1>
           <p>
-            CSS is a language that describes how HTML elements are to be
+            CSS is a languagee that describes how HTML elements are to be
             displayed on a web page. It's been around for more than 25 years,
             and is used by many web developers.
           </p>

@@ -1,7 +1,7 @@
-import PastPresentFuture from "../Slideshow/SlideshowImage/pastPresentFuture.png";
-import OlOl from "../Slideshow/SlideshowImage/olol.jpg";
-import Meeting from "../Slideshow/SlideshowImage/meeting.jpg";
-import Cute from "../Slideshow/SlideshowImage/cute.jpg";
+import PastPresentFuture from "../Slideshow/SlideshowImage/pastPresentFuture.WebP";
+import OlOl from "../Slideshow/SlideshowImage/olol.WebP";
+import Meeting from "../Slideshow/SlideshowImage/meeting.WebP";
+import Cute from "../Slideshow/SlideshowImage/cute.WebP";
 
 export const slideImages = [
   {

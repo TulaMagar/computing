@@ -11,3 +11,4 @@ export { default as Careers } from "../Careers/Careers.js";
 export { default as Contact } from "../Contact.js";
 export { default as Survey } from "../Survey/Survey.js";
 export { default as Tour } from "../Tour.js";
+export { default as HtmlHome } from "../programming_languages/html_l/Html_home.js";
