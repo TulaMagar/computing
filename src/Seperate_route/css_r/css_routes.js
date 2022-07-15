@@ -123,6 +123,7 @@ const css_routes = [
   [<Route path="/css_home" element={<CSS_home />} />, "/css_home"],
   [<Route path="/css_intro" element={<CSS_intro />} />],
   [<Route path="/css_margin" element={<CSS_margin />} />],
+  [<Route path="/css_padding" element={<CSS_padding />} />],
   [<Route path="/css_syntax" element={<CSS_syntax />} />],
   [<Route path="/css_display" element={<CSS_display />} />],
   [<Route path="/css_flex" element={<CSS_flex />} />],
