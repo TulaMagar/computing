@@ -22,9 +22,9 @@ export default function CssPadding() {
             , <code>padding-bottom</code>, and <code>padding-left</code>.
           </p>
           <section>
-            <b>a.</b> <i>margin: </i> given only one value sets the space around
-            the element or website evenly in all 4 sides. However, if you give
-            and set a different value for each side, the space will be
+            <b>a.</b> <i>padding: </i> given only one value sets the space
+            around the element or website evenly in all 4 sides. However, if you
+            give and set a different value for each side, the space will be
             different. <br />
             <p>
               <b>
