@@ -48,7 +48,11 @@ export default function CSS_margin() {
             of a border. It is a string of characters that tells the browser how
             much space to put around an element.
           </p>
-          <img src={MarginImage} alt="margin" />
+          <img
+            style={{ width: "876px", height: "800px" }}
+            src={MarginImage}
+            alt="margin"
+          />
           <p>
             Think above image as a web page or section of a web page. Margin is
             the space around the web page. It has 4 sides: top, right, bottom,
@@ -84,17 +88,15 @@ export default function CSS_margin() {
               for top, right, bottom, left
               <br />
             </p>
-            <b>b.</b> <i>margin-top:</i> sets the space around the element or
-            website only on the top side.
+            <b>b.</b> <i>margin-top:</i> sets the space only on the top side.
             <br />
-            <b>c.</b> <i>margin-right:</i> sets the space around the element or
-            website only on the right side.
+            <b>c.</b> <i>margin-right:</i> sets the space only on the right
+            side.
             <br />
-            <b>d.</b> <i>margin-bottom:</i> sets the space around the element or
-            website only on the bottom side.
+            <b>d.</b> <i>margin-bottom:</i> sets the space only on the bottom
+            side.
             <br />
-            <b>e.</b> <i>margin-left:</i> sets the space around the element or
-            website only on the left side.
+            <b>e.</b> <i>margin-left:</i> sets the space only on the left side.
             <br />
           </section>
           <HtmlCssJsEditor props={CSSMargin} />
