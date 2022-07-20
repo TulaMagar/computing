@@ -1,6 +1,6 @@
 import React, { lazy } from "react";
 import UseTitle from "../../Title.js";
-
+import PaddingImage from "./css_images/margin.avif";
 const LeftNav = lazy(() => import("../../LeftNav/leftNav.js"));
 const RelatedCssLinks = lazy(() => import("./css_links/related_css_links.js"));
 
@@ -21,6 +21,11 @@ export default function CssPadding() {
             CSS properties: <code>padding-top</code>, <code>padding-right</code>
             , <code>padding-bottom</code>, and <code>padding-left</code>.
           </p>
+          <img
+            style={{ width: "876px", height: "800px" }}
+            src={PaddingImage}
+            alt="margin"
+          />
           <section>
             <b>a.</b> <i>padding: </i> given only one value sets the space
             around the element or website evenly in all 4 sides. However, if you
