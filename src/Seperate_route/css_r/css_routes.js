@@ -126,6 +126,8 @@ const css_routes = [
   [<Route path="/css_border" element={<CSS_border />} />],
   [<Route path="/css_padding" element={<CSS_padding />} />],
   [<Route path="/css_position" element={<CSS_position />} />],
+  [<Route path="/css_zIndex" element={<CSS_zIndex />} />],
+  [<Route path="/css_float" element={<CSS_float />} />],
   [<Route path="/css_syntax" element={<CSS_syntax />} />],
   [<Route path="/css_display" element={<CSS_display />} />],
   [<Route path="/css_flex" element={<CSS_flex />} />],

@@ -6,7 +6,6 @@ const HtmlCssJsEditor = lazy(() => import("../../Editor/HtmlCssJsEditor.js"));
 export default function CssPosition() {
   UseTitle("CSS Position");
 
-  const test = `position: relative;`;
   const CSS_Relative = `
   <!DOCTYPE html>
   <html lang="en">
@@ -92,7 +91,10 @@ export default function CssPosition() {
           <b>
             <i>Sticky: </i>
           </b>
-          the element is positioned relative to the viewport.
+          the element is positioned relative to the viewport. The element
+          remains on the top of the page when the page is scrolled. The element
+          can be position to the top, right, bottom, and left properties within
+          the viewport.
           <br />
         </div>
 
